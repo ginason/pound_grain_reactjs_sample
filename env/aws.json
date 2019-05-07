@@ -1,0 +1,12 @@
+{
+    "live": {
+        "accessKeyId"     : "",
+        "secretAccessKey" : "",
+        "region"          : ""
+    },
+    "dev": {
+        "accessKeyId"     : "",
+        "secretAccessKey" : "",
+        "region"          : ""
+    }
+}

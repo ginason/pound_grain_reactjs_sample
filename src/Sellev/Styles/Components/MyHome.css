@@ -1,0 +1,12 @@
+.myHomeContainer {
+    overflow: hidden;
+    margin-top: 70px;
+}
+.myHomeContainer .blank {
+    margin-top: 24px;
+}
+@media screen and (max-width: 768px){
+    .myHomeContainer .blank {
+        margin-top: 0;
+    }
+}

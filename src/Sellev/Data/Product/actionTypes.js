@@ -1,0 +1,2 @@
+
+export const CURRENT_PRODUCT = 'CURRENT_PRODUCT';

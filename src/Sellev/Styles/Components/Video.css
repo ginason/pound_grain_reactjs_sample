@@ -1,0 +1,647 @@
+
+/* Common */
+
+.sectionTitle {
+    font-size: 34px;
+    font-weight: bold;
+    letter-spacing: -1.2px;
+    color: #161616;
+}
+
+
+.sectionSmallTitle {
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 19px;
+    color: #a0a0a0;
+    letter-spacing: -0.5px;
+}
+
+/* Banner */
+.bannerSection {
+    width: 1100px;
+    margin: 0 auto;
+}
+
+.bannerHeader {
+    width: 100%;
+    margin: 0 auto 13px;
+}
+
+.bannerBody{
+    width: 100%;
+    overflow: hidden;
+    height: 370px;
+}
+.listBox {
+    position: relative;
+    width: 323px;
+    height: 360px;
+    margin: 2px 4.5px;
+    float: left;
+    cursor: pointer;
+    border-radius: 12px;
+}
+.listBox:hover {
+    opacity: 0.5;
+    -webkit-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+}
+.listBox .bgImage {
+    width: 100%;
+    height: 323px;
+    border-radius: 12px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    opacity: 0.8;
+}
+.listBox .bgCover {
+    width: 100%;
+    height: 323px;
+    border-radius: 12px;
+    background-color: #000000;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.clickLike {
+    position: absolute;
+    top: 10px;
+    right: 13px;
+}
+.titleBox{
+    position: relative;
+    width: 80%;
+    bottom: 90px;
+    left: 30px;
+    color: #ffffff;
+}
+.titleBox div:first-child{
+    font-size: 11px;
+    line-height: 30px;
+    font-weight: bold;
+}
+.titleBox div:nth-child(2){
+    font-size: 17px;
+    line-height: 23px;
+    font-weight: bold;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.titleBox div:last-child{
+    font-size: 13px;
+    line-height: 2em;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.7);
+}
+.hashtagBox {
+    position: relative;
+    bottom: 74px;
+    overflow: hidden;
+    padding-left: 5px;
+}
+.hashtagItem {
+    border: 1px solid #d4d4d4;
+    color: #000000;
+    height: 26px;
+    width: auto;
+    float: left;
+    line-height: 26px;
+    border-radius: 4px;
+    padding: 0 10px;
+    font-size: 9px;
+    margin-right: 4px;
+}
+/* Video List */
+
+.videoSection {
+    width: 1100px;
+    margin: 120px auto;
+}
+.videoHeader {
+    width: 100%;
+    margin-bottom: 22px;
+}
+.videoBody {
+    width: 100%;
+}
+.videoBox {
+    width: 264px;
+    display: inline-block;
+    margin-right: 14px;
+    margin-bottom: 30px;
+}
+.videoBox:nth-child(4n) {
+    width: 264px;
+    display: inline-block;
+    margin-right: 0;
+    margin-bottom: 24px;
+}
+/*video detail*/
+/*비디오 스케일 맞추기*/
+.playingVideo {
+    position: relative;
+}
+.videoScale {
+    width: 100%;
+    opacity: 0;
+}
+.videoFrame {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+.videoDefault {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+/*/////////////////////*/
+.videoDetailContainer {
+    width: 1113px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.videoDetailHeader {
+    width: 752px;
+    float: left;
+    overflow: hidden;
+    height: 100%;
+}
+.playingVideoBox {
+    width: 100%;
+    border-bottom: 1px solid rgba(151,151,151, 0.18);
+    height: 100%;
+}
+.playingVideo {
+    width: 752px;
+    height: 423px;
+    margin-bottom: 20px;
+}
+
+.videoTitleBox {
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 8px;
+}
+.videoTitle {
+    float: left;
+}
+.videoTitle div:first-child {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.3em;
+    letter-spacing: -1.2px;
+}
+.videoTitle div:last-child {
+    font-size: 14px;
+    color: rgba(22,22,22, 0.5);
+    font-weight: 600;
+    line-height: 30px;
+}
+.videoLikeBtn {
+    width: 89px;
+    display: inline-flex;
+    padding: 14px 7px;
+    float: right;
+    margin: 7px 0;
+}
+
+.selleverVideoBox {
+    width: 100%;
+    padding-bottom: 39px;
+    height: 100%;
+    border-bottom: 1px solid #e2e2e2;
+}
+.sideVideoTitle {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 23px;
+}
+/*thumbnail */
+
+.thumbnailBox {
+    overflow: hidden;
+    width: 100%;
+    margin: 10px 0;
+    cursor: pointer;
+}
+.thumbnailBox:hover {
+    opacity: 0.5;
+    -webkit-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+.thumbnailMobile {
+    width: 100%;
+    /*width: 161px;*/
+    /*height: 90px;*/
+    border-radius: 4px;
+    background-size: cover;
+    background-position: center;
+    float: left;
+}
+.thumbnailScaleBox {
+    position: relative;
+    width: 40%;
+    float: left;
+}
+.thumbnail {
+    width: 100%;
+    /*height: 100%;*/
+    border-radius: 4px;
+    background-size: cover;
+    background-position: center;
+    float: left;
+    position: absolute;
+    right: 0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+}
+.thumbnailScale {
+    width: 100%;
+    opacity: 0;
+}
+/*////////////////////////*/
+.videoScrollBox {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: scroll;
+    white-space: nowrap;
+    overflow-y: hidden;
+}
+.videoScrollBox::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+.videoListBox {
+    width: 60%;
+    float: right;
+    padding-left: 8px;
+}
+.videoListTitle{
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 1.5em;
+    letter-spacing: -1.5px;
+}
+
+.infoBox {
+    overflow: hidden;
+    float: left;
+    margin-right: 7px;
+}
+.infoBox div {
+    float: left;
+}
+.infoBox:last-child span {
+    margin-top: 2px;
+}
+.infoBox:nth-child(2) span {
+    color: rgba(151,151,151, 0.5);
+}
+.infoBox span {
+    color: rgba(46,46,46, 0.7);
+    font-size: 14px;
+}
+.videoOthers {
+    margin-top: 7px;
+}
+.moreBtn {
+    text-align: center;
+    padding: 10px 0;
+}
+
+/*상세페이지 세부정보*/
+.detailContentBox {
+    overflow: hidden;
+    float: right;
+    width: 338px;
+}
+.detailContentLeft {
+    float: left;
+    width: 752px;
+}
+.detailInfoBox {
+    border-bottom: 1px solid rgba(151,151,151, 0.18);
+    padding: 10px 0 55px;
+}
+.detailInfoBox li {
+    margin: 10px 0;
+}
+.detailInfoBox li:first-child{
+    font-size: 14px;
+    color: rgba(22,22,22, 0.5);
+    line-height: 2em;
+    font-weight: 600;
+}
+.detailInfoBox li:nth-child(2){
+    font-size: 15px;
+    line-height: 1.5em;
+    width: 90%;
+    font-weight: 500;
+    letter-spacing: -0.4px;
+}
+.detailInfoBox li:nth-child(3){
+    overflow: hidden;
+}
+.customizedHashTag {
+    width: auto;
+    min-width: 60px;
+    padding: 7px 10px;
+    float: left;
+    margin: 5px;
+}
+/*user follow box*/
+.videoFollowBox {
+    overflow: hidden;
+    padding: 17px 0 14px;
+    border-bottom: 1px solid rgba(151,151,151, 0.18);
+    width: 100%;
+}
+
+.videoFollowBox li {
+    float: left;
+}
+.videoFollowBox li:first-child {
+    margin-right: 9px;
+}
+.videoFollowBox .unfollowBox {
+    margin-top: 20px;
+    margin-right: 10px;
+    float: right;
+}
+.videoFollowBox .followBox {
+    float: right;
+    margin-top: 9px;
+}
+.followUserImage {
+    width: 51px;
+    height: 51px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 25px;
+    float: left;
+    cursor: pointer;
+    border: 1px solid rgba(151,151,151, 0.2);
+}
+.followStatus {
+    display: inline-flex;
+}
+.userTitle {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.5em;
+    cursor: pointer;
+}
+.userFollower {
+    font-size: 15px;
+    color: rgba(22,22,22, 0.5);
+    line-height: 1.5em;
+    margin-top: 2px;
+}
+.videoLikeBtn {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    display: inline-flex;
+    font-size: 14px;
+    letter-spacing: 0.7px;
+    color: #505050;
+}
+.videoLikeBtn .btnContent {
+    display: block;
+    height: 20px;
+    position: relative;
+    margin: 0 auto;
+}
+.videoLikeBtn {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    display: inline-flex;
+    font-size: 14px;
+    letter-spacing: 0.7px;
+    color: #505050;
+}
+.videoLikeBtn .btnContent {
+    display: block;
+    height: 20px;
+    position: relative;
+    margin: 0 auto;
+}
+.videoLikeBtn .btnContent .likeImage.likePink {
+    background-position: -186px 101px;
+}
+.videoLikeBtn .likeImage {
+    background-image: url(/assets/img/ic_web_icon.png);
+    width: 20px;
+    height: 20px;
+    background-position: -186px 121px;
+    margin-top: -2px;
+    cursor: pointer;
+    position: absolute;
+    top: -2px;
+    left: 0;
+}
+.videoLikeBtn .number {
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 24px;
+    padding-bottom: 2px;
+}
+.videoLikeBtn .number.numberPink {
+    color: #fd0a0a;
+}
+/*인기 영상*/
+.contentSIdeBox {
+    width: 100%;
+    margin-top: 25px;
+}
+@media screen and (max-width: 1100px){
+    .bannerSection {
+        width: 100%;
+        padding: 0 20px;
+    }
+    .videoSection {
+        width: 100%;
+        padding: 0 20px;
+    }
+    .videoBox,
+    .videoBox:nth-child(4n) {
+        width: 32%;
+        margin-right: 2%;
+    }
+    .videoBox:nth-child(3n) {
+        margin: 0;
+    }
+
+}
+
+
+@media screen and (max-width: 870px) {
+    .videoSection {
+        width: 100%;
+    }
+
+}
+
+
+
+/*모바일 반응형*/
+@media screen and (max-width: 768px){
+    .videoBannerContainer {
+        margin-top: 30px;
+    }
+    .bannerHeader {
+        margin-bottom: 20px;
+    }
+    .bannerSection {
+        height: 336px;
+    }
+    .bannerBody{
+        height: 307px;
+    }
+    .detailInfoBox {
+        padding: 10px 23px 33px;
+    }
+    /*banner*/
+    .listBox {
+        width: 250px;
+        height: 307px;
+    }
+    .titleBox div:nth-child(2){
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+    .listBox .bgImage {
+        height: 247px;
+    }
+    .listBox .bgCover {
+        height: 247px;
+    }
+    /*Video Detail*/
+    .detailContentBox {
+        width: 100%;
+        float: none;
+    }
+    .videoDetailContainer {
+        width: 100%;
+    }
+    .videoDetailHeader{
+        height: 100%;
+        width: 100%;
+    }
+    .playingVideoBox {
+        width: 100%;
+        border-bottom: 1px solid rgba(151,151,151, 0.18);
+    }
+    .playingVideo {
+        width: 100%;
+        height: 100%;
+        margin-bottom: 20px;
+    }
+    .videoTitleBox {
+        width: 100%;
+        padding: 0 23px;
+    }
+    .videoTitle {
+        width: 90%;
+    }
+    .mobileDropdown {
+        float: right;
+        margin-top: 15px;
+    }
+    .selleverVideoBox {
+        width: 100%;
+        padding: 30px 20px 0;
+    }
+    .videoLikeBtn {
+        display: none;
+    }
+    .detailContentLeft {
+        float: none;
+        width: 100%;
+    }
+    .videoFollowBox {
+        padding: 15px 23px;
+    }
+    .detailContentRight {
+        float: none;
+        width: 100%;
+    }
+    /*비디오 리스트 */
+    /*셀레버 리스트 반응형*/
+    .thumbnailBox {
+        padding: 16px 0;
+        margin: 0;
+    }
+    .thumbnailBox.selleverVideoList {
+        width: 186px;
+        display: inline-block;
+        border: 0;
+        padding: 0;
+        margin-right: 17px;
+        margin-top: 16px;
+        margin-bottom: 30px;
+    }
+    .thumbnailBox.selleverVideoList .thumbnailScaleBox {
+        width: 100%;
+    }
+    .thumbnailBox.selleverVideoList .videoListBox {
+        width: 100%;
+        float: none;
+        padding: 5px;
+        overflow: hidden;
+    }
+        /*인기리스트 반응형*/
+    .thumbnailBox {
+        border-bottom: 1px solid rgba(151,151,151, 0.18);
+    }
+    .videoListBox {
+        width: 60%;
+        padding-left: 15px;
+    }
+    .contentSIdeBox {
+        padding: 0 23px;
+        float: none;
+        margin-bottom: 80px;
+    }
+    .videoListTitle{
+        font-size: 13px;
+    }
+        /*오늘의 동영상 */
+    .videoSection {
+        max-width: 768px;
+        width: auto;
+        padding: 0 20px;
+        margin: 80px auto 50px;
+    }
+    .videoBox {
+        margin-bottom: 24px;
+    }
+    .videoBox,
+    .videoBox:nth-child(4n),
+    .videoBox:nth-child(3n) {
+        width: 100%;
+        margin: 0;
+    }
+    .videoBox:nth-child(4n) {
+        margin-right: 0;
+    }
+}

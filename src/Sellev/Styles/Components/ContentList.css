@@ -1,0 +1,1919 @@
+
+.FundingMarketListBox {
+    width: 352px;
+    float: left;
+    margin-right: 20px;
+}
+.FundingMarketListBox:last-child {
+    margin-right: 0;
+}
+.FundingMarketListBox .listTItle {
+    font-size: 19px;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.FundingMarketListBox .listImg {
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+    cursor: pointer;
+    height: 100%;
+    padding-top: 50%;
+    opacity: 0.8;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.FundingMarketListBox .itemListBox .topItem:hover {
+    opacity: 0.5;
+    -webkit-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+.FundingMarketListBox .itemListBox {
+    margin: 11px auto 0;
+
+}
+.FundingMarketListBox .itemListBox .item {
+    height: 83px;
+    padding: 18px 0 18px 0;
+    border-bottom: 1px solid #e7e7e7;
+}
+.FundingMarketListBox .itemListBox .item:hover div{
+    opacity: 0.5;
+    -webkit-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+.FundingMarketListBox .itemListBox .item a {
+    color: #171717;
+}
+.FundingMarketListBox .itemListBox .item div:nth-child(1) {
+    width: 8px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    border-bottom: 2px solid #2d2d2d;
+    float: left;
+    margin: 18px 0px;
+    margin-right: 10px;
+}
+.FundingMarketListBox .itemListBox .item div:nth-child(2) {
+    width: 52px;
+    height: 52px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 6px;
+    float: left;
+    margin-right: 10px;
+}
+.FundingMarketListBox .itemListBox .item div:nth-child(3) {
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 1.5em;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: #000000;
+}
+.FundingMarketListBox .itemListBox .item div:last-child {
+    font-size: 14px;
+    font-weight: 600;
+    color: rgba(32,32,32, 0.5);
+    line-height: 1.5em;
+}
+.listImgScale {
+    opacity: 0;
+    width: 100%;
+}
+.FundingMarketListBox .itemListBox .topItem {
+    position: relative;
+    background-color: #000000;
+    border-radius: 8px;
+    height: 100%;
+    padding-top: 50%;
+    display: -ms-inline-grid;
+    width: 100%;
+}
+.FundingMarketListBox .itemListBox .topItem .listTextBox {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    color: #ffffff;
+    cursor: pointer;
+}
+.FundingMarketListBox .itemListBox .topItem .listTextBox > div:nth-child(1) {
+    font-size: 14px;
+    border-bottom: 2px solid #ffffff;
+    width: 6px;
+    margin-bottom: 6px;
+}
+.FundingMarketListBox .itemListBox .topItem .listTextBox > div:nth-child(2) {
+    font-size: 16px;
+    line-height: 1.5em;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+.FundingMarketListBox .itemListBox .topItem .listTextBox > div:nth-child(3) {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: rgba(255, 255, 255, 0.8);
+}
+/*progress bar*/
+.progressBox {
+    position: relative;
+}
+.progressBox .progress {
+    background-color: #ebeaeb;
+    height: 4px;
+    margin: 13px auto;
+}
+.progressBox .progress .progressBar {
+    height: 4px;
+    background-color: #fd0a0a;
+}
+.progressNum {
+    position: absolute;
+    font-size: 12px;
+    width: 41px;
+    height: 20px;
+    border-radius: 100px;
+    background-color: #191919;
+    color: #ffffff;
+    bottom: -10px;
+    /*right: 40%;*/
+    text-align: center;
+    padding-top: 6px;
+}
+/*funding*/
+.fundBox {
+    margin-top: 25px;
+    overflow: hidden;
+}
+.fundPercent {
+    float: left;
+    margin-right: 20px;
+}
+
+.fundAttendant {
+    float: left;
+    margin-right: 20px;
+}
+.left {
+    float: left;
+    margin-right: 20px;
+}
+.goal {
+    float: left;
+}
+.fundPercent div:first-child,
+.fundAttendant div:first-child,
+.left div:first-child {
+    color: #fd0a0a;
+    font-size: 18px;
+    font-weight: bold;
+}
+.goal div:first-child {
+    color: #161616;
+    line-height: 18px;
+}
+.goal div:first-child span {
+    font-size: 13px;
+}
+
+.fundPercent div:last-child,
+.fundAttendant div:last-child,
+.left div:last-child,
+.goal div:last-child {
+    font-size: 12px;
+    color: #979797;
+    line-height: 2em;
+}
+/*Comment Box*/
+/*댓글게시판*/
+.commentImage {
+    background-image: url(/assets/img/ic_web_icon.png);
+    width: 20px;
+    height: 20px;
+    background-position: -186px 121px;
+    margin-top: -2px;
+    cursor: pointer;
+}
+.dropdownImage {
+    background-image: url(/assets/img/ic_web_icon.png);
+    width: 10px;
+    height: 10px;
+    background-position: 203px 47px;
+    cursor: pointer;
+}
+.commentDropdownIcon {
+    background-image: url(/assets/img/ic_web_icon.png);
+    width: 10px;
+    height: 10px;
+    cursor: pointer;
+    background-position: 197px 133px;
+    margin-top: 5px;
+}
+.commentLikeIcon {
+    background-image: url(/assets/img/ic_web_icon.png);
+    width: 20px;
+    height: 20px;
+    background-position: -256px 49px;
+    cursor: pointer;
+    margin-right: 4px;
+}
+.changeToPink {
+    background-image: url(/assets/img/ic_app_home.png);
+    background-position: 20px -48px;
+    background-size: 140px;
+}
+/*.changeToPink {*/
+/*background-position: -235px 49px;*/
+/*}*/
+.likeImage {
+    background-image: url(/assets/img/ic_web_icon.png);
+    width: 20px;
+    height: 20px;
+    background-position: -186px 121px;
+    margin-top: -2px;
+    cursor: pointer;
+}
+.detailCommentsBox {
+    overflow: hidden;
+    width: 664px;
+    padding-top: 40px;
+}
+.commentHeader {
+    width: 100%;
+    font-size: 22px;
+    margin-bottom: 13px;
+    font-weight: bold;
+}
+.commentHeader span {
+    font-size: 24px;
+    color: #fd0a0a;
+}
+.commentBody {
+    width: 100%;
+}
+.commentInputBox {
+    height: 51px;
+    border: solid 1px #e2e2e2;
+    line-height: 51px;
+    border-radius: 4px;
+}
+.commentInputBox .commentInput {
+    width: 90%;
+    height: 40px;
+    border: none;
+    text-indent: 15px;
+}
+.commentInputBox .border {
+    font-size: 14px;
+    font-weight: bold;
+    color: #e2e2e2;
+    margin-right: 16px;
+}
+.commentInputBox .commentSubmit {
+    font-size: 14px;
+    font-weight: bold;
+    color: rgba(73,88,103, 0.8);
+    cursor: pointer;
+}
+.commentBox {
+    width: 100%;
+}
+.commentUser {
+    width: 51px;
+    height: 51px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 25px;
+    float: left;
+    cursor: pointer;
+}
+.parentComment {
+    width: 100%;
+    overflow: hidden;
+    padding: 25px 0;
+    border-bottom: 1px solid #e2e2e2;
+}
+@media screen and (max-width: 768px) {
+    .parentComment:last-child {
+        border-bottom: none;
+    }
+}
+.parentComment .commentInfo {
+    float: right;
+    width: 595px;
+}
+.parentComment .commentInfo .comment {
+    font-size: 15px;
+    line-height: 1.5em;
+    font-weight: bold;
+    width: 100%;
+    height: auto;
+    overflow-wrap: break-word;
+}
+.parentComment .commentInfo .userHistory {
+    margin: 10px 0 7px;
+}
+.parentComment .commentInfo .userHistory span:first-child {
+    margin-right: 10px;
+}
+.parentComment .commentInfo .userHistory span {
+    font-size: 13px;
+    color: rgba(33,33,33,0.6);
+    font-weight: bold;
+    line-height: 1.5em;
+}
+.commentOthers {
+    display: inline-flex;
+    font-size: 14px;
+    font-weight: 600;
+    color: #121212;
+}
+.commentOthers .commentReply span {
+    float: left;
+    color: #3e3e3e;
+    line-height: 20px;
+}
+.commentOthers .commentReply .commentDropdownIcon {
+    float: left;
+    margin-left: 3px;
+}
+.commentOthers .commentReply:hover {
+    opacity: 0.8;
+    -webkit-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+    cursor: pointer;
+}
+.likeBox.childLikeBox {
+    overflow: hidden;
+    margin-left: 0;
+    cursor: pointer;
+}
+.likeBox {
+    overflow: hidden;
+    margin-left: 12px;
+    cursor: pointer;
+}
+.likeBox .changeToRed {
+    color: #ff0000;
+    line-height: 20px;
+}
+.likeBox span {
+    float: left;
+    color: #333333;
+    line-height: 20px;
+}
+.likeBox .commentLikeIcon {
+    float: left;
+}
+.childComment:first-child {
+    border-top: 1px solid #e2e2e2;
+}
+.childComment:last-child {
+    border-bottom: 0;
+}
+.childComment {
+    width: 100%;
+    overflow: hidden;
+    padding: 25px 0 10px;
+    border-bottom: 1px solid #e2e2e2;
+    background-color: rgba(232,236,239, 0.15);
+}
+.commentToggle {
+    background-image: url(/assets/img/ic_web_icon.png);
+    width: 25px;
+    height: 25px;
+    background-position: -207px 101px;
+    float: left;
+    margin: 18px 10px;
+}
+
+.childComment .commentInfo {
+    float: right;
+    width: 550px;
+}
+.childComment .commentInfo .comment {
+    font-size: 15px;
+    line-height: 1.5em;
+    font-weight: bold;
+    width: 100%;
+    height: auto;
+    overflow-wrap: break-word;
+}
+.childComment .commentInfo .userHistory {
+    margin: 10px 0;
+}
+.childComment .commentInfo .userHistory span:first-child {
+    margin-right: 10px;
+}
+.childComment .commentInfo .userHistory span {
+    font-size: 13px;
+    color: rgba(33,33,33,0.6);
+    font-weight: bold;
+    line-height: 1.5em;
+}
+.childComment .commentInfo .likeBox{
+    color: #333333;
+    font-size: 14px;
+    font-weight: 600;
+}
+.childCommentInputBox {
+    width: 606px;
+    height: 51px;
+    border: solid 1px #e2e2e2;
+    line-height: 51px;
+    float: right;
+    border-radius: 4px;
+    background: #FFFFFF;
+}
+.childCommentInputBox .childCommentInput {
+    width: 90%;
+    height: 40px;
+    border: none;
+    text-indent: 15px;
+}
+
+.childCommentInputBox .border {
+    font-size: 14px;
+    font-weight: bold;
+    color: #e2e2e2;
+    margin-right: 12px;
+}
+.childCommentInputBox .commentSubmit {
+    font-size: 14px;
+    font-weight: bold;
+    color: rgba(73,88,103, 0.8);
+    cursor: pointer;
+}
+.moreBtn {
+    width: 329px;
+    line-height: 34px;
+    margin: 24px auto 0;
+}
+
+@media screen and (max-width: 768px) {
+    .moreBtn {
+        font-size: 15px;
+        line-height: 42px;
+        margin: 0 auto;
+        width: 100%;
+        max-width: 392px;
+    }
+}
+
+/* DetailList */
+
+.detailList {
+    width: 1100px;
+    margin: 0 auto 95px;
+}
+
+.detailList .detailTab {
+    border-bottom: 1px solid #e0e0e0;
+    position: relative;
+    width: 100%;
+    margin: 0 auto 50px;
+    overflow: hidden;
+}
+
+.detailList .detailTab .tabItem {
+    display: inline-block;
+    padding: 10px 2px;
+    cursor: pointer;
+    position: relative;
+    color: #000000;
+    opacity: 0.3;
+    font-weight: 600;
+    letter-spacing: -0.1px;
+    margin-right: 28px;
+}
+.detailList .detailTab .tabItem:hover {
+    border-bottom: 3px solid #ff0000;
+    opacity: 1;
+}
+
+.detailList .detailTab .tabItem.active {
+    border-bottom: 3px solid #ff0000;
+    opacity: 1;
+    font-weight: bold;
+}
+.relatedHashTagSection {
+    border-bottom: 1px solid rgba(151,151,151, 0.2);
+    margin-bottom: 29px;
+    min-height: 206px;
+}
+
+.relatedHashTagSection .content{
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 57px;
+    max-width: 1100px;
+}
+.relatedHashTagSection .content::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+.detailList .content {
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.relatedSelleverSection {
+    padding-bottom: 39px;
+    margin-bottom: 29px;
+    border-bottom: 1px solid rgba(151,151,151, 0.2);
+    min-height: 206px;
+    overflow: hidden;
+}
+
+.relatedSelleverSection .content {
+    padding-top: 20px;
+    width: 100%;
+    max-width: 1100px;
+}
+.relatedSelleverSection .content::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+.relatedSelleverSection .content .productBox {
+    float: left;
+    margin-right: 14px;
+}
+.relatedSelleverSection .content .productBox:nth-child(4n) {
+    float: left;
+    margin-right: 0;
+}
+.productItemBox {
+    float: left;
+    margin-right: 14px;
+    margin-bottom: 24px;
+}
+.productItemBox:nth-child(4n) {
+    float: left;
+    margin-right: 0;
+}
+/*sellever page sellever information*/
+.selleverBox {
+    overflow: hidden;
+    float: left;
+    width: 9%;
+    margin-right: 4%;
+    margin-bottom: 10px;
+    cursor: pointer;
+    height: 188px;
+}
+.selleverBox:nth-child(8n) {
+    margin-right: 0;
+}
+.selleverBox .profileImage{
+    background-position: center;
+    background-size: cover;
+    opacity: 0.7;
+    border-radius: 100%;
+    width: 100%;
+    padding-top: 100%;
+    margin-bottom: 10px;
+    border: 1px solid rgba(151,151,151, 0.2);
+}
+.selleverBox .textName {
+    font-size: 16px;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 10px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.selleverBox .textFolloer {
+    font-size: 13px;
+    text-align: center;
+    color: #979797;
+    margin-bottom: 8px;
+}
+/*icon*/
+/*follow sellever for myhome*/
+.myHomeCheck {
+    width: 21px;
+    height: 21px;
+    border-radius: 100%;
+    background-color: #ff0000;
+    color: #FFFFFF;
+    float: left;
+    padding: 0 3px;
+    font-size: 27px;
+}
+.textFollowBox {
+    overflow: hidden;
+    height: 24px;
+    width: 64px;
+    margin: 0 auto;
+    padding: 2px;
+}
+.textFollowBox .textFolloer {
+    float: left;
+    font-size: 13px;
+    text-align: center;
+    color: #979797;
+    line-height: 22px;
+}
+.textFollowBox .textFollowing {
+    float: left;
+    font-size: 13px;
+    text-align: center;
+    color: #ff0000;
+    line-height: 22px;
+    margin-left: 5px;
+}
+/*sellever myhome video */
+.relatedSelleverSection .content .videoBox {
+    float: left;
+    margin-right: 14px;
+    margin-bottom: 24px;
+    width: 264px;
+}
+.relatedSelleverSection .content .videoBox:nth-child(4n) {
+    float: left;
+    margin-right: 0;
+    margin-bottom: 24px;
+}
+.videoItemBox {
+    float: left;
+    margin-right: 14px;
+    margin-bottom: 24px;
+    width: 264px;
+}
+.videoItemBox:nth-child(4n) {
+    float: left;
+    margin-right: 0;
+    margin-bottom: 24px;
+}
+.fundingMarketSection {
+    width: 1100px;
+    margin: 0 auto 29px;
+    border-bottom: 1px solid rgba(151,151,151, 0.2);
+    min-height: 206px;
+    overflow: hidden;
+}
+
+.fundingMarketSection .productBody {
+    overflow: hidden;
+    width: 1100px;
+    margin-top: 20px;
+}
+
+.fundingMarketSection .productBody .productBox {
+    float: left;
+    margin-right: 14px;
+    margin-bottom: 24px;
+    width: 264px;
+}
+.fundingMarketSection .productBody .productBox:nth-child(4n) {
+    float: left;
+    margin-right: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .fundingMarketSection {
+        border-bottom: none;
+    }
+    .fundingMarketSection .productBody .productBox {
+        width: 100%;
+    }
+}
+
+.videoSection {
+    width: 1100px;
+    margin: 0 auto 50px;
+    border-bottom: 1px solid rgba(151,151,151, 0.2);
+    min-height: 206px;
+    overflow: hidden;
+    padding-bottom: 50px;
+}
+
+.videoSection .videoBody {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.videoSection .videoBody .videoBox {
+    width: 264px;
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 24px;
+}
+
+
+
+/*모바일 반응형*/
+
+@media screen and (max-width: 768px){
+    /*해시태그 셀레버 페이지*/
+    .selleverBox {
+        width: 29%;
+        margin-right: 6%;
+        height: auto;
+    }
+    .selleverBox:nth-child(8n) {
+        margin-right: 6%;
+    }
+    .selleverBox:nth-child(3n) {
+        margin-right: 0;
+    }
+    /*오늘의 동영상 */
+
+    .videoSection {
+        max-width: 768px;
+        width: auto;
+    }
+
+}
+
+.detailSectionTitle {
+    height: 19px;
+    line-height: 19px;
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.detailSectionTitle .title{
+    color: #212121;
+    letter-spacing: -0.7px;
+    font-size: 19px;
+    font-weight: 700;
+    float: left;
+    line-height: 1.5em;
+}
+
+.detailSectionTitle .viewAll {
+    color: #fd0a0a;
+    font-size: 16px;
+    letter-spacing: -0.6px;
+    float: right;
+    cursor: pointer;
+    line-height: 1.5em;
+}
+.detailSectionTitle .viewAll:hover {
+    opacity: 0.5;
+    -webkit-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+.hashTagItem {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    margin-right: 25px;
+    margin-bottom: 18px;
+    display: inline-block;
+    border-radius: 100%;
+    background: #fc2222;
+}
+.hashTagItem:nth-child(9n) {
+    margin-right: 0;
+}
+.hashTagItem:hover {
+    opacity: 0.5;
+    -webkit-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+.hashTagItem .profile {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    opacity: 0.5;
+    mix-blend-mode: multiply;
+    background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.hashTagItem .name {
+    text-align: center;
+    color: #ffffff;
+    position: absolute;
+    width: 90%;
+    top: 43px;
+    left: 5%;
+    font-size: 16px;
+    height: 19px;
+    line-height: 19px;
+    letter-spacing: -0.6px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.hashTagItem:last-child {
+    margin-right: 0;
+}
+
+.hashTagBubble {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    display: inline-block;
+    border-radius: 100%;
+    background: #fc2222;
+}
+
+.hashTagBubble .profile {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    opacity: 0.5;
+    mix-blend-mode: multiply;
+    background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.profileItem {
+    display: inline-block;
+    width: 9%;
+    margin-right: 4%;
+    margin-bottom: 10px;
+    cursor: pointer;
+    text-align: center;
+}
+.profileItem:hover {
+    opacity: 0.5;
+    -webkit-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+.profileItem:nth-child(8n) {
+    margin-right: 0;
+}
+.profileItem .profile {
+    width: 100%;
+    padding-top: 100%;
+    border-radius: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    border: 1px solid rgba(151,151,151, 0.2);
+}
+
+.profileItem .name {
+    margin-top: 10px;
+    color: #2d2d2d;
+    font-weight: bold;
+    line-height: 1.2em;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.profileItem:last-child {
+    margin-right: 0;
+}
+.defaultBox {
+    margin: 0 auto;
+    text-align: center;
+    width: 200px;
+    height: 138px;
+}
+
+
+.defaultBox .name {
+    margin-top: 10px;
+    color: #2d2d2d;
+    font-weight: bold;
+    line-height: 1.5em;
+    font-size: 14px;
+    opacity: 0.1;
+}
+
+/* ProfileHeader */
+.settingBtnBox {
+    width: 85px;
+    height: 34px;
+    border: 1px solid #d6d6d6;
+    padding: 7px 14px;
+    cursor: pointer;
+    border-radius: 4px;
+    position: absolute;
+    right: 20%;
+    top: 0;
+}
+
+.settingBtnBox .settingText {
+    font-size: 16px;
+    color: #d6d6d6;
+    float: left;
+    height: 20px;
+    line-height: 20px;
+    margin-left: 3px;
+}
+.settingBtnBox .settingIcon {
+    float: left;
+}
+
+.profileHeader {
+    width: 100%;
+    background-color: #ffffff;
+    position: relative;
+    margin-bottom: 30px;
+    border-bottom: 10px solid #f6f6f6;
+}
+
+.profileHeader .bgFilter {
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background-color: #000000;
+    opacity: 0.3;
+}
+
+.profileHeader .bgImageBox {
+    width: 100%;
+    height: 200px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    -webkit-filter: blur(9px);
+    -moz-filter: blur(9px);
+    -o-filter: blur(9px);
+    -ms-filter: blur(9px);
+    filter: blur(9px);
+}
+
+.profileHeader .profileBox {
+    text-align: center;
+    position: relative;
+    bottom: 72px;
+    z-index: 10;
+}
+.profileHeader .profileBox .profile {
+    width: 108px;
+}
+.profileHeader .profileBox .name {
+    width: 100%;
+    font-size: 25px;
+    color: #2d2d2d;
+    height: 29px;
+    line-height: 29px;
+    margin: 10px 0;
+}
+.profileHeader .profileBox .phoneNumber {
+    width: 100%;
+    font-size: 14px;
+    color: #9c9c9c;
+}
+.profileHeader .profileBox .count {
+    color: #2d2d2d;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+.profileHeader .profileBox .profileText {
+    color: rgba(45, 45, 45, 0.5);
+    font-size: 11px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+.profileHeader .profileBox .memo {
+    color: rgba(45, 45, 45, 0.7);
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+.profileHeader .profileBox .btn {
+    padding: 8px 0;
+    width: 78px;
+    height: 29px;
+    text-align: center;
+    letter-spacing: -0.4px;
+    font-size: 12px;
+    font-weight: 700;
+    border-radius: 100px;
+    cursor: pointer;
+    margin: 4px auto 0;
+}
+.profileHeader .profileBox .btn:hover {
+    opacity: 0.5;
+    -webkit-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+.profileHeader .profileBox .btn.btnRed {
+    border: 1px solid rgba(255, 0, 0, 0.7);
+    background-color: #ff0000;
+    color: #ffffff;
+    padding: 8px 13px;
+}
+.profileHeader .profileBox .btn.btnGray {
+    border: 1px solid #d6d6d6;
+    color: #848484;
+    padding: 8px 13px;
+}
+.profileHeader .profileBox .btn.btnGray > .followText{
+    float: left;
+
+}
+.profileHeader .profileBox .btn.btnGray > .followerText{
+    float: left;
+
+}
+.profileHeader .profileBox .btn.btnRed > .followText{
+    float: left;
+
+}
+.profileHeader .profileBox .btn.btnRed > .followerText{
+    float: left;
+
+}
+.profileHeader .profileBox .btn.btnRed:hover {
+    opacity: 0.5;
+    -webkit-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+.profileHeader .profileBox .description {
+    font-size: 14px;
+    color: rgba(45, 45, 45, 0.7);
+    text-align: center;
+    margin-top: 10px;
+    line-height: 1.5em;
+}
+.followCheck {
+    float: left;
+    margin-right: 4px;
+}
+.profile {
+    margin: 0 auto;
+}
+
+/*마이홈 팔로잉 팔로워 박스 피드백*/
+.followBox {
+    overflow: hidden;
+    max-width: 245px;
+    margin: 30px auto;
+}
+
+.followBox li {
+    float: left;
+    min-width: 107px;
+    padding-right: 35px;
+    padding-left: 50px;
+}
+.followBox li:first-child {
+    border-right: solid 1px #efefef;
+    padding-right: 35px;
+    padding-left: 50px;
+}
+.followBox li:last-child {
+    padding-right: 50px;
+    padding-left: 35px;
+}
+.followBox li > div:first-child{
+    font-size: 18px;
+    font-weight: bold;
+    color: #2d2d2d;
+
+}
+.followBox li > div:last-child{
+    font-size: 12px;
+    font-weight: bold;
+    color: rgba(45, 45, 45, 0.5);
+}
+
+.selleverBanner {
+    width: 300px;
+}
+
+/*filter 펀딩마켓 필터설정*/
+
+.filterBtnBox {
+    float: left;
+    margin-right: 3%;
+    margin-bottom: 16px;
+    width: 31%;
+}
+.filterBtnBox:nth-child(3n) {
+    margin-right: 0;
+}
+.filterBtnBox input[type='checkbox']{
+    display: none;
+}
+.filterBtnBox input[type='checkbox'] + label{
+    height: 56px;
+    width: 100%;
+    line-height: 56px;
+    border-radius: 100px;
+    box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.1);
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    color: #fa2828;
+    border: solid 1px #f4f4f4;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.filterBtnBox input[type='checkbox']:checked + label {
+    color: #ffffff;
+    background-color: #fa2828;
+    border: none;
+}
+.selected {
+    color: #ffffff;
+    background-color: #fa2828;
+}
+.nonSelected {
+    color: #fa2828;
+    background-color: #ffffff;
+    border: solid 1px #f4f4f4;
+}
+/*funding market filter page*/
+.filterContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    -webkit-transition-property: all;
+    transition-property: all;
+    -webkit-transition-duration: .3s;
+    transition-duration: .3s;
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+    transition-timing-function: ease-out;
+    z-index: 1000;
+    -webkit-overflow-scrolling: touch;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 15px;
+    overflow-y: scroll;
+}
+.filterContainer > div {
+    width: 539px;
+    position: relative;
+    margin: 10% auto;
+    padding: 0 6%;
+}
+.filterHeader {
+    font-size: 38px;
+    font-weight: 800;
+    margin-bottom: 37px;
+    text-align: center;
+}
+.filterBody .filterList {
+    padding: 43px 0 49px 0;
+    border-top: 1px solid rgba(151,151,151,0.3);
+    width: 100%;
+}
+.filterBody .filterList .title{
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-align: center;
+    line-height: 27px;
+}
+.filterBody .filterList .title span {
+    font-size: 18px;
+    color: #b1b1b1;
+}
+.filterBody .filterList .filterBox {
+    overflow: hidden;
+}
+.filterBody .filterList .filterBox.section1 {
+    width: 280px;
+    margin: 0 auto;
+}
+
+.filterBody .filterList .filterBox.section1 > div{
+    float: left;
+    margin-right: 52px;
+    font-size: 29px;
+    font-weight: bold;
+    color: rgba(9,9,9,0.2);
+    cursor: pointer;
+}
+.filterBody .filterList .filterBox.section1 > div.filterFocus{
+    color: #fa2828;
+}
+
+.filterBody .filterList .filterBox.section1 > div:last-child{
+    float: left;
+    margin-right: 0;
+}
+.filterBody .filterList .filterBox.section2 .categoryBox {
+    float: left;
+    margin-right: 3%;
+    margin-bottom: 16px;
+    width: 31%;
+}
+.filterBody .filterList .filterBox.section2 .categoryBox:nth-child(3n) {
+    float: left;
+    margin-right: 0;
+    margin-bottom: 16px;
+}
+.filterBody .filterList .filterBox.section3 {
+    width: 207px;
+    margin: 0 auto;
+}
+.filterBody .filterList .filterBox.section3 > div{
+    float: left;
+    margin-right: 31px;
+    font-size: 29px;
+    font-weight: bold;
+    color: rgba(9,9,9,0.2);
+    cursor: pointer;
+}
+.filterBody .filterList .filterBox.section3 > div.filterFocus {
+    color: #fa2828;
+}
+.filterBody .filterList .filterBox.section3 > div:last-child{
+    float: left;
+    margin-right: 0;
+}
+.filterClose {
+    text-align: center;
+    height: 56px;
+    width: 125px;
+    margin: 20px auto;
+    line-height: 56px;
+    border-radius: 100px;
+    box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.1);
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #000000;
+    border: solid 1px #f4f4f4;
+}
+.redCircle {
+    width: 12px;
+    height: 12px;
+    border-radius: 100px;
+    background-color: #fa2828;
+    margin: 0 auto 4px;
+}
+.whiteCircle {
+    width: 12px;
+    height: 12px;
+    border-radius: 100px;
+    background-color: #ffffff;
+    margin: 0 auto 4px;
+}
+
+/*해쉬태그 버튼 (상세페이지) hashTag*/
+.hashTagBtn {
+    height: 28px;
+    font-size: 12px;
+    color: #ffffff;
+    font-weight: bold;
+    border-radius: 100px;
+    background-color: #ff0000;
+    text-align: center;
+    cursor: pointer;
+}
+.customizedHashTag {
+    width: auto;
+    float: left;
+    margin: 3px 5px 3px 0;
+    line-height: 28px;
+    padding: 0 12px;
+}
+.hashTagBtn:hover {
+    color: #ffffff;
+    background-color: #ff0000;
+}
+/*해시태그 상세페이지 */
+
+
+@media screen and (max-width: 1100px){
+    .FundingMarketListBox {
+        width: 32%;
+        margin-right: 2%;
+    }
+    .FundingMarketListBox .listImg {
+        width: 100%;
+        border-radius: 7px;
+    }
+    /*detail myhome hashtag*/
+    .hashTagItem {
+        margin-right: 21px;
+    }
+    .hashTagItem:nth-child(9n) {
+        margin-right: 21px;
+    }
+    .hashTagItem:nth-child(7n) {
+        margin-right: 0;
+    }
+    /*detail sellever page*/
+    .detailList {
+        width: 830px;
+    }
+    .fundingMarketSection {
+        width: 100%;
+    }
+    .fundingMarketSection .productBody {
+        width: 100%;
+    }
+    .fundingMarketSection .productBody .productBox:nth-child(3n) {
+        float: left;
+        margin-right: 0;
+    }
+    .fundingMarketSection .productBody .productBox {
+        float: left;
+        margin-right: 19px;
+    }
+    /*sellever myhome fundingmarket */
+    .relatedSelleverSection .content .productBox {
+        margin-right: 19px;
+    }
+    .relatedSelleverSection .content .productBox:nth-child(4n) {
+        margin-right: 19px;
+    }
+    .relatedSelleverSection .content .productBox:nth-child(3n) {
+        margin-right: 0;
+    }
+    /*sellever myhome video */
+    .relatedSelleverSection .content .videoBox {
+        width: 32%;
+        margin-right: 2%;
+    }
+    .relatedSelleverSection .content .videoBox:nth-child(4n) {
+        width: 32%;
+        margin-right: 2%;
+    }
+    .relatedSelleverSection .content .videoBox:nth-child(3n) {
+        width: 32%;
+        margin-right: 0;
+    }
+    .videoItemBox {
+        width: 32%;
+        margin-right: 2%;
+    }
+    .videoItemBox:nth-child(4n) {
+        width: 32%;
+        margin-right: 2%;
+    }
+    .videoItemBox:nth-child(3n) {
+        width: 32%;
+        margin-right: 0;
+    }
+    /*------------------*/
+    .productItemBox {
+        width: 32%;
+        margin-right: 2%;
+    }
+    .productItemBox:nth-child(4n) {
+        width: 32%;
+        margin-right: 2%;
+    }
+    .productItemBox:nth-child(3n) {
+        width: 32%;
+        margin-right: 0;
+    }
+    /*-------------------*/
+    /*video tab*/
+    .videoSection {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 870px) {
+    .detailList {
+        width: 100%;
+    }
+    .fundingMarketSection .productBody .productBox {
+        width: 32%;
+        margin-right: 2%;
+    }
+    .fundingMarketSection .productBody .productBox:nth-child(3n) {
+        width: 32%;
+        margin-right: 0;
+    }
+    .videoSection .videoBody .videoBox {
+        width: 32%;
+        margin-right: 2%;
+    }
+    .videoSection .videoBody .videoBox:nth-child(3n) {
+        width: 32%;
+        margin-right: 0;
+    }
+    /*detail myhome hashtag*/
+    .hashTagItem {
+        margin-right: 21px;
+    }
+    .hashTagItem:nth-child(7n) {
+        margin-right: 21px;
+    }
+    .hashTagItem:nth-child(6n) {
+        margin-right: 0;
+    }
+    /*sellever fundingmarket*/
+    .relatedSelleverSection .content .productBox {
+        width: 32%;
+        margin-right: 2%;
+    }
+    .relatedSelleverSection .content .productBox:nth-child(3n) {
+        width: 32%;
+        margin-right: 0;
+    }
+    .relatedSelleverSection .content .productBox:nth-child(4n) {
+        width: 32%;
+        margin-right: 2%;
+    }
+
+}
+
+@media screen and (max-width: 768px){
+    .profileHeader .bgImageBox {
+        -webkit-filter: none;
+        -moz-filter: none;
+        -o-filter: none;
+        -ms-filter: none;
+        filter: none;
+    }
+    /*hashtag*/
+    .hashTagItem {
+        margin-right: 21px;
+    }
+    .hashTagItem:nth-child(6n) {
+        margin-right: 21px;
+    }
+    /*hashtag detaill video */
+    .videoSection .videoBody .videoBox {
+        width: 100%;
+        margin-right: 0;
+    }
+    .videoSection .videoBody .videoBox:nth-child(3n) {
+        width: 100%;
+    }
+
+    /*sellever detail page*/
+    /*tab*/
+    .detailList .detailTab {
+        margin: 0 auto 30px;
+        border: none;
+    }
+    .detailList .detailTab .tabItem {
+        margin-right: 8px;
+        font-size: 12px;
+    }
+    .detailList {
+        padding: 0 20px;
+    }
+    .fundingMarketSection {
+        padding: 0;
+    }
+    .fundingMarketSection .productBody .productBox:nth-child(3n) {
+        width: 100%;
+        margin-right: 0;
+    }
+    .videoSection {
+        padding: 0;
+    }
+    .relatedHashTagSection {
+        border: none;
+        padding: 0;
+    }
+
+    .relatedSelleverSection {
+        border: none;
+        padding: 0 0 30px;
+    }
+    /*****************************/
+    .FundingMarketListBox.responsiveHome {
+        width: 100%;
+        margin: 0;
+    }
+    /*fundingmarket home list item*/
+    .FundingMarketListBox .itemListBox .topItem {
+        position: relative;
+        width: 100%;
+        height: 100%;
+
+    }
+    .FundingMarketListBox .listImg {
+        height: 100%;
+        padding-top: 50%;
+    }
+    /*progressBar*/
+    .progressNum {
+        font-size: 14px;
+        width: 50px;
+        height: 24px;
+    }
+    .marketPrice,
+    .fundPercent div:first-child,
+    .fundAttendant div:first-child,
+    .left div:first-child,
+    .goal div:first-child {
+        font-size: 25px;
+    }
+    .goal {
+        float: right;
+    }
+    .fundBox {
+        padding: 10px 0;
+    }
+    .progressBox .progress .progressBar {
+        height: 6px;
+    }
+    .progressBox .progress {
+        height: 6px;
+    }
+    .progressNum {
+        width: 50px;
+        height: 24px;
+        font-size: 14px;
+        padding-top: 3px;
+    }
+    /*hashTag Detail*/
+    .fundingMarketSection .productBody .productBox {
+        width: 100%;
+    }
+    /*filter*/
+    .filterContainer {
+        padding-top: 50px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .filterContainer > div {
+        width: 100%;
+    }
+    .filterHeader {
+        font-size: 24px;
+    }
+    .filterBody .filterList .filterBox.section1 {
+        padding: 0;
+        margin: 0 auto;
+        width: 237px;
+    }
+    .filterBody .filterList .filterBox.section1 div{
+        /*margin-right: 32px;*/
+        font-size: 22px;
+    }
+    .filterBody .filterList .filterBox.section3 > div{
+        margin-right: 14px;
+        font-size: 22px;
+    }
+    .filterBody .filterList .filterBox.section3{
+        width: 147px;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .filterBtnBox {
+        font-size: 12px;
+        height: 46px;
+        line-height: 46px;
+    }
+    /*comment*/
+    .commentHeader {
+        font-weight: 800;
+    }
+    .commentInputBox {
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        background: #ffffff;
+        border-radius: 0;
+        border: 0;
+        border-top: 1px solid #e2e2e2;
+    }
+    .detailCommentsBox {
+        width: 100%;
+        padding: 0 20px;
+        margin: 100px auto 80px;
+    }
+    .commentInputBox {
+        width: 100%;
+        box-shadow: 0 -2px 22px 0 rgba(0, 0, 0, 0.13);
+    }
+    .commentInputBox .commentSubmit {
+        width: 15%;
+        font-size: 12px;
+    }
+    .parentComment .commentInfo {
+        width: 80%;
+    }
+    .commentInputBox .commentInput {
+        width: 85%;
+    }
+    .childCommentInputBox {
+        width: 80%;
+    }
+    .childCommentInputBox .commentSubmit {
+        width: 15%;
+        font-size: 12px;
+    }
+    .childComment {
+        padding: 25px 0 0;
+        border-bottom: 0;
+    }
+    .childCommentInputBox .childCommentInput {
+        width: 85%;
+    }
+    /*myhome*/
+    .settingBtnBox {
+        top: -40px;
+        right: 5%;
+    }
+    .profileHeader {
+        margin-bottom: 11px;
+    }
+
+    .profileHeader .profileBox .profile {
+        width: 63px;
+    }
+    .profileHeader .profileBox {
+        bottom: 32px;
+    }
+    .profileHeader .bgFilter {
+        height: 233px;
+    }
+
+    .profileHeader .bgImageBox {
+        height: 233px;
+    }
+
+
+
+    /*sellever fundingmarket*/
+    .relatedSelleverSection .content .productBox {
+        margin-right: 0;
+        float: none;
+        width: 100%;
+    }
+    .relatedSelleverSection .content .productBox:nth-child(3n) {
+        margin-right: 0;
+        float: none;
+        width: 100%;
+    }
+    .relatedSelleverSection .content .productBox:nth-child(4n) {
+        margin-right: 0;
+        float: none;
+        width: 100%;
+    }
+    /*-------------*/
+    .productItemBox {
+        margin-right: 0;
+        float: none;
+        width: 100%;
+    }
+    .productItemBox:nth-child(3n) {
+        margin-right: 0;
+        float: none;
+        width: 100%;
+    }
+    .productItemBox:nth-child(4n) {
+        margin-right: 0;
+        float: none;
+        width: 100%;
+    }
+    /*----------------*/
+    /*sellever myhome video */
+    .relatedSelleverSection .content .videoBox {
+        margin-right: 0;
+        float: none;
+        width: 100%;
+    }
+    .relatedSelleverSection .content .videoBox:nth-child(4n) {
+        margin-right: 0;
+        float: none;
+        width: 100%;
+    }
+    .relatedSelleverSection .content .videoBox:nth-child(3n) {
+        margin-right: 0;
+        float: none;
+        width: 100%;
+    }
+    .videoItemBox {
+        margin-right: 0;
+        float: none;
+        width: 100%;
+    }
+    .videoItemBox:nth-child(4n) {
+        margin-right: 0;
+        float: none;
+        width: 100%;
+    }
+    .videoItemBox:nth-child(3n) {
+        margin-right: 0;
+        float: none;
+        width: 100%;
+    }
+}
+@media screen and (max-width: 420px){
+    .hashTagItem {
+        margin-right: 8%;
+    }
+    .hashTagItem:nth-child(3n) {
+        margin-right: 0;
+    }
+}
+@media screen and (max-width: 375px){
+    .hashTagItem {
+        margin-right: 8%;
+    }
+    .hashTagItem:nth-child(3n) {
+        margin-right: 8%;
+    }
+    .hashTagItem:nth-child(2n) {
+        margin-right: 8%;
+    }
+}
+
+
+
+/*search*/
+.react-autosuggest__container {
+    position: relative;
+}
+
+.react-autosuggest__input {
+    width: 240px;
+    height: 30px;
+    padding: 10px 20px;
+    font-family: Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+}
+
+.react-autosuggest__input--focused {
+    outline: none;
+}
+
+.react-autosuggest__input--open {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.react-autosuggest__suggestions-container {
+    display: none;
+}
+.react-autosuggest__suggestions-container--open {
+    display: block;
+    position: absolute;
+    top: 51px;
+    width: 280px;
+    border: 1px solid #aaa;
+    background-color: #fff;
+    font-family: Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    z-index: 2;
+}
+
+.react-autosuggest__suggestions-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.react-autosuggest__suggestion {
+    cursor: pointer;
+    padding: 10px 20px;
+}
+
+.react-autosuggest__suggestion--highlighted {
+    background-color: #ddd;
+}
+
+.react-autosuggest__section-container {
+    border-top: 1px dashed #ccc;
+}
+
+.react-autosuggest__section-container--first {
+    border-top: 0;
+}
+
+.react-autosuggest__section-title {
+    padding: 10px 0 0 10px;
+    font-size: 12px;
+    color: #777;
+}
+/*search history style*/
+.input {
+    border: 1px solid;
+}
+.sectionTitle {
+    font-size: 18px;
+    font-weight: 600;
+    color: #fd0a0a;
+    padding-bottom: 23px;
+}
+.suggestionsList{
+    font-size: 26px;
+    font-weight: 800;
+    padding-bottom: 23px;
+    line-height: 49px;
+}
+.suggestion {
+
+}
+.suggestionsContainer {
+    width: 536px;
+    border: 1px solid #dddddd;
+    border-top: none;
+    padding: 0 20px;
+}
+.suggestionsContainer .sectionContainer ul li {
+    line-height: 49px;
+    height: 49px;
+}
+.suggestionsContainer .sectionContainer ul li > div > span {
+    line-height: 49px;
+}
+.suggestionsContainer .sectionContainer ul li:hover {
+    cursor: pointer;
+    background-color: #eeeeee;
+}
+.suggestionsContainer .sectionContainer:last-child ul li {
+    overflow: hidden;
+}
+
+
+.suggestionsContainer .sectionContainer:last-child ul li > div > span {
+    float: left;
+}
+.suggestionsContainer .sectionContainer:last-child ul li > div > div {
+    background-image: url(/assets/img/ic_close_web.png);
+    width: 15px;
+    height: 15px;
+    background-position: center;
+    background-size: 15px;
+    cursor: pointer;
+    float: right;
+    margin: 18px 12px;
+}
+@media screen and (max-width: 768px){
+    .container {
+        padding: 0 5%;
+        margin-top: -2px;
+        width: 100%;
+    }
+    .suggestionsContainer {
+        width: 100%;
+    }
+    .suggestionsList {
+        font-size: 15px;
+        line-height: 24px;
+        padding-bottom: 10px;
+    }
+    .suggestionsContainer .sectionContainer ul li {
+        line-height: 24px;
+        height: 24px;
+    }
+    .suggestionsContainer .sectionContainer:last-child ul li > div > div {
+        margin: 5px 12px;
+    }
+    .suggestionsContainer .sectionContainer ul li > div > span {
+        line-height: 24px;
+    }
+    .sectionTitle{
+        padding-bottom: 8px;
+    }
+    /*팔로잉 팔로우 마이홈 */
+    .profileItem {
+        width: 32%;
+        margin-right: 2%;
+    }
+    .profileItem:nth-child(8n) {
+        margin-right: 2%;
+    }
+    .profileItem:nth-child(3n) {
+        margin-right: 0;
+    }
+}

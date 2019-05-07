@@ -1,0 +1,18 @@
+{
+  "live": {
+    "APP_NAME"         : "SELLEV",
+    "META_TITLE"       : "SELLEV",
+    "META_DESCRIPTION" : "SELLEV",
+    "META_KEYWORD"     : "SELLEV",
+    "META_IMAGE"       : "",
+    "DOMAIN"       : ""
+  },
+  "dev": {
+    "APP_NAME"         : "SELLEV-DEV",
+    "META_TITLE"       : "SELLEV-DEV",
+    "META_DESCRIPTION" : "SELLEV",
+    "META_KEYWORD"     : "SELLEV",
+    "META_IMAGE"       : "",
+    "DOMAIN"       : ""
+  }
+}

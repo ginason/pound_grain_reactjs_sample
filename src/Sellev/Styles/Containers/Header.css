@@ -1,0 +1,183 @@
+
+/*span { line-height: 0; }
+span:after { display: inline-block; height: 1.5em; }*/
+body {
+    font-family: RobotoRegular,'Noto Sans','Apple SD Gothic Neo',Helvetica,Arial,sans-serif;
+}
+
+.hide {
+    visibility: hidden;
+    display: none;
+}
+
+a:link, a:hover {
+    text-decoration: none;
+}
+
+li {
+   list-style: none;
+}
+dl, ol, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Common */
+
+
+/* Components */
+
+/* Header */
+.AppContainer {
+
+}
+
+/* Header */
+/*header*/
+.headerContainer{
+    width: 100%;
+    min-height: 85px;
+    height: auto;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+.headerBox{
+    width: 1100px;
+    margin: 0 auto;
+    color: #FFFFFF;
+    height: 100%;
+}
+.logo{
+    float: left;
+}
+.logo img{
+    width: 124px;
+    height: 52px;
+}
+.leftBox{
+    float: left;
+    /*line-height: 85px;*/
+    height: 100%;
+    position: relative;
+}
+.rightBox{
+    float: right;
+    line-height: 85px;
+    height: 100%;
+}
+.rightList {
+    float: left;
+}
+.rightList li:first-child div {
+    width: 22px;
+    height: 22px;
+    background-image: url('/assets/img/ic_home.png');
+    background-position: 104px -1px;
+}
+.rightList li:last-child div {
+    width: 22px;
+    height: 22px;
+    background-image: url('/assets/img/ic_home.png');
+    background-position: 179px -1px;
+}
+.rightList li {
+    margin-right: 22px;
+    float: left;
+    color: #ffffff;
+    line-height: 85px;
+    font-size: 15px;
+    padding: 32px 0;
+    height: 85px;
+}
+.iconBox{
+    float: left;
+    line-height: 85px;
+    position: relative;
+}
+.iconBox div:not(:last-child){
+    float: left;
+    height: 85px;
+    line-height: 85px;
+}
+.iconBox div:nth-child(3){
+    width: 15px;
+    height: 15px;
+    float: left;
+    background-image: url('/assets/img/ic_home.png');
+    background-position: 360px 240px;
+    margin-top: 34px;
+}
+.iconBox div img{
+    width: 34px;
+    height: 34px;
+}
+.sideMenu {
+    overflow: hidden;
+    position: absolute;
+    top: 70px;
+    right: -70px;
+}
+
+.logo {
+    margin-right: 40px;
+    line-height: 85px;
+}
+
+.toggleMenu{
+    color: white;
+    overflow: hidden;
+    position: absolute;
+    top: 70px;
+    right: -70px;
+}
+.toggleMenu li{
+    float: none;
+}
+.toggleIcon{
+    float: left;
+    line-height: 85px;
+    height: 85px;
+    padding: 36px 0;
+}
+.toggleIcon div{
+    width: 15px;
+    height: 15px;
+    background-image: url('/assets/img/ic_home.png');
+    background-position: 360px 240px;
+}
+
+/*반응형*/
+@media screen and (max-width: 1100px){
+    .headerBox{
+        width: 100%;
+    }
+    .leftBox{
+        margin-left: 30px;
+    }
+    .rightBox{
+        margin-right: 30px;
+    }
+}
+@media screen and (min-width: 850px){
+    .toggleIcon{
+        display: none;
+    }
+}
+@media screen and (max-width: 850px){
+    .logo{
+        margin-right: 0;
+    }
+    .leftList{
+        display: none;
+    }
+
+    .toggleIcon{
+        display: block;
+    }
+
+    .toggleMenu {
+        display: block;
+    }
+}

@@ -1,0 +1,563 @@
+input {
+    outline: none;
+}
+.loginContainer {
+    width: 460px;
+    margin: 121px auto 0;
+}
+
+.loginContainer .loginBody {
+    width: 100%;
+    text-align: center;
+}
+.loginLogo {
+    margin: 10px auto;
+}
+.login .authLogo {
+    margin: 0 auto 10px;
+}
+.login .authBox {
+    padding: 35px 26px 32px;
+    margin-bottom: 54px;
+}
+.loginBox {
+    width: 100%;
+    height: 545px;
+    padding: 30px 35px;
+    border-radius: 12px;
+    background-color: #ffffff;
+    box-shadow: 18px 62px 58px 0 rgba(0, 0, 0, 0.09);
+}
+.login .authBox .boxFooter {
+    margin-top: 21px;
+}
+/*or*/
+.border {
+    color: #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
+    text-align: center;
+    position: relative;
+    margin-top: 4px;
+}
+
+.border .or {
+    width: 43px;
+    font-size: 14px;
+    position: relative;
+    margin: 0 auto;
+    bottom: -8px;
+    background-color: #ffffff;
+}
+/*form*/
+.loginForm {
+    width: 100%;
+}
+.loginForm label {
+    height: 59px;
+    line-height: 59px;
+    width: 100%;
+}
+.loginForm input {
+    margin-left: 20px;
+    border: 0;
+    width: 75%;
+    height: 90%;
+}
+.loginForm label:first-child {
+    border-top: solid 1px #e0e0e0;
+    border-bottom: solid 1px #e0e0e0;
+}
+.loginForm label:last-child {
+    border-bottom: solid 1px #e0e0e0;
+}
+/*mobile Login*/
+.mobileLoginBox {
+    display: none;
+    /*padding: 0 26px;*/
+}
+.mobileLoginBox .logoBox {
+    overflow: hidden;
+}
+.mobileLoginBox .logoBox .logo {
+    background-image: url("/assets/img/logo_login_black.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 151px;
+    height: 42px;
+    float: left;
+}
+.mobileLoginBox .logoBox .line {
+    width: 43px;
+    border: solid 3px #000000;
+    float: left;
+    margin-top: 23px;
+    margin-right: 15px;
+}
+.mobileLoginBox .title {
+    font-size: 35px;
+    font-weight: bold;
+    margin-top: 18px;
+    line-height: 45px;
+    margin-bottom: 38px;
+}
+/*link to signup*/
+.boxFooter {
+    margin-top: 32px;
+    text-align: center;
+}
+
+.boxFooter > a {
+    color: #fd0a0a;
+    font-weight: bold;
+}
+/*footer*/
+.loginFooter {
+    margin-top: 54px;
+    text-align: center;
+}
+.loginFooter a {
+    color: #272727;
+}
+.loginFooter .logoBox {
+    font-size: 12px;
+    color: #272727;
+    line-height: 23px;
+    width: 50%;
+    margin: 12px auto;
+    text-align: center;
+}
+
+.loginFooter .logoBox div {
+    background-image: url('/assets/img/ic_common.png');
+    width: 55px;
+    height: 20px;
+    background-position: 112px 128px;
+    float: left;
+}
+.signupFooter {
+    text-align: center;
+}
+.signupFooter a {
+    color: #272727;
+}
+.signupFooter .logoBox {
+    font-size: 12px;
+    color: #272727;
+    line-height: 23px;
+    width: 50%;
+    margin: 12px auto;
+}
+
+.signupFooter .logoBox div {
+    background-image: url('/assets/img/ic_common.png');
+    width: 55px;
+    height: 20px;
+    background-position: 112px 128px;
+    float: left;
+}
+/*footer*/
+.mobileLoginFooter {
+    /*display: none;*/
+    margin: 30px auto 60px;
+    text-align: center;
+}
+.mobileLoginFooter > div > a{
+    color: #000000;
+    font-size: 15px;
+    font-weight: bold;
+}
+.mobileLoginFooter > div{
+    margin-bottom: 10px;
+}
+/* logo btn */
+
+.loginBtn {
+    margin-bottom: 10px;
+}
+/*button Common*/
+.authBtn {
+    height: 56px;
+    width: 100%;
+    /*width: 407px;*/
+    margin: 8px auto;
+    border-radius: 4px;
+    cursor: pointer;
+}
+/* kakao button */
+
+.kakao {
+    background-color: #feea02;
+}
+.kakaoBody {
+    overflow: hidden;
+    padding: 18px 36px;
+}
+.kakaoBody div:first-child {
+    background-image: url('/assets/img/ic_common.png');
+    width: 22px;
+    height: 19px;
+    background-position:  113px -63px;
+    float: left;
+}
+
+.kakaoBody div:last-child {
+    color: #4c2c10;
+    font-size: 16px;
+    float: left;
+    line-height: 22px;
+    border-left: 2px solid rgba(214,191,5, 0.65);
+    margin-left: 38px;
+    padding-left: 31px;
+}
+
+/* naver button */
+
+.naver {
+    background-color: #1dc800;
+}
+
+.naverBody {
+    overflow: hidden;
+    padding: 18px 36px;
+}
+.naverBody div:first-child {
+    background-image: url('/assets/img/ic_common.png');
+    width: 22px;
+    height: 19px;
+    background-position:  113px 40px;
+    float: left;
+}
+.naverBody div:last-child {
+    color: #ffffff;
+    font-size: 16px;
+    float: left;
+    line-height: 22px;
+    border-left: 2px solid rgba(0,0,0, 0.1);
+    margin-left: 38px;
+    padding-left: 31px;
+}
+.naver a {
+    overflow: hidden;
+    padding: 18px 36px;
+    display: block;
+}
+.naver > a > span {
+    background-image: url('/assets/img/ic_common.png');
+    width: 22px;
+    height: 19px;
+    background-position:  113px 40px;
+    float: left;
+}
+.naver a div:last-child {
+    color: #ffffff;
+    font-size: 16px;
+    float: left;
+    line-height: 22px;
+    border-left: 2px solid rgba(0,0,0, 0.1);
+    margin-left: 38px;
+    padding-left: 31px;
+}
+/* facebook button */
+
+.facebook {
+    background-color: #395a90;
+}
+.facebookBody {
+    overflow: hidden;
+    padding: 18px 36px;
+}
+.facebookBody div:first-child {
+    background-image: url('/assets/img/ic_common.png');
+    width: 22px;
+    height: 18px;
+    background-position:  113px 19px;
+    float: left;
+}
+/*.facebookBody span:nth-child(2) {*/
+    /*opacity: 0.5;*/
+    /*float: left;*/
+    /*margin: 2px 30px;*/
+/*}*/
+.facebookBody div:nth-child(2) {
+    color: #ffffff;
+    font-size: 16px;
+    float: left;
+    line-height: 22px;
+    border-left: 2px solid rgba(0,0,0, 0.1);
+    margin-left: 38px;
+    padding-left: 31px;
+}
+.facebookBody div:last-child {
+    color: #ffffff;
+    font-size: 16px;
+    float: left;
+    line-height: 22px;
+    border-left: 2px solid rgba(0,0,0, 0.1);
+    margin-left: 38px;
+    padding-left: 31px;
+}
+
+/* login button : red button */
+
+.loginBtn {
+    background-color: #fd0a0a;
+    overflow: hidden;
+    line-height: 56px;
+    color: #ffffff;
+    text-align: center;
+}
+.mobileLoginBtn {
+    background-color: #fd0a0a;
+    overflow: hidden;
+    line-height: 56px;
+    color: #ffffff;
+    text-align: center;
+}
+/* sellev button */
+
+.sellevBtn {
+    height: 56px;
+    width: 371px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border-radius: 4px;
+    box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.2);
+    border: solid 1px #e5e5e5;
+}
+.sellevBody {
+    overflow: hidden;
+    padding: 18px 36px;
+}
+.sellevBody div:first-child {
+    background-image: url('/assets/img/ic_common.png');
+    width: 55px;
+    height: 20px;
+    background-position: 112px 128px;
+    float: left;
+}
+.sellevBody span:nth-child(2) {
+    opacity: 0.5;
+    float: left;
+    margin: 0 30px;
+}
+.sellevBody div:last-child {
+    font-size: 16px;
+    float: left;
+    line-height: 21px;
+}
+/*Find Password*/
+.findPasswordContainer {
+    width: 460px;
+    margin: 100px auto 50px;
+}
+
+/* signup */
+.signupContainer {
+    width: 460px;
+    margin: 122px auto 50px;
+}
+input[type=checkbox].signupCheckbox:checked + label.ckeckboxBlackIcon {
+    width: 24px;
+    height: 24px;
+    background-image: url("/assets/img/ic_web_icon.png");
+    background-position: -30px 75px;
+    position: relative;
+    top: 14px;
+}
+input[type=checkbox].signupCheckbox + label.ckeckboxBlackIcon{
+    width: 24px;
+    height: 24px;
+    background-image: url("/assets/img/ic_web_icon.png");
+    background-position: -30px -54px;
+    position: relative;
+    top: 15px;
+}
+input[type=checkbox].signupCheckbox {
+    display: none;
+    position: relative;
+}
+.checkboxLabel {
+    display: inline-block;
+    color: #979797;
+    margin-left: 7px;
+}
+
+/*Common */
+.authBody {
+    width: 100%;
+}
+.authLogo {
+    width: 163px;
+    height: 49px;
+    background-image: url("/assets/img/logo_auth_black.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0 auto 10px;
+}
+.authLogoMobile {
+    display: none;
+    width: 24px;
+    height: 24px;
+    background-image: url("/assets/img/ic_common.png");
+    background-position: 84px 24px;
+}
+.authBox {
+    min-height: 328px;
+    border-radius: 12px;
+    background-color: #ffffff;
+    box-shadow: 18px 62px 58px 0 rgba(0, 0, 0, 0.09);
+    padding: 42px 26px 29px;
+    margin-bottom: 64px;
+}
+.authTitle {
+    font-size: 24px;
+    font-weight: bold;
+    width: 407px;
+    margin: 0 auto;
+    line-height: 1.5em;
+}
+/*policy Container*/
+/*이용약관 */
+.policyContainer {
+    width: 504px;
+    margin: 100px auto;
+}
+.policySection {
+    width: 100%;
+}
+
+.policySection .whiteBox {
+    background-color: #ffffff;
+    box-shadow: 19px 20px 58px 0 rgba(0, 0, 0, 0.04);
+    border-radius: 12px;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 57px;
+}
+
+.policySection .whiteBox .title {
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: -0.6px;
+    color: #000000;
+}
+.policySection .whiteBox .regulationBox {
+    margin-top: 32px;
+}
+.policySection .whiteBox .regulationBox .content{
+    margin-top: 6px;
+    width: 100%;
+    height: 289px;
+    background-color: #f9f9f9;
+    border-radius: 6px;
+    overflow: auto;
+    line-height: 1.5em;
+    padding: 25px;
+}
+
+/*Responsive */
+@media screen and (max-width: 768px) {
+    .signup {
+        margin-top: 50px;
+    }
+    .signupContainer {
+        max-width: 768px;
+        width: auto;
+        margin: 10px 30px 100px;
+    }
+    .authLogo {
+        display: none;
+    }
+    .authLogoMobile {
+        display: block;
+    }
+    .authBox {
+        padding: 0;
+        border: 0;
+        box-shadow: none;
+    }
+    .login .authBox {
+        padding: 0;
+    }
+    .authTitle {
+        font-size: 35px;
+        width: 100%;
+    }
+    .authBtn {
+        margin-bottom: 15px;
+    }
+    .authBtn.loginBtn {
+        width: 100%;
+        border-radius: 0;
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        margin: 0;
+    }
+    .signupFooter {
+        display: none;
+    }
+    .checkboxLabel {
+        font-size: 12px;
+    }
+
+    /*비밀번호찾기*/
+    .findPasswordContainer {
+        max-width: 768px;
+        width: auto;
+        margin: 10px 30px 50px;
+    }
+    .password {
+        margin-top: 90px;
+    }
+    .authTitle.findPasswordTitle {
+        width: 211px;
+        text-align: left;
+        margin: 0;
+    }
+    .loginFooter {
+        display: none;
+    }
+    /*로그인*/
+    .loginContainer {
+        max-width: 768px;
+        width: auto;
+        margin: 70px 30px 0;
+    }
+    /*mobile 로그인*/
+    .mobileLoginBox {
+        display: block;
+    }
+    .facebookBody, .naver a,
+    .kakaoBody,
+    .naverBody {
+        padding: 18px 7%;
+    }
+    .facebookBody span:nth-child(2),
+    .naver a span:nth-child(2),
+    .kakaoBody span:nth-child(2) {
+        margin: 0 5%;
+    }
+    /*로그인 footer*/
+    /*.mobileLoginFooter {*/
+        /*display: block;*/
+    /*}*/
+    .login .authBox .boxFooter {
+        margin-top: 31px;
+        font-size: 15px;
+    }
+    /*이용약관 policy*/
+    .policyContainer {
+        width: 100%;
+        padding: 0 20px;
+        margin: 100px auto;
+    }
+    /*login footer*/
+    .mobileLoginFooter > div > a{
+        font-size: 14px;
+    }
+}
+
+.loginCallbackContainer {
+    min-height: 100%;
+}

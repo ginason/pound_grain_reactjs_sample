@@ -1,0 +1,44 @@
+.swipeBanner {
+    display: block;
+    float: none;
+    position: relative;
+    top: auto;
+    right: auto;
+    bottom: auto;
+    left: auto;
+    z-index: auto;
+    width: 100%;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow: hidden;
+}
+.fundingMarket > button:first-child {
+     left: 6px;
+     z-index: 100;
+     top: 45%;
+ }
+.fundingMarket > button:last-child {
+    right: 6px;
+    z-index: 100;
+    top: 45%;
+}
+.video > button:first-child {
+    left: 6px;
+    z-index: 100;
+    top: 45%;
+}
+.video > button:last-child {
+    right: 6px;
+    z-index: 100;
+    top: 45%;
+}
+.home > button:first-child {
+    left: 6px;
+    z-index: 100;
+    top: 40%;
+}
+.home > button:last-child {
+    right: 6px;
+    z-index: 100;
+    top: 40%;
+}

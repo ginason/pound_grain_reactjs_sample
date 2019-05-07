@@ -1,0 +1,1001 @@
+p {
+    padding: 5px;
+    margin: 0;
+}
+tr > td:first-child {
+    background-color: #e2e2e2;
+}
+td {
+    padding: 5px;
+}
+* {
+    font-family: 'Apple SD Gothic Neo', 'Product Sans', 나눔고딕, Ngothic, 나눔바른고딕, NanumBarunGothic, 나눔바른고딕OTF, NanumBarunGothicOTF, sans-serif;
+    padding:0;
+    margin:0;
+    line-height:100%;
+    /*-webkit-transition: all 0.3s ease-out;*/
+    /*-o-transition: all 0.3s ease-out;*/
+    /*transition: all 0.3s ease-out;*/
+    -webkit-touch-callout: none;
+    /*-webkit-tap-highlight-color: rgba(0,0,0,0);*/
+    -webkit-tap-highlight-color: transparent; /* 일부 안드로이드 호환을 위한 코드 */
+    -webkit-user-select: none;
+    -webkit-overflow-scrolling: touch;
+
+}
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    font-size: 14px;
+}
+/*반응형*/
+.mobileScreen {
+    display: none;
+}
+/*Color*/
+.red {
+    color: #ff0000;
+}
+
+.naverBtn {
+    background-color: red;
+    color: blue;
+    border: 5px solid #000000;
+}
+
+.followBtn {
+    height: 34px;
+    width: 66px;
+    font-size: 12px;
+    color: #ffffff;
+    font-weight: bold;
+    border-radius: 100px;
+    background-color: #ff0000;
+    text-align: center;
+    line-height: 35px;
+    cursor: pointer;
+}
+.unfollowBtn {
+    font-size: 13px;
+    font-weight: 800;
+    color: #979797;
+    cursor: pointer;
+}
+
+/*button*/
+.btn34White {
+    height: 34px;
+    width: 100%;
+    border-radius: 6px;
+    background-color: #ffffff;
+    border: solid 1px #d6d6d6;
+    color: #505050;
+    text-align: center;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: bold;
+}
+.btn42White {
+    border: 1px solid #e2e2e2;
+    color: #a7a7a7;
+    width: 100%;
+    height: 42px;
+    cursor: pointer;
+    text-align: center;
+    background-color: #ffffff;
+}
+.btn47Black {
+    height: 47px;
+    width: 100%;
+    border-radius: 6px;
+    background-color: #232323;
+    color: #ffffff;
+    cursor: pointer;
+    font-weight: bold;
+}
+.btn47White {
+    height: 47px;
+    width: 100%;
+    border-radius: 6px;
+    background-color: #ffffff;
+    border: solid 1px #d6d6d6;
+    color: #232323;
+    font-weight: bold;
+    cursor: pointer;
+}
+.btn44Red {
+    height: 44px;
+    width: 100%;
+    border-radius: 100px;
+    font-size: 15px;
+    text-align: center;
+    cursor: pointer;
+}
+.btn56Mobile {
+    height: 56px;
+    width: 100%;
+    background-color: #232323;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    line-height: 56px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    color: #ffffff;
+    display: none;
+}
+.scale:hover {
+    transform: scale(1.2);
+    -webkit-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+}
+.mouseover:hover {
+    opacity: 0.5;
+    -webkit-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+/*mobile funding market button*/
+.mobileBtnBox {
+    display: none;
+    width: 100%;
+    padding: 32px 30px;
+}
+.mobileBtn {
+    height: 56px;
+    width: 100%;
+    background-color: #232323;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    padding: 17px 30px;
+    /*line-height: 55px;*/
+    font-size: 16px;
+    cursor: pointer;
+    z-index: 10;
+}
+.btnBoxLeft {
+    overflow: hidden;
+    float: left;
+}
+.btnBoxLeft span {
+    float: left;
+    color: #ffffff;
+    margin-right: 24px;
+    line-height: 27px;
+}
+.btnBoxLeft .whiteHeartMobile,
+.btnBoxLeft .pinkHeartMobile,
+.btnBoxLeft .commentImage,
+.btnBoxLeft div {
+    float: left;
+    margin-right: 7px;
+}
+
+.btnBoxRight {
+    float: right;
+    overflow: hidden;
+    padding: 5px 0 5px 25px;
+    color: #fa2828;
+}
+
+/*.btnBoxRight span {*/
+    /*color: rgba(0,0,0, 0.5);*/
+    /*float: left;*/
+/*}*/
+.btnBoxRight > div {
+    color: #fa2828;
+    float: left;
+}
+.btnBoxRight .textRed {
+    color: #fa2828;
+    float: left;
+    margin-left: 40px;
+}
+.btnBoxRight .textWhite {
+    color: #ffffff;
+    float: left;
+}
+.btnBoxHashTag {
+    float: right;
+    overflow: hidden;
+    color: #ffffff;
+    padding: 5px 0;
+}
+
+/*icon*/
+.followPlusIcon {
+    width: 11px;
+    height: 11px;
+    background-image: url("/assets/img/ic_follow_plus.png");
+    background-position: center;
+    /*background-size: cover;*/
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.followingCheckIcon {
+    width: 9px;
+    height: 9px;
+    background-image: url("/assets/img/ic_following_check.png");
+    background-position: center;
+    /*background-size: cover;*/
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.settingIcon {
+    width: 18px;
+    height: 18px;
+    background-image: url("/assets/img/ic_settings.png");
+    background-position: center;
+    /*background-size: cover;*/
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.filterIcon {
+    background-image: url("/assets/img/ic_filter.png");
+    width: 15px;
+    height: 14px;
+    background-size: cover;
+    cursor: pointer;
+}
+.krwUnit {
+    color: #fd0a0a;
+    margin-right: 5px;
+}
+.crownIcon {
+    background-image: url(/assets/img/ic_crown.png);
+    width: 25px;
+    height: 17px;
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+    margin: 0 auto;
+}
+/*필터버튼*/
+/*filter*/
+.filterBtn {
+    overflow: hidden;
+    width: 72px;
+    height: 30px;
+    border-radius: 4px;
+    border: solid 1px #d1d1d1;
+    float: right;
+    padding: 8px 13px;
+    cursor: pointer;
+}
+.filterIcon.filter {
+    float: left;
+}
+.filterText {
+    font-size: 14px;
+    color: #fd0a0a;
+    float: left;
+    margin-left: 3px;
+}
+/*기존 마이홈 수정버튼*/
+.modifyBtnBox {
+    border-radius: 100%;
+    width: 49px;
+    height: 49px;
+    border: 1px solid #fa2828;
+    padding: 12px 13px;
+    margin-left: 80%;
+    margin-top: -69px;
+    cursor: pointer;
+}
+.modifyBtn {
+    background-image: url(/assets/img/ic_app.png);
+    width: 22px;
+    height: 22px;
+    background-position: 161px 257px;
+    cursor: pointer;
+}
+.modifyBtnBox:hover {
+    opacity: 0.5;
+    -webkit-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+.backIcon {
+    background-image: url(/assets/img/ic_app_home.png);
+    width: 40px;
+    height: 32px;
+    background-position: -40px 70px;
+    cursor: pointer;
+}
+.closeIcon {
+    background-image: url(/assets/img/ic_close_web.png);
+    width: 32px;
+    height: 32px;
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+}
+.closeMobile{
+    background-image: url(/assets/img/ic_close_web.png);
+    width: 15px;
+    height: 15px;
+    background-position: center;
+    background-size: 15px;
+    cursor: pointer;
+}
+
+.arrowRight {
+    background-image: url(/assets/img/ic_app.png);
+    width: 20px;
+    height: 30px;
+    background-position: -124px 28px;
+    cursor: pointer;
+}
+.cameraMobileIcon {
+     background-image: url(/assets/img/ic_app.png);
+     width: 48px;
+     height: 48px;
+     background-position: -35px 46px;
+     cursor: pointer;
+ }
+.cameraIcon {
+    background-image: url(/assets/img/ic_web_icon.png);
+    width: 36px;
+    height: 36px;
+    background-position: -147px 97px;
+    cursor: pointer;
+}
+.hideInput {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip:rect(0,0,0,0);
+    border: 0;
+    opacity: 0;
+}
+.checkMobile {
+    background-image: url(/assets/img/ic_app.png);
+    width: 46px;
+    height: 46px;
+    background-position: -36px -51px;
+    cursor: pointer;
+}
+.noneCheckMobile {
+    background-image: url(/assets/img/ic_app.png);
+    width: 46px;
+    height: 46px;
+    background-position: -36px 0;
+    cursor: pointer;
+}
+.currency {
+    background-image: url(/assets/img/ic_web_icon.png);
+    width: 22px;
+    height: 22px;
+    background-position: -139px 84px;
+    background-size: 450px;
+}
+.whiteHeartMobile {
+    background-image: url(/assets/img/ic_app_home.png);
+    width: 25px;
+    height: 25px;
+    background-position: 49px -45px;
+    background-size: 140px;
+}
+.pinkHeartMobile {
+    background-image: url(/assets/img/ic_app_home.png);
+    width: 25px;
+    height: 25px;
+    background-position: 24px -45px;
+    cursor: pointer;
+    background-size: 140px;
+}
+.whiteHeartIcon {
+    background-image: url(/assets/img/ic_home.png);
+    width: 23px;
+    height: 23px;
+    background-position: 23px 1px;
+    cursor: pointer;
+}
+
+.whiteHeartIcon:hover {
+    transform: scale(1.2);
+    -webkit-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+}
+.pinkHeartIcon {
+    background-image: url(/assets/img/ic_home.png);
+    width: 23px;
+    height: 23px;
+    background-position: 22px 98px;
+    cursor: pointer;
+}
+.whiteHeartFullIcon {
+    background-image: url(/assets/img/ic_heart_full_white.png);
+    width: 16px;
+    height: 16px;
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+}
+.whiteHearLineIcon {
+    background-image: url(/assets/img/ic_heart_line_white.png);
+    width: 16px;
+    height: 16px;
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+}
+.searchBox {
+    width: 40px;
+    height: 40px;
+    background-color: #fd0a0a;
+    border-radius: 100%;
+    padding: 8px;
+    margin: 9px 0;
+}
+.addressIcon {
+    background-image: url(/assets/img/ic_address.png);
+    width: 23px;
+    height: 21px;
+    background-position: center;
+    cursor: pointer;
+    background-color: #fd0a0a;
+}
+.searchIcon {
+    background-image: url(/assets/img/ic_home.png);
+    width: 29px;
+    height: 29px;
+    background-position: 92px 106px;
+    cursor: pointer;
+    background-color: #fd0a0a;
+    padding: 10px 10px;
+    margin: 9px 0;
+}
+.coinIcon {
+    background-image: url(/assets/img/ic_web_icon.png);
+    width: 25px;
+    height: 25px;
+    background-position: -255px 97px;
+    cursor: pointer;
+}
+.pointIcon {
+    background-image: url(/assets/img/ic_web_icon.png);
+    width: 25px;
+    height: 25px;
+    background-position: -255px 74px;
+    cursor: pointer;
+}
+.coinUnit {
+    background-image: url(/assets/img/ic_web_icon.png);
+    width: 25px;
+    height: 25px;
+    background-position: -277px 97px;
+    cursor: pointer;
+}
+.pointUnit {
+    background-image: url(/assets/img/ic_web_icon.png);
+    width: 25px;
+    height: 25px;
+    background-position: -277px 75px;
+    cursor: pointer;
+}
+.likeImage {
+    background-image: url(/assets/img/ic_web_icon.png);
+    width: 20px;
+    height: 20px;
+    background-position: -186px 121px;
+    margin-top: -2px;
+    cursor: pointer;
+}
+.likeCount {
+    background-image: url('/assets/img/ic_web_icon.png');
+    width: 20px;
+    height: 19px;
+    background-position: -234px 135px;
+}
+
+.playIcon {
+    background-image: url(/assets/img/ic_web_icon.png);
+    width: 20px;
+    height: 20px;
+    background-position: -207px 119px;
+    cursor: pointer;
+}
+.redPoint{
+    width: 24px;
+    height: 24px;
+    background-image: url('/assets/img/ic_common.png');
+    background-position: 83px 24px;
+}
+.redCircle {
+    width: 17px;
+    height: 17px;
+    background-image: url(/assets/img/ic_web_icon.png);
+    background-position: -160px 61px;
+}
+.commentImage {
+    background-image: url(/assets/img/ic_app.png);
+    width: 23px;
+    height: 23px;
+    background-position: -63px -3px;
+    cursor: pointer;
+    background-size: 259px;
+
+}
+.commentImage:hover {
+    transform: scale(1.2);
+    -webkit-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+}
+.dropdownImage {
+    background-image: url(/assets/img/ic_web_icon.png);
+    width: 22px;
+    height: 15px;
+    background-position: 302px 148px;
+    cursor: pointer;
+}
+.dropdownUp {
+    background-image: url(/assets/img/ic_web_icon.png);
+    width: 22px;
+    height: 15px;
+    background-position: 302px 129px;
+    cursor: pointer;
+}
+.newIcon {
+    background-image: url(/assets/img/ic_web_icon.png);
+    width: 20px;
+    height: 20px;
+    background-position: 394px 128px;
+}
+.checkIcon {
+    background-image: url(/assets/img/ic_web_icon.png);
+    width: 26px;
+    height: 26px;
+    background-position: 62px 66px;
+    cursor: pointer;
+}
+.noneCheckIcon {
+    background-image: url(/assets/img/ic_web_icon.png);
+    width: 26px;
+    height: 26px;
+    background-position: 62px 95px;
+    cursor: pointer;
+}
+.grayCheckIcon {
+    background-image: url(/assets/img/ic_web_icon.png);
+    width: 22px;
+    height: 22px;
+    background-position: 275px 307px;
+    cursor: pointer;
+}
+.checkFollowIcon {
+    background-image: url(/assets/img/ic_web_icon.png);
+    width: 20px;
+    height: 20px;
+    background-position: 201px 156px;
+    cursor: pointer;
+    margin-top: -3px;
+}
+.cardIcon {
+    background-image: url(/assets/img/ic_web_icon.png);
+    width: 40px;
+    height: 45px;
+    background-position: 119px 146px;
+}
+.phoneIcon {
+    background-image: url(/assets/img/ic_web_icon.png);
+    width: 30px;
+    height: 45px;
+    background-position: 75px 146px;
+}
+/*Category Title*/
+.sectionTitle {
+    font-size: 34px;
+    font-weight: bold;
+    letter-spacing: -1.2px;
+    color: #161616;
+}
+.sectionTitle > span {
+    border-bottom: solid 2.8px transparent;
+    line-height: 1.5em;
+    margin-right: 8px;
+}
+.sectionTitle > span:hover {
+    border-bottom: solid 2.8px #fd0a0a;
+    line-height: 1.5em;
+    cursor: pointer;
+}
+.sectionTitle div {
+    background-image: url("/assets/img/ic_common.png");
+    width: 20px;
+    height: 11px;
+    background-position: 161px -44px;
+    display: inline-block;
+    margin-bottom: 7px;
+    cursor: pointer;
+}
+.sectionWhiteTitle {
+    font-size: 34px;
+    font-weight: bold;
+    letter-spacing: -1.2px;
+    color: #ffffff;
+}
+
+.sectionSmallTitle {
+    font-family: 'Apple SD Gothic Neo', 'Product Sans', 나눔고딕, Ngothic, 나눔바른고딕, NanumBarunGothic, 나눔바른고딕OTF, NanumBarunGothicOTF, sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 19px;
+    color: #a0a0a0;
+    letter-spacing: -0.5px;
+    margin-bottom: 6px;
+}
+.titleBox {
+    overflow: hidden;
+}
+.titleBox .sectionTitle {
+    float: left;
+}
+.titleBox .more {
+    color: #fd0a0a;
+    font-size: 16px;
+    float: right;
+    padding-top: 11px;
+}
+.titleBox .filter {
+    color: #ff0000;
+    font-size: 16px;
+    float: right;
+    padding-top: 11px;
+    cursor: pointer;
+}
+.titleBox .filter:hover {
+    opacity: 0.6;
+    -webkit-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+
+/*Autentication form */
+.formGroup.formLargeContainer {
+     width: 503px;
+     margin: 10px 0;
+ }
+.formGroup.formSmallContainer {
+    width: 318px;
+    margin: 10px 0;
+}
+.formGroupTitle {
+    color: #fd0a0a;
+    font-size: 15px;
+    letter-spacing: -0.5px;
+    font-weight: 700;
+    margin-bottom: 8.5px;
+    width: 100%;
+}
+.formGroup {
+    width: 407px;
+    margin: 23px auto 18px;
+}
+/*setting*/
+.formGroup.formSettingContainer {
+    margin: 17px auto 37px;
+}
+.formRow.formSettingBox{
+    cursor: pointer;
+}
+.formRow.formSettingBox .formInputText {
+    width: 40%;
+}
+.formRow.formSettingBox .formInput {
+    width: 50%;
+}
+.formRow.formSettingBox .formInputText.formNoInput {
+    width: 90%;
+}
+.formRow.formSettingBox .formInputText.settingText {
+    font-size: 15px;
+}
+/*setting Profile*/
+.formRow.formLargeText .formInputText {
+    width: 30%;
+}
+.formRow.formLargeText .inputWithoutIcon {
+    width: 70%;
+}
+/*login*/
+.formGroup.loginForm {
+    margin: 23px auto 20px;
+}
+
+
+.formGroup .formRow {
+    width: 100%;
+    height: 59px;
+    line-height: 59px;
+    display: inline-flex;
+}
+.formGroup .formRow.disabled {
+    background-color: #f8f8f8;
+}
+.formGroup .formRow {
+    border-top: 1px solid #e0e0e0;
+}
+.formGroup .formRow:last-child {
+    border-top: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
+}
+.formGroup div .formRow.bottomLine {
+    border-top: 1px solid #e0e0e0;
+    border-bottom: 0;
+}
+.formRow .formInputText {
+    font-size: 13px;
+    width: 20%;
+    line-height: 59px;
+    font-weight: bold;
+}
+.formRow.disabled .formInputText {
+    color: #dcdcdc;
+    background-color: #f8f8f8;
+}
+.formRow .inputWithIcon {
+    width: 75%;
+    height: 50px;
+    margin: 5px 0;
+    border: 0;
+}
+.formRow .formInput.inputWithIcon.addressDisabled {
+    width: 72%;
+    height: 50px;
+    margin: 5px 0;
+    border: 0;
+}
+.formRow .inputIconBox {
+    width: 5%;
+    height: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    font-size: 14px;
+}
+.formRow .inputIconBox.disabled {
+    background-color: #dcdcdc;
+    cursor: default;
+    color: #ffffff;
+}
+.formRow .inputWithoutIcon {
+    width: 80%;
+    height: 50px;
+    margin: 5px 0;
+    border: 0;
+    line-height: 50px;
+    font-weight: 600;
+    color: #161616;
+}
+.formRow .formInputName {
+    font-size: 15px;
+    width: 30%;
+    line-height: 59px;
+    font-weight: 600;
+    padding-left: 5px;
+}
+.formRow .formInputName.grey {
+    color: rgba(22,22,22, 0.5);
+}
+.formRow .formInputText.grey {
+    color: #161616;
+    opacity: 0.5;
+}
+.formRow.disabled .formInputName {
+    color: #dcdcdc;
+    background-color: #f8f8f8;
+}
+.formInputName.newPasswordName {
+    display: none;
+    text-align: center;
+    padding: 17px 7px 17px 5px;
+    line-height: 1.5em;
+}
+.formRow .inputWithVerify {
+    width: 55%;
+    padding-right: 5px;
+    height: 50px;
+    margin: 5px 0;
+    border: 0;
+}
+.formRow .formInputWithVerify {
+    width: 70%;
+    height: 50px;
+    margin: 5px 0;
+    border: 0;
+}
+/*auth button*/
+.formRow .inputVerifyBox {
+    width: 15%;
+    height: 100%;
+    line-height: 58px;
+    text-align: center;
+    font-size: 14px;
+}
+.formRow .inputVerifyBox.disabled {
+    background-color: #dcdcdc;
+    cursor: default;
+    color: #ffffff;
+}
+.formRow .inputVerifyBox.activeRed {
+    background-color: #fd0a0a;
+    cursor: pointer;
+    color: #ffffff;
+}
+.formRow .inputVerifyBox.activeBlack {
+    background-color: #292929;
+    cursor: pointer;
+    color: #ffffff;
+}
+.formRow .inputVerifyBox.activeWhite {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    cursor: pointer;
+}
+
+.formRow .formInput {
+    height: 50px;
+    margin: 5px 0;
+    border: 0;
+    line-height: 50px;
+}
+.formRow.paymentForm .formInput {
+    text-align: right;
+}
+.formRow .formInput.fullWidth {
+    width: 100%;
+}
+.formRow .formInput.gray {
+    color: rgba(22,22,22, 0.5);
+}
+.formRow input.formInput:disabled {
+    cursor: default;
+    background-color: #f8f8f8;
+    color: #dcdcdc;
+}
+
+.formRow input.formInput:disabled::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    background-color: #f8f8f8;
+    color: #dcdcdc;
+}
+.formRow .formInput.inputWithIcon.addressDisabled:disabled {
+    cursor: default;
+    background-color: #ffffff;
+    color: #dcdcdc;
+}
+.formRow .formInput.inputWithIcon.addressDisabled:disabled::-webkit-input-placeholder {
+    cursor: default;
+    background-color: #ffffff;
+    color: #dcdcdc;
+}
+.formRow .formInput.inputWithIcon.font14 {
+    font-size: 14px;
+}
+.agreeLabel {
+    margin-bottom: 27px;
+}
+/*warning message*/
+.formInputWarn {
+    font-size: 14px;
+    color: #ff0000;
+    padding-top: 13px;
+    border-top: 1px solid #e0e0e0;
+    margin-bottom: 13px;
+}
+.formInputAlert {
+    color: #979797;
+    padding-top: 13px;
+    border-top: 1px solid #e0e0e0;
+    margin-bottom: 13px;
+    font-size: 14px;
+}
+.red {
+    color: #ff0000;
+}
+.bold {
+    font-weight: bold;
+}
+.bold.black {
+    font-weight: 500;
+    color: #161616;
+}
+
+/*comment mobile*/
+.commentContainer {
+    position: fixed;
+    top: 65px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    -webkit-transition-property: all;
+    transition-property: all;
+    -webkit-transition-duration: .3s;
+    transition-duration: .3s;
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+    transition-timing-function: ease-out;
+    z-index: 1000;
+    -webkit-overflow-scrolling: touch;
+    overflow-y: scroll;
+}
+
+@media screen and (max-width: 768px){
+    .sectionWhiteTitle {
+        color: #000000;
+    }
+    /*full screen version*/
+    .fullScreen {
+        display: none;
+    }
+    /*mobile version*/
+    .mobileScreen {
+        display: block;
+    }
+    /*mobile funding market button*/
+    .mobileBtnBox {
+        display: block;
+        padding: 0;
+    }
+    .btn56Mobile {
+        display: block;
+    }
+    .formGroup.loginForm .formRow.loginMobile{
+        border-top: none;
+    }
+    .formGroup {
+        width: 100%;
+    }
+    .formGroup.formLargeContainer {
+        width: 100%;
+    }
+    .formGroup.formSmallContainer {
+        width: 100%;
+    }
+    .formInputName.newPasswordName {
+        display: block;
+    }
+    .formRow .formInput {
+        font-size: 13px;
+        font-weight: bold;
+    }
+    .formRow .formInputName {
+        font-size: 12px;
+    }
+    .formRow .inputWithVerify {
+        width: 50%;
+    }
+    .formRow .inputVerifyBox {
+        width: 20%;
+    }
+    input::-webkit-input-placeholder {
+        font-size: 12px;
+    }
+    .formRow.formSettingBox .formInputText.formNoInput {
+        font-size: 15px;
+    }
+    .formRow .formInputText {
+        font-size: 12px;
+        width: 25%;
+    }
+    .formRow.formLargeText .inputWithoutIcon {
+        width: 75%;
+    }
+    .formRow .formInput.inputWithIcon.font14 {
+        font-size: 13px;
+    }
+    .formRow .formInputText.settingText {
+        font-size: 15px;
+    }
+    .btnBoxRight .textRed {
+        margin-left: 20px;
+    }
+}

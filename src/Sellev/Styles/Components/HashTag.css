@@ -1,0 +1,529 @@
+
+* {
+    font-family: 'Apple SD Gothic Neo', 'Product Sans', 나눔고딕, Ngothic, 나눔바른고딕, NanumBarunGothic, 나눔바른고딕OTF, NanumBarunGothicOTF, sans-serif;
+    padding:0;
+    margin:0;
+    line-height:100%;
+}
+
+.hashTagContainer {
+    width: 100%;
+    overflow: hidden;
+}
+
+/* HashTag Main Page */
+
+.hashTagHomeContainer {
+    overflow: hidden;
+}
+
+/*.recommendedSection {*/
+    /*margin-top: 131px;*/
+    /*width: 100%;*/
+    /*display: block;*/
+    /*position: relative;*/
+/*}*/
+.recommendedSection {
+    margin: 131px auto 0;
+    width: 1100px;
+}
+.recommendedSection .recommendedHeader {
+    width: 100%;
+    margin: 0 auto 20px;
+}
+/*hashtag banner */
+.recommendedSection .recommendedBody {
+    margin: 0 auto;
+    overflow: hidden;
+    width: 100%;
+}
+.hashTagBannerBox {
+    position: relative;
+    background-color: #000000;
+    margin-bottom: 10px;
+    cursor: pointer;
+    border-radius: 12px;
+    width: 32%;
+    padding-top: 32%;
+    float: left;
+    margin-right: 2%;
+    display: -ms-inline-grid;
+}
+.hashTagBannerBox.hashTagTopItem {
+    margin-right: 2%;
+}
+.hashTagBannerBox.hashTagTopItem:nth-child(3n) {
+    margin-right: 0;
+}
+.hashTagBannerBox.hashTagItem {
+    width: 15%;
+    padding-top: 15%;
+    margin-right: 2%;
+}
+.hashTagBannerBox.hashTagItem:last-child {
+    margin-right: 0;
+}
+.hashTagBannerBox.hashTagItem.card {
+    width: 15%;
+    padding-top: 15%;
+    margin-right: 2%;
+}
+.hashTagBannerBox.hashTagItem.card:nth-child(6n) {
+    margin-right: 0;
+}
+.hashTagBannerBox.hashTagNew{
+    width: 15%;
+    padding-top: 15%;
+    margin-right: 2%;
+}
+.hashTagBannerBox.hashTagNew:nth-child(3n-2) {
+    width: 32%;
+    padding-top: 15%;
+    margin-right: 2%;
+}
+.hashTagBannerBox.hashTagNew:nth-child(9n-5) {
+     margin-right: 0;
+}
+.hashTagBannerBox.hashTagNew:nth-child(9n) {
+    margin-right: 0;
+}
+.hashTagBannerBox:hover {
+    opacity: 0.5;
+    -webkit-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+.hashTagBannerBox .hashTagImgScale {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+.hashTagBannerBox .hashTagBanner {
+    /*width: 100%;*/
+    /*height: 374px;*/
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.7;
+    border-radius: 12px;
+    display: -ms-inline-grid;
+}
+.hashTagBannerBox .hashTagTextBox {
+    position: absolute;
+    text-align: center;
+    top: 41%;
+    left: 35%;
+}
+.hashTagBannerBox .hashTagTextBox.includeCrown {
+    top: 36%;
+}
+.hashTagBannerBox .hashTagTextBox .bannerText{
+    font-size: 12px;
+    color: #FFFFFF;
+    margin-top: 8px;
+}
+.hashTagBannerBox .hashTagTextBox.hashTagItem {
+    width: 60%;
+    top: 35%;
+    left: 20%;
+}
+.hashTagBannerBox .hashTagTextBox.hashTagNew {
+    position: absolute;
+    text-align: center;
+    top: 35%;
+    left: 10%;
+    right: 10%;
+}
+.hashTagBannerBox.hashTagNew:nth-child(3n-2) .hashTagTextBox.hashTagNew{
+    position: absolute;
+    text-align: center;
+    top: 35%;
+    left: 30%;
+    right: 30%;
+}
+.hashTagBannerBox .hashTagTextBox > .rankNumber{
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: bold;
+    border-bottom: 2px solid #ffffff;
+    width: 20px;
+    margin: 0 auto 14px;
+}
+.hashTagBannerBox .clickLike {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+}
+.cardListBox {
+    overflow: hidden;
+}
+.hashTagBannerBox .hashTagTextBox > .hashTagBtn{
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    text-align: center;
+    min-width: 89px;
+    width: auto;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 20px;
+    background-color: rgba(255,255,255, 0.25);
+    cursor: pointer;
+    padding: 0 20px;
+
+}
+
+.hashTagList .hashTagBox {
+    width: 212px;
+    height: 50px;
+    border: 1px solid #e6e6e6;
+    float: left;
+    line-height: 50px;
+    text-align: center;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.hashTagList .hashTagBox:nth-child(5n) {
+    margin-right: 0;
+}
+
+
+
+
+.newSection {
+    margin: 120px auto 50px;
+}
+.newSection .newHeader {
+    max-width: 1100px;
+    margin: 0 auto 29px;
+}
+
+.newSection .newBody {
+    padding-bottom: 90px;
+    overflow: hidden;
+}
+
+.newSection .newBody .list {
+    max-width: 1100px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+/*.newSection .newBody .list .item {*/
+    /*width: 49.5%;*/
+    /*height: 89px;*/
+    /*float: left;*/
+    /*border-radius: 4px;*/
+    /*border: 1px solid #e6e6e6;*/
+    /*border-bottom: none;*/
+    /*background-color: #FFFFFF;*/
+    /*padding: 33px 27px;*/
+    /*overflow: hidden;*/
+/*}*/
+
+/*.newSection .newBody .list .item .title {*/
+    /*font-size: 18px;*/
+    /*font-weight: 600;*/
+    /*color: #0d0d0d;*/
+    /*overflow: hidden;*/
+    /*white-space: nowrap;*/
+    /*text-overflow: ellipsis;*/
+    /*float: left;*/
+    /*max-width: 150px;*/
+    /*margin-right: 6px;*/
+/*}*/
+
+/*.newSection .newBody .list .item:hover .title {*/
+    /*color: #ff0000;*/
+    /*-webkit-transition: all 0.3s ease-out;*/
+    /*-o-transition: all 0.3s ease-out;*/
+    /*transition: all 0.3s ease-out;*/
+/*}*/
+/*.newSection .newBody .list .item .timeslot {*/
+    /*font-size: 17px;*/
+    /*text-align: right;*/
+    /*color: #313131;*/
+/*}*/
+
+/*.newSection .newBody .list .item .timeslot.today {*/
+    /*font-size: 16px;*/
+    /*color: #ff0000;*/
+    /*float: right;*/
+/*}*/
+/*.todayIcon {*/
+    /*float: left;*/
+/*}*/
+/*.newSection .newBody .list .item:nth-child(2n) {*/
+    /*margin-left: 1%;*/
+/*}*/
+
+/*.newSection .newBody .list .item:nth-child(11), .newSection .newBody .list .item:nth-child(12) {*/
+    /*border-bottom: 1px solid #e6e6e6;*/
+/*}*/
+
+
+
+/* HashTag Detail Page */
+
+.hashTagDetailContainer {
+    margin-top: 70px;
+}
+
+.hashTagDetailContainer .detailHeader {
+    height: 263px;
+    overflow: hidden;
+    margin-bottom: 50px;
+}
+
+.hashTagDetailContainer .detailHeader .bgBoxBlack {
+    position: relative;
+    width: 100%;
+    height: 263px;
+    background-color: #000000;
+}
+.hashTagDetailContainer .detailHeader .bgBoxNone {
+    position: relative;
+    width: 100%;
+    height: 263px;
+}
+.hashTagDetailContainer .detailHeader .bgBoxBlack .bgImage {
+    width: 100%;
+    height: 263px;
+    opacity: 0.8;
+    background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    -webkit-filter: blur(9px);
+    -moz-filter: blur(9px);
+    -o-filter: blur(9px);
+    -ms-filter: blur(9px);
+    filter: blur(9px);
+}
+.hashTagDetailContainer .detailHeader .bgBoxNone .bgImageNone {
+    width: 100%;
+    height: 263px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.hashTagDetailContainer .detailHeader .profileBox {
+    width: fit-content;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+    bottom: 160px;
+}
+
+.hashTagDetailContainer .detailHeader .profileBox .name {
+    height: 40px;
+    font-size: 33px;
+    font-weight: 700;
+    color: #ffffff;
+    letter-spacing: -1.6px;
+    line-height: 40px;
+}
+
+.hashTagDetailContainer .detailHeader .profileBox .likeBtn {
+    margin: 10px auto 15px;
+    color: #ffffff;
+    font-size: 15px;
+}
+
+.hashTagDetailContainer .detailHeader .profileBox .likeBtn {
+    overflow: hidden;
+    width: fit-content;
+    position: relative;
+    text-align: center;
+}
+
+.hashTagDetailContainer .detailHeader .profileBox .likeBtn .icon {
+    float: left;
+}
+
+.hashTagDetailContainer .detailHeader .profileBox .likeBtn .number {
+    line-height: 19px;
+    height: 19px;
+    vertical-align: top;
+    margin-left: 5px;
+    float: left;
+}
+
+@media screen and (max-width: 1100px){
+    .hashTagHomeContainer {
+        padding: 0 20px;
+    }
+    .recommendedSection {
+        width: 100%;
+    }
+    .hashTagList .hashTagBox {
+        width: 18.4%;
+        margin-right: 2%;
+        font-size: 14px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        height: 30px;
+        line-height: 30px;
+    }
+    .hashTagList .hashTagBox:nth-child(5n) {
+        margin-right: 0;
+    }
+    /*home hashtag*/
+    .hashTagBannerBox .hashTagTextBox {
+        left: 31%;
+    }
+    .hashTagBannerBox .hashTagTextBox.hashTagItem {
+        top: 24%;
+    }
+    .hashTagBannerBox .hashTagTextBox.hashTagItem > .hashTagBtn{
+        max-width: 75px;
+        min-width: 60px;
+        margin: 0 auto;
+        padding: 0;
+    }
+    .hashTagBannerBox .hashTagTextBox.hashTagNew {
+        top: 28%;
+    }
+    .hashTagBannerBox.hashTagNew:nth-child(3n-2) .hashTagTextBox.hashTagNew {
+        top: 28%;
+    }
+    .hashTagBannerBox .hashTagTextBox.hashTagNew > .hashTagBtn{
+        max-width: 89px;
+        min-width: 60px;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    /*home hashtag banner box*/
+    .hashTagBannerBox.hashTagTopItem {
+        margin-right: 0;
+        float: none;
+        width: 100%;
+        padding-top: 100%;
+    }
+    .hashTagBannerBox.hashTagItem {
+        margin-right: 2%;
+        width: 32%;
+        padding-top: 32%;
+
+    }
+    .hashTagBannerBox.hashTagItem:nth-child(3n) {
+        margin-right: 0;
+    }
+    .hashTagBannerBox.hashTagItem.card {
+        margin-right: 2%;
+        width: 32%;
+        padding-top: 32%;
+
+    }
+    .hashTagBannerBox.hashTagItem.card:nth-child(3n) {
+        margin-right: 0;
+    }
+    .hashTagBannerBox .hashTagTextBox .rankNumber{
+        font-size: 26px;
+    }
+    .hashTagBannerBox .hashTagTextBox > .hashTagBtn{
+        font-size: 14px;
+        height: 30px;
+        line-height: 30px;
+    }
+    .hashTagBannerBox .hashTagTextBox.hashTagItem > .hashTagBtn{
+        font-size: 12px;
+        height: 24px;
+        line-height: 24px;
+    }
+
+    .hashTagBannerBox .hashTagTextBox.hashTagItem {
+        width: 80%;
+        top: 24%;
+        left: 11%;
+    }
+    .hashTagBannerBox .hashTagTextBox.hashTagINew > .hashTagBtn{
+        font-size: 12px;
+        height: 24px;
+        line-height: 24px;
+    }
+    .hashTagBannerBox .hashTagTextBox.hashTagINew {
+        width: 80%;
+        top: 24%;
+        left: 11%;
+    }
+    .hashTagBannerBox .hashTagTextBox {
+        left: 31%;
+        right: 31%;
+    }
+    .hashTagBannerBox .hashTagTextBox > .rankNumber{
+        margin: 0 auto 5px;
+    }
+    /*추천 해시태그*/
+    .recommendedSection {
+        margin-top: 90px;
+    }
+    /*신규 해시태그*/
+    .newSection {
+        margin: 80px auto 50px;
+    }
+    .hashTagBannerBox.hashTagNew:nth-child(3n-2) {
+        float: none;
+        overflow: hidden;
+        width: 100%;
+        padding-top: 50%;
+    }
+    .hashTagBannerBox.hashTagNew:nth-child(3n) {
+        float: none;
+        overflow: hidden;
+        width: 49%;
+        padding-top: 49%;
+        padding-right: 0;
+    }
+    .hashTagBannerBox.hashTagNew {
+        width: 49%;
+        padding-top: 49%;
+        padding-right: 2%;
+    }
+
+    /*상세해시태그 배너*/
+    .hashTagDetailContainer .detailHeader .profileBox .name {
+        position: relative;
+        top: 95px;
+        font-size: 16px;
+    }
+    .hashTagDetailContainer .detailHeader .profileBox .name.mobileName {
+        position: relative;
+        top: 95px;
+        font-size: 23px;
+    }
+    .hashTagBannerBox .hashTagTextBox.hashTagNew {
+        top: 38%;
+    }
+    .hashTagBannerBox.hashTagNew:nth-child(3n-2) .hashTagTextBox.hashTagNew {
+        top: 38%;
+    }
+    .hashTagBannerBox .hashTagTextBox .bannerText{
+        margin-top: 12px;
+    }
+    .hashTagDetailContainer .detailHeader .profileBox {
+        bottom: 240px;
+    }
+    .hashTagDetailContainer .detailHeader .bgBoxBlack .bgImage {
+        filter: none;
+    }
+}

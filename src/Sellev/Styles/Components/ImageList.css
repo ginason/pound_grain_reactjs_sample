@@ -1,0 +1,388 @@
+/**************ImageList*************/
+/*funding market*/
+.listContainer {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    width: 100%;
+}
+.listContainer:hover {
+
+}
+.imageBox {
+    /*width: 100%;*/
+    width: 264px;
+    height: 132px;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 8px;
+    border-radius: 7px;
+    opacity: 0.8;
+}
+.imageBgBox {
+    position: absolute;
+    width: 100%;
+    height: 132px;
+    top: 0;
+    left: 0;
+    background: linear-gradient(#ffffff, rgba(0,0,0, 0.6));
+    border-radius: 7px;
+}
+.imageScale {
+    display: none;
+}
+.listContainer:hover {
+    opacity: 0.7;
+    -webkit-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+.listContainer .imgSize {
+    width: 100%;
+    border-radius: 12px;
+}
+.listContainer:hover .imgSize {
+    opacity: 0.7;
+    -webkit-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+.profileBox {
+    background-size: cover;
+    background-position: center;
+    width: 33px;
+    height: 33px;
+    border-radius: 17px;
+    border: 1px solid rgba(151,151,151, 0.2)
+}
+.mobileProfileBox {
+    background-size: cover;
+    background-position: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    border: 1px solid rgba(151,151,151, 0.2)
+}
+.profileBox:hover {
+    transform: scale(1.2);
+    -webkit-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+}
+.fundingMarketArtist {
+    font-size: 13px;
+    color: #6e6e6e;
+    line-height: 33px;
+    height: 33px;
+    margin-left: 5px;
+}
+.fundingMarketTitle {
+    font-size: 15px;
+    line-height: 1.5em;
+    color: #000000;
+    font-weight: bold;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.clickLike {
+    position: absolute;
+    right: 13px;
+    top: 6px;
+}
+.productProfileBox {
+    overflow: hidden;
+    margin: 9px 0 5px;
+}
+.productProfileBox > div {
+    float: left;
+}
+
+/*video*/
+.videoList {
+    width: 100%;
+}
+.videoList .listTitle {
+    font-size: 15px;
+    font-weight: 600;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    line-height: 22px;
+    color: #000000;
+    margin-top: 10px;
+}
+.videoList .listBody {
+    font-size: 13px;
+    color: #979797;
+    /*line-height: 30px;*/
+}
+.videoList .listBody .listBar {
+    color: rgba(151,151,151, 0.4);
+    font-size: 10px;
+    margin: 0 2.5px 0 2px;
+}
+.videoList .listBody div {
+    display: inline-block;
+}
+/*.videoList .listBody .likeImg{*/
+    /*background-image: url('/assets/img/ic_common.png');*/
+    /*width: 20px;*/
+    /*height: 20px;*/
+    /*background-position: 0 85px;*/
+/*}*/
+.videoList .listBody .likeImg{
+    background-image: url('/assets/img/ic_web_icon.png');
+    width: 18px;
+    height: 15px;
+    background-position: -234px 136px;
+    margin-bottom: -3px;
+}
+.playingSecond {
+    font-size: 12px;
+    position: absolute;
+    right: 11px;
+    bottom: 52px;
+    color: #ffffff;
+    line-height: 18px;
+}
+/*funding*/
+.fundBox {
+    overflow: hidden;
+    width: 100%;
+    height: 30px;
+}
+.fundBox li {
+    float: left;
+    margin-right: 5px;
+    color: #8a8a8a;
+    font-size: 12px;
+    line-height: 30px;
+}
+.fundBox li:last-child {
+    margin-right: 0;
+}
+.fundProgressBox {
+    overflow: hidden;
+    position: absolute;
+    bottom: 100px;
+    width: 100%;
+    padding: 0 20px;
+}
+.fundProgressHeader {
+    overflow: hidden;
+    width: 100%;
+}
+.fundProgressHeader .fundPercent {
+    float: left;
+    font-size: 13px;
+    font-weight: bold;
+    height: 23px;
+    line-height: 23px;
+    color: #ff0000;
+    border-bottom: 2px solid #ff0000;
+}
+.fundProgressHeader .left {
+    float: right;
+    height: 23px;
+    line-height: 23px;
+    font-size: 13px;
+    color: #ffffff;
+}
+
+/*progress bar*/
+.progressBox {
+    /*position: relative;*/
+}
+.progressBox .progress {
+    background-color: rgba(255,255,255, 0.6);
+    height: 4px;
+    margin: 13px auto;
+}
+.progressBox .progress .progressBar {
+    height: 4px;
+    background-color: #ffffff;
+}
+.progressBox .progress .progressRedBar {
+    height: 4px;
+    background-color: #fd0a0a;
+}
+.customProgress {
+    position: relative;
+    width: initial;
+    /*width: 83%;*/
+    margin-left: 43px;
+    height: 3px;
+}
+.progressNum {
+    position: absolute;
+    font-size: 12px;
+    width: 43px;
+    height: 20px;
+    border-radius: 100px;
+    background-color: #191919;
+    color: #ffffff;
+    bottom: 8px;
+    text-align: center;
+    padding: 5px 0;
+}
+
+
+/*market*/
+
+.marketPrice {
+    font-size: 18px;
+    color: #fd0a0a;
+    float: left;
+    line-height: 30px;
+    font-weight: bold;
+}
+/*.marketPrice .currencyIcon {*/
+    /*background-image: url('/assets/img/ic_web_icon.png');*/
+    /*width: 20px;*/
+    /*height: 20px;*/
+    /*background-position: -122px 75px;*/
+    /*float: left;*/
+    /*margin-top: -2px;*/
+/*}*/
+
+.marketBox {
+    height: 30px;
+    overflow: hidden;
+}
+.marketOption {
+    float: left;
+    font-size: 12px;
+    line-height: 18px;
+    color: #000000;
+}
+.marketOption span:first-child {
+    color: #979797;
+    margin: 0 10px;
+}
+.marketOption span:last-child {
+    color: #fd0a0a;
+}
+
+@media screen and (max-width: 1100px){
+    .imageBox {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 870px) {
+    .imageBox {
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width: 768px){
+    .listContainer {
+        margin-bottom: 50px;
+    }
+    .listContainer.videoListContainer {
+        margin-bottom: 24px;
+    }
+    /*imageBox scale 펀딩&마켓*/
+    .imageBgBox {
+        height: 100%;
+    }
+    .imageScaleBox {
+        position: relative;
+        margin-bottom: 15px;
+    }
+    .imageScale {
+        display: block;
+        width: 100%;
+        opacity: 0;
+    }
+    .imageBox {
+        /*min-width: 100%;*/
+        /*min-height: 242px;*/
+        border-radius: 7px;
+        /*add*/
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        right: 0;
+        left: 0;
+        top: 0;
+        bottom: 0;
+    }
+    .profileBox {
+        width: 50px;
+        height: 50px;
+        border-radius: 30px;
+        border: 1.5px solid #ffffff;
+    }
+    .fundProgressBox {
+        bottom: 150px;
+    }
+    .fundingMarketTitle,
+    .marketPrice {
+        /*font-size: 25px;*/
+        font-size: 20px;
+        line-height: 29px;
+    }
+    .fundingMarketArtist {
+        font-size: 15px;
+        line-height: 40px;
+        height: 40px;
+    }
+    /*market*/
+    .marketOption {
+        font-size: 16px;
+        padding-top: 5px;
+    }
+
+    /*funding*/
+    .fundBox {
+        width: 100%;
+    }
+    /*video*/
+
+    .videoList .listTitle {
+        font-size: 20px;
+        line-height: 20px;
+        /*padding: 8px 0 7px;*/
+    }
+    .videoList .listBody {
+        font-size: 12px;
+        line-height: 12px;
+        padding: 5px 0 35px;
+    }
+    .videoList .listBody span:nth-child(4){
+        font-size: 13px;
+    }
+    .playingSecond {
+        bottom: 48px;
+        font-size: 12px;
+        line-height: 20px;
+        font-weight: normal;
+    }
+
+    /*progressbar 반응형*/
+    .progressBox .progress .progressBar {
+        height: 6px;
+    }
+    .progressBox .progress .progressRedBar {
+        height: 6px;
+    }
+    .progressBox .progress {
+        height: 6px;
+    }
+    .progressNum {
+        width: 50px;
+        height: 24px;
+        font-size: 14px;
+        line-height: 19px;
+        padding: 4px 0;
+    }
+    .customProgress {
+        margin-left: 50px;
+        width: initial;
+    }
+}
+
+

@@ -1,0 +1,506 @@
+
+.entirePaymentContainer {
+    width: 1100px;
+    margin: 120px auto 100px;
+    overflow: hidden;
+}
+.paymentContainer {
+    width: 100%;
+    /*
+    overflow: hidden;
+    */
+}
+.paymentHeader {
+    float: left;
+    width: 30%;
+    border-right: solid 1px rgba(151,151,151, 0.2);
+    padding-right: 30px;
+}
+.detailTab {
+    overflow: hidden;
+    width: 100%;
+    height: 36px;
+    margin-bottom: 25px;
+}
+.detailTab .tabItem {
+    float: left;
+    color: #454545;
+    font-size: 13px;
+    width: 33%;
+    height: 100%;
+    text-align: center;
+    line-height: 36px;
+    border-bottom: solid 1px #cecece;
+    border-top: solid 1px #cecece;
+    cursor: pointer;
+    background-color: #f8f8f8;
+    font-weight: bold;
+}
+.detailTab .tabItem.active {
+    color: #fd0a0a;
+    border-left: solid 1px #cecece;
+    border-right: solid 1px #cecece;
+    border-bottom: 0;
+    background-color: #ffffff;
+}
+.dotPosition {
+    margin-left: 5px;
+}
+.paymentBody {
+    float: right;
+    width: 592px;
+    margin-bottom: 50px;
+}
+.paymentWhiteBox {
+    float: right;
+    padding: 0 40px 40px;
+    width: 592px;
+    height: 100%;
+    border-radius: 12px;
+    background-color: #ffffff;
+    box-shadow: 19px 20px 58px 0 rgba(0, 0, 0, 0.04);
+}
+.paymentTitle {
+    font-size: 37px;
+    font-weight: bold;
+    margin-bottom: 32px;
+    margin-top: 12px;
+}
+.paymentBoxTitle {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.5em;
+
+}
+/*///////////////////////*/
+.paymentBox {
+    width: 100%;
+}
+.paymentBox .noneOptionText {
+    color: #2d2d2d;
+    font-weight: bold;
+    line-height: 1.5em;
+    font-size: 14px;
+    opacity: 0.1;
+    margin: 20px 0;
+}
+.paymentBox li > div {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    padding: 10px 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+.paymentBox li > div .paymentItem {
+    float: left;
+    width: 67%;
+    padding-left: 5%;
+
+}
+.paymentBox li > div .paymentItem > .itemHeader {
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 14px;
+    line-height: 1.5em;
+    overflow: hidden;
+}
+.paymentBox li > div .paymentItem > .itemHeader > div:first-child {
+    float: left;
+    color: #b0b0b0;
+    font-size: 11px;
+}
+.paymentBox li > div .paymentItem > .itemHeader > div:last-child {
+    float: right;
+    font-size: 9px;
+    color: #fd0a0a;
+    border-bottom: 1px solid #fd0a0a;
+    cursor: pointer;
+}
+.paymentBox li > div .paymentItem .paymentText{
+    font-size: 12px;
+    width: 100%;
+    color: #000000;
+    font-weight: bold;
+    line-height: 1.5em;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin: 14px 0;
+}
+.paymentBox li > div .paymentItem .optionText {
+    color: #b0b0b0;
+    font-size: 12px;
+}
+.paymentBox li > div .checkBox {
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    cursor: pointer;
+}
+.paymentBox li > div .userImage {
+    width: 30%;
+    padding-top: 30%;
+    background-size: cover;
+    background-position: center;
+    border-radius: 6px;
+    float: left;
+}
+.cartTitle {
+    font-size: 16px;
+    font-weight: bold;
+    height: 38px;
+    line-height: 38px;
+}
+/*//////////////////////////////*/
+.paymentBody .sectionTitle {
+    padding: 5px 0;
+    font-size: 20px;
+    font-weight: 900;
+    line-height: 2em;
+}
+.paymentBody .formTitle {
+     font-weight: bold;
+     font-size: 15px;
+     color: #fd0a0a;
+    line-height: 2em;
+ }
+.paymentBody .sectionSubTitle {
+    font-size: 13px;
+    font-weight: bold;
+    border-bottom: 1px solid #fd0a0a;
+    color: #fd0a0a;
+    cursor: pointer;
+}
+.paymentBody .sectionTitleBox {
+    overflow: hidden;
+}
+.paymentBody .sectionTitleBox div{
+    display: inline-block;
+    margin-right: 10px;
+}
+.paymentBody .paymentSelector {
+    padding: 5px;
+    font-size: 15px;
+}
+.iconInForm {
+    margin: 17px 0;
+}
+.paymentList {
+    width: 503px;
+    height: auto;
+    padding: 18px 0;
+    border-top: solid 1px #e0e0e0;
+    border-bottom: solid 1px #e0e0e0;
+}
+.paymentList li {
+    overflow: visible;
+    height: 34px;
+}
+.paymentList li div:first-child{
+    float: left;
+}
+.paymentList li div:last-child{
+    float: right;
+    font-weight: bold;
+    font-size: 20px;
+}
+.paymentList li:not(:last-child) div{
+    font-size: 14px;
+    color: rgba(22,22,22, 0.7);
+}
+
+.paymentList li:last-child div:first-child{
+    font-size: 14px;
+    color: #ff0000;
+    line-height: 29px;
+}
+.paymentList li:last-child .priceVal .price {
+    font-size: 29px;
+    color: #ff0000;
+}
+.paymentList .priceVal {
+}
+.paymentList .priceVal .price {
+    float: left;
+    line-height: 25px;
+}
+.paymentList .priceVal .coinIcon {
+    float: left;
+}
+.paymentList li:first-child div:last-child .coinIcon {
+    bottom: -2px;
+}
+.dropdownBox {
+    width: 116px;
+    font-size: 14px;
+    font-weight: bold;
+    border-bottom: 2px solid #464646;
+    overflow: hidden;
+    cursor: pointer;
+}
+.dropdownBox > span,
+.dropdownBox > div {
+    font-weight: bold;
+    float: left;
+    line-height: 1.5em;
+}
+.notification {
+    font-size: 13px;
+    color: rgba(22,22,22, 0.3);
+    margin: 20px 0;
+    line-height: 1.5em;
+}
+/*card form*/
+.paymentFormBox {
+    overflow: hidden;
+    width: 100%;
+    background-color: rgba(232,236,239,0.4);
+    padding: 13px 17px;
+}
+.formList1,
+.formList2 {
+    overflow: hidden;
+}
+.formList1 {
+    margin-bottom: 15px;
+}
+.formList2 {
+    margin-bottom: 8px;
+}
+.formList1 .formBox,
+.formList2 .formBox {
+    float: left;
+}
+.formList1 .formBox:first-child {
+     width: 273px;
+ }
+.formList1 .formBox:last-child {
+    width: 200px;
+}
+.formList2 .formBox:first-child {
+    margin-right: 13px;
+}
+.formList2 .formBox:last-child {
+
+}
+.formBox .title {
+    color: #607398;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+.formBox .itemBox {
+    overflow: hidden;
+    float: left;
+    height: 42px;
+    border: 1px solid #ffffff;
+    background-color: #ffffff;
+}
+.formBox .itemBox > div {
+    float: left;
+}
+.formBox .itemBox input {
+    float: left;
+    height: 35px;
+    line-height: 42px;
+    border: none;
+}
+.formBox .itemBox .numberInput {
+    width: 55px;
+    margin: 2px 1px;
+}
+.formBox .itemBox > .bar {
+    padding: 13px 0;
+    color: #161616;
+}
+.formBox .itemBox .date {
+    width: 50%;
+    float: left;
+}
+.formBox .itemBox .date > div {
+    float: left;
+    font-size: 14px;
+    line-height: 37px;
+    color: rgba(22,22,22,0.4);
+    margin-right: 3px;
+}
+.formBox .itemBox .date .dateInput {
+    float: left;
+    width: 80%;
+    margin: 2px;
+}
+.formBox .itemBox .passwordInput {
+    width: 114px;
+    margin: 2px;
+}
+.formBox .itemBox .birthOfDateInput {
+    width: 124px;
+    margin: 2px;
+}
+.formNotification {
+    font-size: 12px;
+    color: rgba(22,22,22,0.4);
+    text-align: center;
+}
+.optionBox{
+    cursor: pointer;
+}
+.resultContainer {
+    overflow: hidden;
+    height: auto;
+}
+.resultContainer .title{
+    margin-top: 10px;
+    font-weight: 700;
+    font-size: 25px;
+    text-align: center;
+}
+.resultContainer .subTitle{
+    margin-top: 50px;
+    font-size: 15px;
+    text-align: center;
+}
+.resultContainer .subTitle.button {
+    background-color: #fff;
+    border: 1px solid #e7e8ea;
+    color: #666;
+    width: 170px;
+    margin: 50px auto;
+    padding: 10px 0;
+    cursor: pointer;
+}
+@media screen and (max-width: 1100px) {
+
+    .entirePaymentContainer {
+        width: 860px;
+    }
+    .paymentHeader{
+        border: none;
+        width: 33%;
+        padding-right: 0;
+    }
+    .paymentBody {
+        box-shadow: none;
+        margin-right: -17px;
+    }
+    .paymentBox li > div .paymentItem {
+        width: 59%;
+    }
+}
+@media screen and (max-width: 768px){
+    .paymentWhiteBox {
+        padding: 0;
+        box-shadow: none;
+        width: 100%;
+    }
+    .entirePaymentContainer {
+        width: 100%;
+        padding: 0 28px 0 28px;
+        margin: 90px auto 100px;
+        overflow: hidden;
+    }
+    .paymentHeader,
+    .paymentBody {
+        float: none;
+        width: 100%;
+        border: none;
+        padding: 0;
+    }
+    .paymentTitle {
+        font-size: 24px;
+        text-align: center;
+    }
+    .paymentBoxTitle, .paymentBody .sectionTitle {
+        font-size: 20px;
+    }
+    .paymentList {
+        width: 100%;
+        margin: 10px 0;
+    }
+    .paymentBox {
+        overflow: hidden;
+        margin-bottom: 30px;
+    }
+    .paymentBox li > div .paymentItem .paymentText{
+        width: 100%;
+        font-size: 15px;
+        margin: 7% 0;
+    }
+    .paymentBox li > div .paymentItem, .paymentBox li > div .userImage {
+        float: left;
+    }
+    .paymentBox li > div .userImage {
+        width: 30%;
+        padding-top: 30%;
+    }
+    .paymentBox li > div {
+        overflow: hidden;
+    }
+    .paymentBox li > div .paymentItem {
+        width: 70%;
+        padding-left: 10px;
+    }
+    .paymentBody .sectionTitleBox {
+        height: 40px;
+        margin-top: 30px;
+    }
+    .paymentBody .sectionTitleBox .sectionTitle {
+        float: left;
+        margin-right: 0;
+        line-height: 20px;
+    }
+    .paymentBody .sectionTitleBox .sectionSubTitle {
+        float: right;
+        margin: 2px 0;
+    }
+    /*destination form*/
+    .addressInput {
+        font-size: 12px;
+    }
+    /*card form*/
+    .formList1 .formBox:first-child {
+        width: 100%;
+        margin-bottom: 10px;
+        margin-top: 9px;
+    }
+    .formList2 .formBox:first-child {
+        margin-bottom: 10px;
+        margin-top: 9px;
+    }
+    .formBox .itemBox .numberInput {
+        width: 20%;
+        margin: 2px;
+    }
+    /*option list*/
+    .paymentBox li > div .paymentItem .optionText {
+        font-size: 15px;
+    }
+    .paymentBox li > div .paymentItem > .itemHeader > div:first-child {
+        font-size: 15px;
+    }
+    .paymentBox li > div .paymentItem > .itemHeader > div:last-child {
+        font-size: 15px;
+    }
+    .cartTitle {
+        font-size: 24px;
+    }
+}
+.btnSection {
+    width: 100%;
+    margin: 28px auto 40px;
+    position: relative;
+    float: right;
+}
+
+.btnSection .btnRed {
+    display: block;
+    width: 152px;
+    padding: 14px;
+    position: relative;
+    border-radius: 100px;
+    background-color: #fd0a0a;
+    text-align: center;
+    line-height: 16px;
+    font-size: 15px;
+    color: #ffffff;
+    margin: 0 auto;
+    cursor: pointer;
+}

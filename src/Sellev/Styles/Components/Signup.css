@@ -1,0 +1,36 @@
+
+.signupContainer {
+    width: 460px;
+    margin: 121px auto 0;
+}
+.signupContainer .signupBody {
+    width: 100%;
+    text-align: center;
+}
+.signupLogo {
+    margin: 10px auto;
+}
+.signupBox {
+    width: 100%;
+    height: 446px;
+    padding: 30px 35px;
+    border-radius: 12px;
+    background-color: #ffffff;
+    box-shadow: 18px 62px 58px 0 rgba(0, 0, 0, 0.09);
+}
+.signupBox .title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 22px;
+    text-align: left;
+    line-height: 1.4em;
+    padding: 0 10px;
+}
+
+/*or*/
+.signupBox .border {
+    color: #e0e0e0;
+    margin: 18px 0;
+}
+
+/*footer*/

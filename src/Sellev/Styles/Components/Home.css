@@ -1,0 +1,312 @@
+/* Common */
+
+/* Banner */
+.bannerBody{
+    overflow: hidden;
+    height: 350px;
+    width: 1100px;
+    margin: 0 auto;
+}
+
+.bannerSection {
+    width: 100%;
+    height: 425px;
+    background-color: black;
+    padding-top: 110px;
+}
+.BannerHeader {
+    width: 1100px;
+    margin: 0 auto 20px;
+}
+
+.listBox {
+    position: relative;
+    /*width: 323px;*/
+    /*height: 340px;*/
+    margin: 2px 4.5px;
+    float: left;
+    cursor: pointer;
+}
+.listBox:hover {
+    background-color: #ffffff;
+    border-radius: 12px;
+}
+.listBox .listContent {
+    width: 100%;
+    position: relative;
+}
+.listBox .listContent:hover {
+    opacity: 0.7;
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+/*.listBox .bgImage:hover {
+    opacity: 0.5;
+    -webkit-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+}*/
+
+.listBox .bgImage {
+    width: 323px;
+    height: 317px;
+    border-radius: 12px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.listBox .bannerProfile {
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    border-radius: 100%;
+    border: 1px solid rgba(151,151,151, 0.2);
+    z-index: 1000;
+    bottom: 66px;
+    right: 13px;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.listBox .bannerProfile:hover {
+    opacity: 0.9;
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+.titleBox{
+    position: relative;
+    width: 250px;
+    min-height: 80px;
+    bottom: 114px;
+    left: 30px;
+    color: #ffffff;
+}
+/*.titleBox:hover {
+    opacity: 0.5;
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}*/
+.titleBox div:first-child{
+    font-size: 16px;
+    height: 26px;
+    color: rgba(255,255,255, 0.8);
+    line-height: 26px;
+}
+
+.titleBox div:last-child{
+    font-size: 22px;
+    margin-top: 4px;
+    line-height: 1.3em;
+    font-weight: 800;
+}
+
+/* Funding Market */
+.fundingMarketSection {
+    width: 1100px;
+    margin: 120px auto 50px;
+    overflow: hidden;
+}
+.fundingMarketHeader {
+    width: 100%;
+    margin-bottom: 22px;
+}
+.fundingMarketBody {
+    width: 100%;
+}
+.fundingMarketTab {
+    overflow: hidden;
+    padding: 0 29px;
+}
+.fundingMarketTab li {
+    font-size: 22px;
+    font-weight: bold;
+    float: left;
+    margin-right: 24px;
+    color: rgba(45,45,47, 0.35);
+    border-bottom: solid 3px transparent;
+    cursor: pointer;
+    line-height: 30px;
+}
+.fundingMarketTab li:hover {
+    border-bottom: solid 3px #fd0a0a;
+    color: #2d2d2f;
+}
+.fundingMarketTab li.active {
+    border-bottom: solid 3px #fd0a0a;
+    color: #2d2d2f;
+}
+.mobileFundingMarketBody {
+    padding: 0 29px;
+}
+/**/
+/*funding market list box*/
+/**/
+/* HashTag */
+.hashTagSection {
+    width: 1100px;
+    margin: 220px auto 0;
+    overflow: hidden;
+}
+.hashTagHeader {
+    width: 1100px;
+    margin: 0 auto 22px;
+}
+
+/* Video */
+.videoSection {
+    width: 1100px;
+    margin: 120px auto 50px;
+}
+.videoHeader {
+    width: 100%;
+    margin-bottom: 22px;
+}
+.videoBody {
+    width: 100%;
+}
+
+.videoBox {
+    width: 264px;
+    display: inline-block;
+    margin-right: 14px;
+    margin-bottom: 31px;
+}
+.videoBox:nth-child(4n) {
+    width: 264px;
+    display: inline-block;
+    margin-right: 0;
+}
+@media screen and (max-width: 1100px){
+    /*Banner*/
+    .BannerHeader {
+        width: auto;
+        margin: 0 20px 20px;
+    }
+    .bannerBody {
+        width: 100%;
+        padding: 0 20px;
+    }
+    /*펀딩&마켓*/
+    .fundingMarketHeader {
+        width: auto;
+        margin: 0;
+    }
+    .fundingMarketBody {
+        width: auto;
+        margin: 0 30px;
+    }
+    .fundingMarketSection {
+        width: 100%;
+        padding: 0 20px;
+    }
+    /*해쉬테그*/
+    .hashTagSection {
+        width: 100%;
+        padding: 0 20px;
+    }
+    .hashTagHeader {
+        width: 100%;
+    }
+    /*인기동영상*/
+    .videoSection {
+        width: auto;
+        padding: 0 20px;
+    }
+    /*오늘의 동영상 */
+    .videoBox {
+        width: 32%;
+        margin-right: 2%;
+    }
+    .videoBox:nth-child(4n) {
+        width: 32%;
+        margin-right: 2%;
+    }
+    .videoBox:nth-child(3n) {
+        margin-right: 0;
+    }
+}
+/*모바일 반응형*/
+@media screen and (max-width: 768px){
+    /*Banner*/
+    .bannerBody{
+        overflow: hidden;
+        width: 100%;
+        padding: 0 20px;
+        height: 299px;
+    }
+    .listBox .bgImage {
+        width: 250px;
+        height: 247px;
+    }
+    .BannerHeader {
+        margin: 0 20px 20px;
+    }
+    .bannerSection {
+        background-color: #ffffff;
+        padding-top: 100px;
+    }
+    .fundingMarketHeader {
+        margin-bottom: 22px;
+    }
+    /*펀딩 마켓*/
+    .fundingMarketBody {
+        margin: 0;
+        width: 100%;
+        max-width: 100%;
+        overflow-x: scroll;
+        white-space: nowrap;
+        overflow-y: hidden;
+        -webkit-overflow-scrolling: touch;
+        -ms-overflow-style: -ms-autohiding-scrollbar;
+        padding: 0 30px;
+    }
+    .fundingMarketBody::-webkit-scrollbar {
+        width: 0;
+    }
+    .fundingMarketBody::-webkit-scrollbar:hover {
+        width: 10px;
+    }
+    .fundingMarketBody::-webkit-scrollbar-thumb:hover {
+        background: red;
+    }
+    .fundingMarketTab li {
+        font-size: 18px;
+    }
+    /* Funding Market */
+    .fundingMarketSection {
+        margin: 0 auto;
+        overflow: hidden;
+    }
+    /*해쉬태그*/
+    .hashTagSection {
+        margin: 80px auto;
+        width: 100%;
+    }
+    /*오늘의 동영상 */
+    .videoSection {
+        max-width: 768px;
+        width: auto;
+        margin: 80px auto 50px;
+    }
+    .videoHeader {
+        margin-bottom: 28px;
+    }
+    .videoBox {
+        width: 100%;
+        margin-right: 0;
+        /*height: 318px;*/
+        margin-bottom: 0;
+    }
+    .videoBox:nth-child(4n) {
+        width: 100%;
+        margin-right: 0;
+    }
+}

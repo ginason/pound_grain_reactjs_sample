@@ -1,0 +1,107 @@
+input:focus {
+    outline: none;
+}
+.searchContainer {
+    width: 1100px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 100px auto 0;
+}
+
+.searchBarContainer {
+    width: 536px;
+    margin-bottom: 68px;
+    overflow: hidden;
+}
+
+.searchBarContainer .searchBar {
+    float: left;
+    width: 93%;
+    position: relative;
+}
+.searchBarContainer .border {
+    width: 536px;
+    border-bottom: 3px solid #ff0000;
+    position: absolute;
+    top: 151px;
+}
+.searchBox {
+    float: right;
+    width: 7%;
+    padding-top: 14px;
+}
+.searchBarContainer .searchBar input {
+    width: 100%;
+    border: none;
+    height: 53px;
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: -0.2px;
+    color: #000000;
+    padding: 0 10px;
+}
+
+.searchBarContainer .btn {
+    display: inline-block;
+    background-image: url('/assets/img/ic_home.png');
+}
+.searchBlack {
+    width: 25px;
+    height: 26px;
+    background-image: url(/assets/img/ic_home.png);
+    background-position: 105px 58px;
+    display: inline-block;
+    margin-left: 28px;
+    cursor: pointer;
+}
+.searchMobile {
+    width: 35px;
+    height: 35px;
+    background-image: url(/assets/img/ic_app_home.png);
+    background-position: 144px 140px;
+    background-size: 144px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+@media screen and (max-width: 1100px) {
+    .searchContainer {
+        width: 830px;
+        padding: 0;
+    }
+}
+@media screen and (max-width: 830px) {
+    .searchContainer {
+        width: 100%;
+        padding: 0 23px;
+    }
+}
+@media screen and (max-width: 768px){
+    .searchContainer {
+        width: 100%;
+        padding: 0;
+    }
+    .searchBarContainer {
+        width: 100%;
+        padding: 0;
+    }
+    .searchBarContainer .searchBar {
+        width: 100%;
+        float: left;
+        position: relative;
+    }
+    .searchBox {
+        position: absolute;
+        right: 7%;
+        width: 9%;
+    }
+    .searchBarContainer .border {
+        width: 90%;
+        border-bottom: 1px solid rgba(151,151,151, 0.2);
+        right: 5%;
+
+    }
+    .searchBarContainer .searchBar input {
+        width: 85%;
+    }
+}

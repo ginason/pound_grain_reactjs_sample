@@ -1,0 +1,11 @@
+
+.userBox {
+    border-radius: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    border: 1px solid rgba(151,151,151, 0.2);
+}

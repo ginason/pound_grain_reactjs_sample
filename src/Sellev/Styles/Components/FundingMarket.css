@@ -1,0 +1,1237 @@
+/*Common*/
+.mobileScreen {
+    display: none;
+}
+.redCircle {
+    width: 17px;
+    height: 17px;
+    background-image: url(/assets/img/ic_web_icon.png);
+    background-position: -160px 61px;
+}
+
+.likeImage {
+    background-image: url(/assets/img/ic_web_icon.png);
+    width: 20px;
+    height: 20px;
+    background-position: -186px 121px;
+    margin-top: -2px;
+    cursor: pointer;
+}
+
+/* Banner */
+.fundingMarketSection {
+    margin: 130px auto 0;
+    width: 1100px;
+    overflow-x: hidden;
+}
+.fundingMarketHeader {
+    width: 100%;
+    margin: 0 auto 13px;
+}
+.bannerBody{
+    overflow: hidden;
+    height: 365px;
+    width: 100%;
+    margin: 0 auto;
+}
+.listBox {
+    position: relative;
+    width: 323px;
+    height: 380px;
+    margin: 2px 4.5px;
+    float: left;
+    cursor: pointer;
+    border-radius: 12px;
+}
+.listBox:hover {
+     opacity: 0.5;
+ }
+.listBox .bgCover {
+    width: 100%;
+    height: 323px;
+    border-radius: 12px;
+    background-color: #000000;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.listBox .bgImage {
+    width: 100%;
+    height: 323px;
+    border-radius: 12px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    opacity: 0.8;
+}
+.hashtagBox {
+    position: relative;
+    bottom: 74px;
+    overflow: hidden;
+    padding-left: 5px;
+}
+.hashtagItem {
+    border: 1px solid #d4d4d4;
+    color: #000000;
+    height: 26px;
+    width: auto;
+    float: left;
+    line-height: 26px;
+    border-radius: 4px;
+    padding: 0 10px;
+    font-size: 9px;
+    margin-right: 4px;
+}
+/*.listBox .bgFooter {*/
+    /*width: 100%;*/
+    /*height: 121px;*/
+    /*background: black;*/
+    /*border-bottom-left-radius: 12px;*/
+    /*border-bottom-right-radius: 12px;*/
+    /*position: relative;*/
+/*}*/
+
+.titleBox{
+    position: relative;
+    width: 250px;
+    left: 30px;
+    color: #ffffff;
+    bottom: 92px;
+}
+.titleBox > div:first-child{
+    font-size: 11px;
+    line-height: 30px;
+    color: #ffffff;
+}
+.titleBox .textBox1,
+.titleBox .textBox2 {
+    overflow: hidden;
+}
+.titleBox .textBox1{
+    height: 30px;
+    overflow: hidden;
+}
+.titleBox .textBox1 > div:first-child{
+    font-size: 8px;
+    float: left;
+    width: 80%;
+    line-height: 20px;
+}
+.titleBox .textBox1 > div:last-child{
+    font-size: 8px;
+    float: right;
+    width: 20%;
+    line-height: 20px;
+    text-align: right;
+}
+.titleBox .textBox2 > div:first-child{
+    font-size: 16px;
+    float: left;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 80%;
+    line-height: 20px;
+}
+.titleBox .textBox2 > div:last-child{
+    font-size: 16px;
+    float: right;
+    width: 20%;
+    text-align: right;
+    line-height: 20px;
+}
+.titleBox .marketText {
+    font-size: 16px;
+    line-height: 1.4em;
+    font-weight: bold;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.titleBox div:last-child{
+    font-size: 18px;
+    line-height: 1.5em;
+    color: #ffffff;
+    font-weight: bold;
+}
+.titleBox div:last-child > span{
+    font-size: 14px;
+    line-height: 1.5em;
+    color: #ffffff;
+    font-weight: bold;
+}
+.fundSymbole {
+    width: 62px;
+    height: 62px;
+    background-color: #f40000;
+    border-radius: 31px;
+    color: #ffffff;
+    right: 10px;
+    top: -44px;
+    position: absolute;
+    padding-top: 10px;
+    text-align: center;
+}
+.fundSymbole span:first-child {
+    font-size: 11px;
+    line-height: 23px;
+}
+.fundSymbole span:nth-child(2) {
+    font-size: 19px;
+    font-weight: bold;
+}
+.fundSymbole span:nth-child(2) {
+    font-size: 12px;
+}
+.marketItem{
+    overflow: hidden;
+}
+.marketItem .itemCurrency {
+    float: left;
+    background-image: url(/assets/img/ic_web_icon.png);
+    width: 20px;
+    height: 20px;
+    background-position: -122px 75px;
+    margin-top: -2px;
+}
+.marketItem .itemPrice {
+    float: left;
+}
+/*Funding Market */
+.fundingMarketBody {
+    width: 1100px;
+    min-height: 305px;
+    margin: 120px auto 0;
+}
+.fundingMarketBody.detailRankingMarket {
+     margin: 120px 0 50px;
+    overflow: hidden;
+ }
+.fundingMarketBody .productBody {
+    overflow: hidden;
+    margin: 30px auto;
+}
+.fundingMarketBody .productBody .productBox {
+    float: left;
+    margin-right: 14px;
+    margin-bottom: 30px;
+}
+.fundingMarketBody .productBody .productBox:nth-child(4n) {
+    float: left;
+    margin-right: 0;
+}
+.clickLike {
+    position: absolute;
+    right: 13px;
+    top: 6px;
+}
+
+/***********funding Detail*************/
+.fundingContainer {
+    width: 1021px;
+    margin: 100px auto 0;
+}
+.fundingHeader {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.fundingNameBox {
+    font-size: 13px;
+    font-weight: bold;
+    display: inline-flex;
+    margin-bottom: 11px;
+    cursor: pointer;
+}
+.fundingNameBox .profile {
+    width: 34px;
+    height: 34px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 100%;
+    border: 1px solid rgba(151,151,151, 0.2);
+}
+.fundingNameBox span {
+    line-height: 36px;
+    margin-left: 5px;
+    color: #626262;
+}
+.fundingTitleBox {
+    font-size: 30px;
+    font-weight: bold;
+}
+.fundingBody {
+    width: 100%;
+    overflow: hidden;
+    padding-bottom: 60px;
+    border-bottom: 1px solid rgba(151, 151, 151, 0.35);
+}
+.fundingBody .bgImage {
+    width: 664px;
+    height: 467px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    float: left;
+    border-radius: 4px;
+}
+.fundingBox {
+    width: 307px;
+    float: right;
+    font-weight: bold;
+    height: 467px;
+    padding: 49px 0 0;
+}
+.fundDetailMobile {
+    display: none;
+}
+.fundingBox .priceTitle {
+    font-size: 18px;
+}
+.fundingBox .priceTitle .title {
+    margin-top: 11px;
+    color: #161616;
+    letter-spacing: -0.2px;
+}
+.fundingBox .price {
+    font-size: 37px;
+    margin: 15px 0 9px;
+    color: #1d1d1d;
+    letter-spacing: -0.6px;
+}
+.fundingBox .price .priceUnit{
+    font-size: 30px;
+    color: #1d1d1d;
+    display: inline-block;
+    margin-right: 5px;
+}
+.fundingBox .percentage {
+    font-size: 18px;
+    letter-spacing: 1.7px;
+    color: #1d1d1d;
+}
+.fundingOthers {
+    overflow: hidden;
+}
+.fundingOthers li {
+    float: left;
+    margin-right: 30px;
+}
+.fundingOthers li .title{
+    font-size: 13px;
+    color: #161616;
+    letter-spacing: -0.1px;
+    font-weight: 700;
+    line-height: 30px;
+}
+.fundingOthers li .content {
+    font-size: 29px;
+    font-weight: 600;
+    color: #1d1d1d;
+    letter-spacing: 1.3px;
+}
+.fundingBtnBox {
+    margin: 37px 0 32px;
+}
+.fundingBtn {
+    line-height: 47px;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+.likeBtn {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    display: inline-flex;
+    font-size: 14px;
+    letter-spacing: 0.7px;
+    color: #505050;
+}
+.likeBtn .btnContent {
+    display: block;
+    height: 20px;
+    position: relative;
+    margin: 0 auto;
+}
+.likeBtn .btnContent .likeImage.likePink {
+    background-position: -186px 101px;
+}
+.likeBtn .likeImage {
+    background-image: url(/assets/img/ic_web_icon.png);
+    width: 20px;
+    height: 20px;
+    background-position: -186px 121px;
+    margin-top: -2px;
+    cursor: pointer;
+    position: absolute;
+    top: -2px;
+    left: 0;
+}
+.likeBtn .number {
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 24px;
+    padding-bottom: 2px;
+}
+.likeBtn .number.numberPink {
+    color: #fd0a0a;
+}
+/*progress bar*/
+.progressBox {
+    position: relative;
+    margin: 22px 0 24px;
+}
+.progressBox .progress {
+    background-color: #ebeaeb;
+    height: 4px;
+    margin: 13px auto;
+}
+.progressBox .progress .progressBar {
+    height: 4px;
+    background-color: #fd0a0a;
+}
+.progressNum {
+    position: absolute;
+    font-size: 12px;
+    width: 41px;
+    height: 20px;
+    border-radius: 100px;
+    background-color: #191919;
+    color: #ffffff;
+    bottom: -10px;
+    text-align: center;
+    padding-top: 4px;
+}
+.fundingMobileOthers {
+    overflow: hidden;
+}
+.fundingMobileOthers li {
+    float: left;
+    height: 60px;
+    margin-right: 20px;
+}
+.fundingMobileOthers li:last-child {
+    float: right;
+    margin-right: 0;
+}
+.fundingMobileOthers li:last-child .content {
+    font-size: 18px;
+    color: #fd0a0a;
+    font-weight: normal;
+    text-align: right;
+    line-height: 30px;
+}
+.fundingMobileOthers li:last-child .title {
+    line-height: 30px;
+    font-size: 15px;
+    color: rgba(22, 22, 22, 0.8);
+}
+.fundingMobileOthers li .content {
+    font-size: 28px;
+    line-height: 30px;
+    color: #fd0a0a;
+    font-weight: bold;
+}
+
+.fundingMobileOthers li .title {
+    line-height: 30px;
+    font-size: 15px;
+    color: rgba(22, 22, 22, 0.8);
+}
+.fundingMobileOthers li .titleWhite {
+    line-height: 30px;
+    font-size: 15px;
+    color: #ffffff;
+}
+@media screen and (max-width: 768px) {
+    .fundingMarketSection {
+        margin-top: 100px;
+        height: 370px;
+    }
+    .progressNum {
+        padding-top: 5px;
+    }
+}
+/*detail content 펀딩설명 개요 상세정보 .. */
+.detailContentBody {
+}
+.detailContentLeft {
+    width: 664px;
+    float: left;
+    padding-top: 20px;
+    position: relative;
+}
+
+.detailContentLeft > li {
+    border-bottom: 1px solid rgba(151, 151, 151, 0.5);
+    width: 100%;
+    padding: 15px 0;
+    overflow: hidden;
+}
+.detailContentLeft > li:first-child {
+    padding: 20px 0;
+}
+.detailContentLeft > li:nth-child(4),
+.detailContentLeft > li:nth-child(5) {
+    width: 100%;
+    padding: 40px 0;
+    overflow: hidden;
+}
+.detailContentLeft > li > div {
+    line-height: 1.5em;
+}
+.detailContentLeft > li .contentTitle {
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+.detailContentLeft .notificationTitle {
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: -1px;
+    line-height: 1.5em;
+    margin-bottom: 7px;
+    margin-top: 8px;
+}
+.detailContentLeft .notificationTitle span {
+    color: #fd0a0a;
+}
+.detailContentLeft > li .goalBox li {
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 28px;
+}
+.detailContentLeft > li .goalBox li span:first-child {
+    color: #b6b6b6;
+    margin-right: 19px;
+}
+.detailContentRight {
+    float: right;
+    width: 311px;
+    padding-top: 40px;
+}
+/*펀딩을 선택해보세요*/
+.detailContentSideBox {
+    width: 100%;
+}
+.detailContentSideBox .contentTitle {
+    font-size: 20px;
+    font-weight: bold;
+}
+.detailContentSideList {
+    padding: 20px 0;
+}
+.detailContentSideList > li {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 5px 5px 35px 10px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 20px;
+    margin-bottom: 10px;
+    position: relative;
+}
+.detailContentSideList li div {
+    line-height: 2em;
+}
+.selectorBox {
+    overflow: hidden;
+    position: relative;
+}
+.selectFunding {
+    position: absolute;
+    top: 22px;
+    right: 22px;
+}
+.selectorBox .sideSelector {
+    font-size: 14px;
+}
+.selectorBox .sideSelector span {
+    color: #fd0a0a;
+}
+.sidePrice {
+    font-size: 34px;
+    color: #fd0a0a;
+    font-weight: 500;
+}
+.sidePrice > span {
+    font-size: 30px;
+}
+.sideInfo {
+    font-size: 13px;
+}
+.sideInfo span:first-child {
+    color: rgba(151,151,150, 0.7);
+    margin-right: 10px;
+}
+/*comment*/
+
+
+
+
+/*랭킹 실시간 인기펀딩*/
+.rankSection {
+    width: 100%;
+    /*width: 1100px;*/
+    /*margin-bottom: 70px;*/
+    /*border-top: 1px solid #e2e2e2;*/
+    /*padding-top: 44px;*/
+}
+.rankHeader {
+    margin-bottom: 29px;
+}
+
+/*market Detail*/
+.marketContainer {
+    width: 1021px;
+    margin: 100px auto 0;
+}
+.marketHeader {
+    overflow: hidden;
+    padding-bottom: 47px;
+    border-bottom: 1px solid rgba(151, 151, 151, 0.35);
+}
+.marketHeader .bgImage {
+    width: 664px;
+    height: 467px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    float: left;
+    border-radius: 4px;
+}
+
+.marketBox {
+    float: right;
+    width: 307px;
+    min-height: 467px;
+    padding: 49px 0 0;
+}
+.marketUserBox {
+    height: 34px;
+    cursor: pointer;
+}
+.marketUserBox .profile{
+    width: 34px;
+    height: 34px;
+    float: left;
+    background-size: cover;
+    background-position: center;
+    border-radius: 100%;
+    border: 1px solid rgba(151,151,151, 0.2);
+}
+.marketUserBox .name {
+    font-size: 13px;
+    float: left;
+    margin-left: 3px;
+    height: 34px;
+    padding-top: 9.5px;
+}
+.marketTitleBox {
+    font-size: 22px;
+    line-height: 1.4em;
+    font-weight: bold;
+    width: 100%;
+    margin-top: 10px;
+    letter-spacing: -1.2px;
+}
+.marketPrice {
+    overflow: hidden;
+    margin-top: 10px;
+}
+.marketSelectBox {
+    margin-top: 23px;
+    margin-bottom: 10px;
+}
+.marketPrice .unitImage {
+    background-image: url(/assets/img/ic_krw.svg);
+    width: 32px;
+    height: 27px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    float: left;
+    margin-top: 2px;
+}
+.marketPrice .price {
+    color: #fd0a0a;
+    font-size: 32px;
+    float: left;
+    letter-spacing: -0.5px;
+}
+.marketPrice .unit {
+    float: left;
+    font-size: 30px;
+}
+.marketPrice > .deliveryPrice{
+     font-size: 16px;
+     margin-left: 15px;
+     color: #000000;
+     letter-spacing: -0.2px;
+     opacity: 0.45;
+     line-height: 31px;
+     float: left;
+ }
+.marketBox > .deliveryPrice{
+    font-size: 16px;
+    color: #000000;
+    letter-spacing: -0.2px;
+    opacity: 0.45;
+    line-height: 31px;
+    vertical-align: top;
+    margin-bottom: 20px;
+}
+.marketSelect {
+    width: 100%;
+    height: 47px;
+    border: 1px solid #e9e9e9;
+    border-radius: 8px;
+    padding: 13px 15px;
+    margin-top: 9px;
+}
+.marketSelect:first-child {
+    margin-top: 0;
+}
+.marketTotal {
+    overflow: hidden;
+    font-size: 16px;
+}
+.marketTotal .description {
+    float: left;
+    margin-top: 5px;
+}
+.marketTotal .totalBox {
+    float: right;
+    overflow: hidden;
+}
+.marketTotal .totalBox .total {
+    float: left;
+    color: #fd0a0a;
+    font-size: 17px;
+    font-weight: bold;
+}
+.marketTotal .totalBox .marketCurrency {
+    float: left;
+    font-size: 15px;
+    line-height: 17px;
+    height: 17px;
+    margin-right: 3px;
+}
+.marketPriceMobile .marketCurrency {
+    float: left;
+    margin-top: 6px;
+    margin-right: 3px;
+}
+.marketBtnBox {
+    overflow: hidden;
+}
+.marketBtn {
+    padding: 16px 0;
+    text-align: center;
+    width: 48%;
+    margin-bottom: 10px;
+    float: left;
+}
+.marketBtn:first-child {
+    margin-right: 2%;
+}
+
+.marketLikeBtn {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    display: inline-flex;
+    width: 100%;
+    font-size: 14px;
+    letter-spacing: 0.7px;
+    color: #505050;
+}
+.marketLikeBtn .btnContent {
+    display: block;
+    height: 20px;
+    position: relative;
+    margin: 0 auto;
+}
+.marketLikeBtn .likeImage {
+    background-image: url(/assets/img/ic_web_icon.png);
+    width: 20px;
+    height: 20px;
+    background-position: -186px 121px;
+    margin-top: -2px;
+    cursor: pointer;
+    position: absolute;
+    top: -2px;
+    left: 0;
+}
+.marketLikeBtn .likeImage.likePink {
+    background-position: -186px 101px;
+}
+.marketLikeBtn .number {
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 24px;
+    padding-bottom: 2px;
+    font-weight: bold;
+}
+.marketLikeBtn .number.numberPink {
+    color: #fd0a0a;
+}
+.marketTotal {
+    margin: 21px 0;
+}
+/*option icon*/
+.minusIcon {
+    background-image: url("/assets/img/ic_option_minus.png");
+    width: 21px;
+    height: 21px;
+    background-position: center;
+    cursor: pointer;
+    float: left;
+    background-repeat: no-repeat;
+    border: 1px solid #dadada;
+    border-right: 0;
+}
+.plusIcon {
+    background-image: url("/assets/img/ic_option_add.png");
+    width: 21px;
+    height: 21px;
+    background-position: center;
+    cursor: pointer;
+    float: left;
+    background-repeat: no-repeat;
+    border: 1px solid #dadada;
+    border-left: 0;
+}
+.deleteIcon {
+    background-image: url("/assets/img/ic_option_delete.png");
+    width: 21px;
+    height: 21px;
+    background-position: center;
+    cursor: pointer;
+    float: left;
+    background-repeat: no-repeat;
+    border: 1px solid #dadada;
+}
+/*option */
+.productOption {
+    width: 100%;
+}
+.productOption > li {
+    width: 100%;
+    height: 74px;
+    padding: 10px 12px;
+    background-color: #f8f8f8;
+    border-top: 1px solid #c1c1c1;
+}
+.optionHeader {
+    font-size: 14px;
+    height: 31px;
+    line-height: 31px;
+}
+.optionBody {
+    overflow: hidden;
+}
+.optionLeft {
+    float: left;
+    overflow: hidden;
+}
+
+.optionLeft .optionButton {
+    overflow: hidden;
+}
+.amountOption {
+    width: 21px;
+    height: 21px;
+    float: left;
+    border: 1px solid #dadada;
+    text-align: center;
+}
+.optionRight {
+    float: right;
+    overflow: hidden;
+}
+.optionRight .title {
+    float: left;
+    font-size: 15px;
+    font-weight: bold;
+    height: 21px;
+    line-height: 21px;
+    margin-right: 5px;
+}
+.fundingEnd {
+    width: 64px;
+    height: 24px;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #ffffff;
+    font-size: 12px;
+    -webkit-border-radius: 13px;
+    -moz-border-radius: 13px;
+    border-radius: 13px;
+    padding: 2px 11px;
+    font-weight: normal;
+}
+.contentBox {
+    width: 100%;
+    padding: 20px;
+}
+.contentBox > div {
+    line-height: 1.5em;
+}
+
+/*mobile 타이틀 사진 밑에 설명 및 가격*/
+.marketBoxMobile {
+    padding: 0 24px;
+    width: 100%;
+    margin-top: 19px;
+}
+.marketTitleMobile {
+    font-size: 17px;
+    width: 100%;
+    line-height: 1.5em;
+}
+.marketPriceMobile {
+    width: 100%;
+    margin-top: 14px;
+}
+
+.marketBoxMobile span:nth-child(2){
+    color: #fd0a0a;
+    font-size: 34px;
+    font-weight: bold;
+}
+.marketBoxMobile span:nth-child(3){
+    color: rgba(151,151,151, 0.5);
+    font-size: 14px;
+    margin: 0 10px;
+}
+.marketBoxMobile span:nth-child(4){
+    font-size: 16px;
+    color: #fd0a0a;
+    font-weight: bold;
+}
+.marketBoxMobile span:nth-child(5){
+    font-size: 16px;
+}
+
+
+.fundingMarketTab {
+    overflow: hidden;
+}
+.fundingMarketTab li {
+    font-size: 22px;
+    font-weight: bold;
+    float: left;
+    margin-right: 24px;
+    color: rgba(45,45,47, 0.35);
+    /*border-bottom: solid 3px transparent;*/
+    cursor: pointer;
+    line-height: 30px;
+}
+.fundingMarketTab li:hover {
+    /*border-bottom: solid 3px #fd0a0a;*/
+    color: #fd0a0a;
+}
+.fundingMarketTab li.active {
+    /*border-bottom: solid 3px #fd0a0a;*/
+    color: #fd0a0a;
+}
+
+
+/*mobile button*/
+.mobileBtn {
+    padding: 17px 15px;
+}
+@media screen and (max-width: 1100px){
+    .rankSection {
+        width: 100%;
+    }
+    .fundingMarketSection {
+        padding: 0 20px;
+        width: 100%;
+        overflow: hidden;
+    }
+    .fundingMarketHeader {
+        width: 100%;
+    }
+    .fundingMarketBody {
+        width: 100%;
+        padding: 0 20px;
+    }
+    .fundingMarketHeader,
+    .fundingMarketBody.detailRankingBody {
+        width: 100%;
+    }
+    .fundingMarketBody .productBody .productBox {
+        margin-right: 19px;
+    }
+    .fundingMarketBody .productBody .productBox:nth-child(4n) {
+        margin-right: 19px;
+    }
+    .fundingMarketBody .productBody .productBox:nth-child(3n) {
+        margin-right: 0;
+    }
+    .fundingMarketBody {
+        width: 100%;
+    }
+    .fundingMarketBody .productBody {
+        width: 100%;
+    }
+    .fundingMarketBody .productBody .productBox {
+        width: 32%;
+        margin-right: 2%;
+    }
+    .fundingMarketBody .productBody .productBox:nth-child(4n) {
+        width: 32%;
+        margin-right: 2%;
+    }
+    .fundingMarketBody .productBody .productBox:nth-child(3n) {
+        margin-right: 0;
+    }
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 768px){
+    /*full screen version*/
+    .fullScreen {
+        display: none;
+    }
+    /*mobile version*/
+    .mobileScreen {
+        display: block;
+    }
+    /*banner*/
+    .bannerBody {
+        width: 100%;
+    }
+    .listBox {
+        width: 250px;
+        height: 295px;
+    }
+    .listBox .bgImage {
+        height: 247px;
+    }
+    .listBox .bgCover {
+        height: 247px;
+    }
+    .listBox .bgFooter {
+        height: 97px;
+    }
+    .titleBox {
+        bottom: 90px;
+        width: 190px;
+    }
+    .titleBox .textBox{
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+    .titleBox .marketText{
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+    .fundSymbole {
+        top: -30px;
+    }
+    /*/////////////////////////////////////////*/
+    .fundingMarketHeader {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .fundingMarketBody {
+        max-width: 768px;
+        width: auto;
+        margin: 80px auto 50px;
+    }
+    .fundingMarketBody.detailRankingBody {
+        margin-top: 0;
+    }
+    .fundingMarketBody .productBody .productBox {
+        margin-right: 0;
+        float: none;
+        width: 100%;
+        margin-bottom: 24px;
+    }
+    .fundingMarketBody .productBody .productBox:nth-child(4n) {
+        margin-right: 0;
+        float: none;
+        width: 100%;
+    }
+    .fundingMarketBody .productBody .productBox:nth-child(3n) {
+        margin-right: 0;
+        float: none;
+        width: 100%;
+    }
+    /*progress bar*/
+    .progressNum {
+        width: 50px;
+        height: 24px;
+        font-size: 14px;
+        line-height: 16px;
+    }
+    /***********funding Detail*************/
+    .fundingContainer {
+        width: 100%;
+        margin: 100px auto 0;
+    }
+    .fundingHeader {
+        text-align: left;
+        padding: 0 24px;
+        margin-bottom: 12px;
+    }
+    .fundingBody {
+        border-bottom: 0;
+        padding-bottom: 0;
+     }
+    .fundingBody .bgImage {
+        width: 100%;
+        height: 353px;
+        background-position: center;
+        background-size: cover;
+        float: none;
+    }
+    .fundingBox {
+        display: none;
+    }
+    .fundingNameBox {
+        margin-bottom: 9px;
+    }
+    .fundDetailMobile {
+        display: block;
+        padding: 0 21px;
+        overflow: hidden;
+        margin-top: 19px;
+    }
+    .fundDetailMobile .fundDescription {
+        margin-bottom: 12px;
+        font-size: 14px;
+        line-height: 1.5em;
+    }
+    .detailContentLeft {
+        width: 100%;
+        float: none;
+        border-bottom: 0;
+    }
+    .detailContentLeft > li {
+        padding: 40px 20px;
+    }
+    .detailContentLeft > li:nth-child(2) {
+        border-top: 1px solid rgba(151, 151, 151, 0.5);
+    }
+    .detailContentLeft > li:nth-child(4),
+    .detailContentLeft > li:nth-child(5) {
+        padding: 40px 20px 40px;
+    }
+    .detailContentRight {
+        float: none;
+        width: 100%;
+    }
+    .detailContentLeft .notificationTitle {
+        padding: 8px 0 20px;
+        margin: 0;
+    }
+    .detailContentLeft > li:first-child {
+        padding: 20px 20px;
+    }
+    /*detail Content Side option */
+    .detailContentSideList > li {
+        height: 264px;
+    }
+    /*comment Box*/
+    .detailCommentsBox{
+        display: none;
+    }
+    /***********market Detail*************/
+    .marketContainer {
+        width: 100%;
+        margin: 100px auto 0;
+    }
+    .marketHeader {
+        text-align: left;
+        padding-bottom: 28px;
+    }
+    .marketMobile {
+        padding: 0 20px 12px;
+    }
+    .marketHeader .bgImage {
+        width: 100%;
+        height: 353px;
+        background-position: center;
+        background-size: cover;
+        float: none;
+    }
+    .marketBox {
+        float: none;
+        width: 100%;
+        min-height: 100%;
+        border: 0;
+        padding: 0 20px;
+    }
+    .marketPrice .price {
+        font-weight: bold;
+    }
+    .marketBox > .deliveryPrice{
+        margin-bottom: 0;
+    }
+    .fundingMarketBody.detailRankingMarket {
+        padding: 0 25px;
+        overflow: hidden;
+        margin: 80px auto;
+    }
+    /*랭킹 실시간 인기펀딩*/
+    .rankingBody {
+        overflow: hidden;
+    }
+    .rankSection {
+        border-top: 0;
+        width: 100%;
+        /*padding-top: 74px;*/
+    }
+    .rankingBody {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: scroll;
+        white-space: nowrap;
+        overflow-y: hidden;
+    }
+    .fundingMarketTab li {
+        font-size: 15px;
+    }
+    .mobileFundingMarketBody {
+        width: 100%;
+    }
+    /*currency icon mobile*/
+    .marketPrice .unit {
+        line-height: 32px;
+        font-weight: bold;
+    }
+    .marketTotal .totalBox .marketCurrency {
+        font-weight: bold;
+        line-height: 17px;
+        height: 17px;
+    }
+    .sidePrice {
+        font-size: 18px;
+    }
+    .sidePrice > span {
+        font-size: 15px;
+    }
+}
+
+
+

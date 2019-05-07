@@ -1,0 +1,523 @@
+* {
+    font-family: 'Apple SD Gothic Neo', 'Product Sans', 나눔고딕, Ngothic, 나눔바른고딕, NanumBarunGothic, 나눔바른고딕OTF, NanumBarunGothicOTF, sans-serif;
+    padding:0;
+    margin:0;
+    line-height:100%;
+}
+/* Common */
+a {
+    color: #000000;
+}
+a:hover{
+    text-decoration: none;
+    color: #000000;
+}
+.cursorDefault {
+    cursor: default;
+}
+.whiteBox {
+    background-color: #ffffff;
+    box-shadow: 19px 20px 58px 0 rgba(0, 0, 0, 0.04);
+    border-radius: 12px;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 57px;
+    position: relative;
+}
+
+.whiteBox .title {
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: -0.6px;
+    color: #000000;
+    display: block;
+}
+
+.formGroup {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.btnSection {
+    width: 100%;
+    margin: 28px auto 40px;
+    position: relative;
+}
+
+.btnSection .btnRed {
+    display: block;
+    width: 152px;
+    padding: 14px;
+    position: relative;
+    border-radius: 100px;
+    background-color: #fd0a0a;
+    text-align: center;
+    line-height: 16px;
+    font-size: 15px;
+    color: #ffffff;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+/* SideMenu */
+
+.sideMenuContainer {
+    margin-top: 57px;
+    width: 280px;
+    border-right: 1px solid rgba(151,151,151,0.2);
+    display: inline-block;
+}
+.displayNone {
+    display: none;
+}
+.sideMenuContainer .titleBox {
+    padding-bottom: 42px;
+}
+
+.sideMenuContainer .titleBox .circle {
+    width: 18px;
+    height: 18px;
+    margin-bottom: 16px;
+    border-radius: 100%;
+    background-color: #ff0000;
+}
+
+.sideMenuContainer .titleBox .title {
+    font-size: 37px;
+    font-weight: 700;
+    color: #000000;
+    letter-spacing: -0.3px;
+}
+
+.sideMenuContainer .menuList {
+
+}
+
+.sideMenuContainer .menuList .item {
+    font-size: 19px;
+    font-weight: 700;
+    margin-bottom: 27px;
+    cursor: pointer;
+    display: block;
+    color: #cccccc;
+}
+
+.sideMenuContainer .menuList .item.active {
+    color: #000000;
+}
+
+/* Profile */
+.settingContainer {
+    width: 407px;
+    margin: 0 auto;
+    min-height: 750px;
+}
+.profileContainer {
+    position: absolute;
+    top: 0;
+    right: 30px;
+}
+
+.profileSection {
+    padding: 27px 49px;
+    width: 453px;
+}
+.editProfileImage {
+    position: absolute;
+    right: 62px;
+    bottom: 1px;
+}
+.editCoverImage {
+    position: absolute;
+    right: 3px;
+    bottom: 3px;
+}
+.profileTitle {
+    margin-bottom: 17.5px;
+}
+@media screen and (min-width: 1080px){
+    .profileContainer {
+        right: 180px;
+    }
+}
+
+.profileContainer .profileSection .coverBox {
+    margin-top: 22px;
+    margin-bottom: 37px;
+    background-color: #f9f9f9;
+    text-align: center;
+    width: 100%;
+    height: 299px;
+    position: relative;
+    display: block;
+}
+.profileContainer .profileSection .coverImage {
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+}
+.profileContainer .profileSection .coverImage:hover {
+    opacity: 0.8;
+    -webkit-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+.profileContainer .profileSection .coverBox .profileBox {
+    width: 105px;
+    position: absolute;
+    padding-right: 35px;
+    left: 50%;
+    bottom: -21px;
+    cursor: pointer;
+}
+.profileContainer .profileSection .coverBox .profileBox .background {
+    width: 70px;
+    height: 70px;
+    display: block;
+    border: 1.5px solid #ffffff;
+    border-radius: 100%;
+    background-color: #f7f7f7;
+    box-shadow: 10px 13px 24px 0 rgba(0, 0, 0, 0.1);
+    margin-right: 35px;
+    position: absolute;
+    top: 0;
+    right: 35px;
+    background-size: cover;
+}
+.profileContainer .profileSection .coverBox .profileBox .profile:hover {
+    opacity: 0.8;
+    -webkit-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+.profileContainer .profileSection .coverBox .profileBox .profile {
+    width: 70px;
+    height: 70px;
+    display: block;
+    border: 1.5px solid #ffffff;
+    border-radius: 100%;
+    background-color: #f7f7f7;
+    box-shadow: 10px 13px 24px 0 rgba(0, 0, 0, 0.1);
+    margin-right: 35px;
+    position: relative;
+    top: 0;
+    right: 50%;
+    background-size: cover;
+    background-position: center;
+}
+
+.profileContainer .profileSection .coverBox .description {
+    display: inline-block;
+    margin-top: 126px;
+    font-size: 17px;
+    letter-spacing: -0.7px;
+    color: #212121;
+    opacity: 0.2;
+    font-weight: 700;
+}
+
+.profileContainer .profileSection .blank {
+    width: 100%;
+    height: 36px;
+    display: block;
+}
+
+/* ChangePassword */
+
+.passwordContainer {
+    position: absolute;
+    top: 0;
+    right: 30px;
+}
+
+.passwordContainer .passwordSection {
+    padding: 22px 27px 47.5px;
+    width: 555px;
+}
+.changePasswordBtn {
+    color: #ffffff;
+    text-align: center;
+    padding: 0;
+    line-height: 56px;
+}
+@media screen and (min-width: 1080px){
+    .passwordContainer {
+        right: 126px;
+    }
+}
+
+.passwordContainer .passwordSection .blank {
+    width: 100%;
+    height: 33px;
+}
+
+.passwordContainer .passwordSection .blank2 {
+    width: 100%;
+    height: 24px;
+}
+
+
+/* Delete */
+
+.deleteContainer {
+    position: absolute;
+    top: 0;
+    right: 30px;
+    /*right: 126px;*/
+}
+
+.deleteContainer .deleteSection {
+    padding: 22px 27px;
+    width: 555px;
+}
+.deleteOption {
+    margin: 10px 0;
+    height: 36px;
+    font-size: 16px;
+}
+
+.indent {
+    margin-left: 5%;
+}
+.indentDouble {
+    margin-left: 10%;
+}
+p {
+    line-height: 1.5em;
+}
+.deleteContainer.positionInMid {
+    right: 20%;
+}
+
+/*@media screen and (min-width: 1080px){*/
+    /*.deleteContainer {*/
+        /*right: 126px;*/
+    /*}*/
+    /*.deleteContainer.positionInMid {*/
+        /*right: 20%;*/
+    /*}*/
+/*}*/
+
+.deleteContainer .deleteSection .regulationBox {
+    margin-top: 32px;
+    margin-bottom: 27px;
+}
+
+.deleteContainer .deleteSection .regulationBox .title {
+    font-size: 16px;
+    letter-spacing: -0.6px;
+    font-weight: 600;
+}
+
+.deleteContainer .deleteSection .regulationBox .content {
+    margin-top: 6px;
+    padding: 20px;
+    width: 100%;
+    height: 289px;
+    background-color: #f9f9f9;
+    border-radius: 6px;
+    overflow: auto;
+    line-height: 1.5em;
+}
+.deleteContainer .deleteSection .regulationBox .content > li:first-child > div:first-child{
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: -0.6px;
+    color: #000000;
+    line-height: 1.5em;
+}
+.deleteContainer .deleteSection .regulationBox .content > li {
+    margin-bottom: 20px;
+}
+.deleteContainer .deleteSection .regulationBox .content > li:first-child > div:last-child{
+    font-size: 16px;
+    color: #fd0a0a;
+    line-height: 1.2em;
+}
+.deleteContainer .deleteSection .regulationBox .content > li > div:first-child{
+    font-size: 16px;
+    font-weight: bold;
+    color: #000000;
+    line-height: 1.5em;
+}
+.deleteContainer .deleteSection .regulationBox .content > li > div:last-child{
+    font-size: 16px;
+    color: #000000;
+    line-height: 1.2em;
+}
+.optionOther {
+    width: 100%;
+    height: 36px;
+    margin: 10px auto;
+}
+input[type=checkbox].checkbox:checked + label.checkboxBlackIcon {
+    width: 24px;
+    height: 24px;
+    background-image: url("/assets/img/ic_web_icon.png");
+    background-position: -30px 75px;
+    position: relative;
+    top: 15px;
+}
+input[type=checkbox].checkbox + label.checkboxBlackIcon{
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    background-image: url("/assets/img/ic_web_icon.png");
+    background-position: -30px -54px;
+    position: relative;
+    top: 15px;
+}
+input[type=checkbox].checkbox {
+    display: none;
+    position: relative;
+}
+.checkboxLabel {
+    display: inline-block;
+    margin-left: 5px;
+}
+.checkboxWarn {
+    line-height: 25px;
+    font-size: 12px;
+    color: #FF3A30;
+    text-align: left;
+}
+/*delete*/
+
+/*button*/
+.btnBoxMobile {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    display: none;
+}
+.btnPay {
+    height: 56px;
+    width: 50%;
+    background-color: #fd0a0a;
+    color: #ffffff;
+    /*padding: 32px 0;*/
+    line-height: 56px;
+    font-size: 16px;
+    cursor: pointer;
+    float: left;
+    text-align: center;
+}
+.btnCancel {
+    height: 56px;
+    width: 50%;
+    background-color: #1f1f1f;
+    color: #ffffff;
+    /*padding: 32px 0;*/
+    line-height: 56px;
+    font-size: 16px;
+    cursor: pointer;
+    float: left;
+    text-align: center;
+}
+/*설정 모바일 앱 페이지*/
+.settingHeader {
+    font-size: 33px;
+    font-weight: 800;
+    margin-bottom: 40px;
+}
+.settingBody .formTitle {
+    color: #ff4848;
+    font-size: 20px;
+    font-weight: 600;
+}
+.settingText {
+    color: #ff4141;
+    font-size: 22px;
+    line-height: 50px;
+    text-align: right;
+}
+.iconArrow {
+    margin: 14px 0 14px 10%;
+}
+.memoBox {
+    width: 100%;
+}
+.memoBox .header {
+    font-size: 13px;
+    line-height: 59px;
+    font-weight: bold;
+    height: 59px;
+
+}
+.memoBox .body .textBox {
+    width: 100%;
+    padding: 5px 5px;
+    border: 1px solid #e0e0e0;
+    line-height: 1.3em;
+}
+
+@media screen and (max-width: 768px) {
+    .sideMenuContainer {
+        display: none;
+    }
+    /*profile*/
+    .settingContainer {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .profileContainer {
+        position: initial;
+    }
+    .profileSection {
+        padding: 0;
+        width: 100%;
+        position: initial;
+    }
+    .profileContainer .profileSection .blank.profileBlank {
+        height: 42px;
+    }
+    /*password*/
+    .passwordContainer {
+        position: initial;
+    }
+    .passwordContainer .passwordSection {
+        padding: 0;
+        width: 100%;
+    }
+    /*delete*/
+    .deleteContainer {
+        position: initial;
+    }
+    .deleteContainer .deleteSection {
+        padding: 0;
+        width: 100%;
+    }
+
+    .deleteContainer .deleteSection .regulationBox .content {
+        height: 233px;
+    }
+    .whiteBox {
+        background-color: transparent;
+        box-shadow: none;
+        margin-top: 0;
+    }
+    .deleteContainer .deleteSection .regulationBox {
+        margin-top: 24px;
+        margin-bottom: 33px;
+    }
+    .deleteContainer .deleteSection .regulationBox .title {
+        margin-bottom: 17px;
+        line-height: 22px;
+    }
+    .deleteOption {
+        width: 100%;
+    }
+    /*Mobile Font*/
+    .font20Mobile {
+        font-size: 20px;
+    }
+    /*delete*/
+    .btnBoxMobile {
+        display: block;
+    }
+
+}

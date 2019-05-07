@@ -1,0 +1,104 @@
+.footerContainer {
+    width: 100%;
+    height: 316px;
+    background-color: #242424;
+    overflow: hidden;
+}
+.footerBody {
+    overflow: hidden;
+    width: 1100px;
+    margin: 0 auto;
+    padding: 50px 0 65px;
+    border-bottom: 1px solid #3a3a3a;
+}
+.footerBody > li {
+    float: left;
+    margin-right: 10%;
+}
+.footerBody > li:nth-child(4) {
+    margin-right: 0;
+}
+.footerBody > li .title {
+    color: #c0c0c0;
+    font-size: 16px;
+    margin-bottom: 18px;
+    font-weight: bold;
+}
+.footerBody > li .text,
+.footerBody > li .text > a{
+    color: #939393;
+    font-size: 14px;
+}
+.footerBody > li .itemBox {
+    overflow: hidden;
+    margin-top: 21px;
+}
+.footerLogo {
+    background-image: url("/Assets/img/logo_Footer.png");
+    width: 73px;
+    height: 21px;
+    /*background-size: cover;*/
+    background-position: center;
+}
+.iconFacebook {
+    background-image: url("/Assets/img/ic_footer_facebook.png");
+    width: 26px;
+    height: 26px;
+    /*background-size: cover;*/
+    background-position: center;
+    float: left;
+    margin-right: 10px;
+}
+.iconYoutube {
+    background-image: url("/Assets/img/ic_footer_youtube.png");
+    width: 26px;
+    height: 26px;
+    /*background-size: cover;*/
+    background-position: center;
+    float: left;
+    margin-right: 10px;
+}
+.iconInstagram {
+    background-image: url("/Assets/img/ic_footer_instagram.png");
+    width: 26px;
+    height: 26px;
+    /*background-size: cover;*/
+    background-position: center;
+    float: left;
+}
+.footerContainer .footer {
+    font-size: 15px;
+    color: #525252;
+    text-align: center;
+    height: 69px;
+    line-height: 69px;
+}
+@media screen and (max-width: 768px){
+    .footerContainer {
+        height: auto;
+        padding: 0 20px;
+    }
+    .footerBody {
+        width: 100%;
+        padding: 15px 0;
+    }
+    .footerBody > li {
+        float: none;
+        margin-right: 0;
+    }
+    .mobileSection1 {
+        border-bottom: 1px solid #3a3a3a;
+        padding-bottom: 15px;
+    }
+    .mobileSection2 {
+        padding-top: 15px;
+    }
+    .mobileSection2 .text {
+        line-height: 16px;
+    }
+    .footerContainer .footer {
+        text-align: left;
+        height: 50px;
+        line-height: 50px;
+    }
+}

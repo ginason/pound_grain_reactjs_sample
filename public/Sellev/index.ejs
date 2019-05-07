@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title><%=meta.title%></title>
+    <meta name="title"                  content="<%=meta.title%>" />
+    <meta name="description"           content="<%=meta.description%>" />
+    <meta name="keywords"                content="<%=meta.keyword%>" />
+    <meta name="application-name"     content="<%=meta.title%>">
+
+    <meta property="og:type" content="webpage" />
+    <meta property="og:url" content="<%=meta.url%>" />
+    <meta property="og:title" content="<%=meta.title%>" />
+    <meta property="og:image" content="<%=meta.image%>" />
+    <meta property="og:description" content="<%=meta.description%>" />
+    <link rel="shortcut icon" type="image/png" href="/assets/img/ic_favicon.png"/>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/lib/fontello/fontello.css">
+    <link rel="stylesheet" href="/assets/lib/swiper/swiper.min.css">
+    <link rel="stylesheet" href="/assets/lib/bootstrap/bootstrap.min.css"  crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" charset="UTF-8f" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" />
+    <!--
+        integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M"
+    -->
+    <style>
+        @font-face {
+            font-family: 'fontello';
+            src: url('/assets/lib/fontello/fontello.eot?95131330');
+            src: url('/assets/lib/fontello/fontello.eot?95131330#iefix') format('embedded-opentype'),
+            url('/assets/lib/fontello/fontello.woff?95131330') format('woff'),
+            url('/assets/lib/fontello/fontello.ttf?95131330') format('truetype'),
+            url('/assets/lib/fontello/fontello.svg?95131330#fontello') format('svg');
+            font-weight: normal;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'BebasNeue';
+            src: url('/assets/lib/fonts/BebasNeue-Regular.eot');
+            src: url('/assets/lib/fonts/BebasNeue-Regular.ttf');
+            font-weight: normal;
+            font-style: normal;
+        }
+        i:before{
+            width: auto !important;
+            margin-right: 0 !important;
+            margin-left: 0 !important;
+            line-height: normal !important;
+        }
+
+        @font-face {
+            font-family: 'Apple SD Gothic Neo';
+            src: url('/assets/lib/fonts/AppleSDGothicNeo.ttc') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'Product Sans';
+            src: url('/assets/lib/fonts/Product Sans Bold.ttf') format('opentype');
+            font-weight: 700;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'Product Sans';
+            src: url('/assets/lib/fonts/Product Sans Bold Italic.ttf') format('opentype');
+            font-weight: 700;
+            font-style: italic;
+        }
+        @font-face {
+            font-family: 'Product Sans';
+            src: url('/assets/lib/fonts/Product Sans Italic.ttf') format('opentype');
+            font-weight: 400;
+            font-style: italic;
+        }
+        @font-face {
+            font-family: 'Product Sans';
+            src: url('/assets/lib/fonts/Product Sans Regular.ttf') format('opentype');
+            font-weight: 400;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'Apple SD Gothic Neo';
+            src: url('/assets/lib/fonts/AppleSDGothicNeoT00-11.otf'),
+            url('/assets/lib/fonts/AppleSDGothicNeoT00-12.otf') format('opentype');
+            font-weight: 100;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'Apple SD Gothic Neo';
+            src: url('/assets/lib/fonts/AppleSDGothicNeoUL00-13.otf'),
+            url('/assets/lib/fonts/AppleSDGothicNeoUL00-14.otf') format('opentype');
+            font-weight: 200;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'Apple SD Gothic Neo';
+            src: url('/assets/lib/fonts/AppleSDGothicNeoL00-09.otf'),
+            url('/assets/lib/fonts/AppleSDGothicNeoL00-10.otf') format('opentype');
+            font-weight: 300;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'Apple SD Gothic Neo';
+            src: url('/assets/lib/fonts/AppleSDGothicNeoR00-01.otf'),
+            url('/assets/lib/fonts/AppleSDGothicNeoR00-02.otf') format('opentype');
+            font-weight: 400;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'Apple SD Gothic Neo';
+            src: url('/assets/lib/fonts/AppleSDGothicNeoM00-03.otf'),
+            url('/assets/lib/fonts/AppleSDGothicNeoM00-04.otf') format('opentype');
+            font-weight: 500;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'Apple SD Gothic Neo';
+            src: url('/assets/lib/fonts/AppleSDGothicNeoSB00-05.otf'),
+            url('/assets/lib/fonts/AppleSDGothicNeoSB00-06.otf') format('opentype');
+            font-weight: 500;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'Apple SD Gothic Neo';
+            src: url('/assets/lib/fonts/AppleSDGothicNeoB00-07.otf'),
+            url('/assets/lib/fonts/AppleSDGothicNeoB00-08.otf') format('opentype');
+            font-weight: 600;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'Apple SD Gothic Neo';
+            src: url('/assets/lib/fonts/AppleSDGothicNeoEB00-15.otf'),
+            url('/assets/lib/fonts/AppleSDGothicNeoEB00-16.otf') format('opentype');
+            font-weight: 800;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'Apple SD Gothic Neo';
+            src: url('/assets/lib/fonts/AppleSDGothicNeoH00-17.otf'),
+            url('/assets/lib/fonts/AppleSDGothicNeoH00-18.otf') format('opentype');
+            font-weight: 900;
+            font-style: normal;
+        }
+
+    </style>
+    <!--    &lt;!&ndash; Naver Login API &ndash;&gt;
+        <script type="text/javascript" src="https://static.nid.naver.com/js/naveridlogin_js_sdk_2.0.0.js" charset="utf-8"></script>-->
+    <!-- Javascript Shims -->
+    <!-- https://cdnjs.cloudflare.com/ajax/libs/es5-shim/4.5.9/es5-sham.min.js -->
+    <script src="/assets/js/polyfill/es5-sham.min.js"></script>
+    <script src="/assets/js/polyfill/es5-shim.min.js"></script>
+    <!-- https://cdnjs.cloudflare.com/ajax/libs/json3/3.3.2/json3.min.js -->
+    <script src="/assets/js/polyfill/json3.min.js"></script>
+    <!-- https://cdnjs.cloudflare.com/ajax/libs/es6-shim/0.35.3/es6-sham.min.js -->
+    <script src="/assets/js/polyfill/es6-sham.min.js"></script>
+    <script src="/assets/js/polyfill/es6-shim.min.js"></script>
+    <!-- https://wzrd.in/standalone/es7-shim@latest -->
+    <script src="/assets/js/polyfill/es7-shim.min.js"></script>
+    <!-- https://github.com/jamesallardice/Placeholders.js/blob/master/dist/placeholders.min.js -->
+    <script src="/assets/js/polyfill/placeholder.min.js"></script>
+
+    <!-- Javascript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
+    <!--
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    -->
+
+    <!-- Bootstrap의 필수API. 버전이 맞아야한다.--> <script src="/assets/lib/bootstrap/popper.min.js" crossorigin="anonymous"></script>
+    <!--
+        integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
+    -->
+
+    <script src="/assets/lib/bootstrap/bootstrap.min.js" crossorigin="anonymous"></script>
+    <!--
+        integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
+    -->
+
+    <script src="/assets/lib/swiper/swiper.jquery.min.js"></script>
+
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-106538425-1"></script>
+    <script src="/assets/js/naveridlogin_js_sdk.js"></script>
+    <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-106538425-1');
+    </script>
+</head>
+<body style="margin: 0 !important; padding: 0 !important;">
+<div id="root" style="width: 100%; height: 100%"></div>
+<script src="/public/Sellev/bundle.js"></script>
+</body>
+</html>

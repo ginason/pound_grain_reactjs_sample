@@ -1,0 +1,876 @@
+
+.UserContainer {
+    width: 1100px;
+    margin: 100px auto 50px;
+    min-height: 500px;
+}
+.userMenuContainer {
+    width: 1100px;
+    margin: 100px auto 50px;
+    min-height: 500px;
+    overflow: hidden;
+}
+.userMenuHeader {
+    float: left;
+    width: 25%;
+}
+.userMenuHeader .menuContent {
+    margin-top: 40px;
+}
+.userMenuHeader .menuContent .section {
+    padding: 20px 0;
+}
+.userMenuHeader .menuContent .section:first-child {
+    padding-top: 0;
+    padding-bottom: 20px;
+}
+.userMenuHeader .menuContent .border {
+    width: 41px;
+    height: 2px;
+    background-color: #d4d4d4;
+}
+.userMenuHeader .menuContent .section .item {
+    font-size: 19px;
+    margin-top: 21px;
+    font-weight: bold;
+    color: #cccccc;
+    cursor: pointer;
+}
+.userMenuHeader .menuContent .section .item:first-child {
+    margin-top: 0;
+}
+.userMenuHeader .menuContent .section .item.active {
+    color: #000000;
+    cursor: default;
+}
+.userMenuBody {
+    float: right;
+    width: 75%;
+}
+.noProductText {
+    color: #2d2d2d;
+    font-weight: bold;
+    line-height: 1.5em;
+    font-size: 14px;
+    opacity: 0.1;
+    margin-top: 100px;
+}
+/* 구매한 콘텐츠 */
+.contentsTable {
+
+}
+.contentsTable .tableBox {
+    overflow: hidden;
+    border-bottom: 2px solid #000000;
+}
+.contentsTable .tableBox .column {
+    float: left;
+}
+.contentsTable .tableBox .tableHeader {
+    padding: 10px 0;
+    overflow: hidden;
+    border-bottom: 2px solid #000000;
+}
+.contentsTable .tableBox .tableHeader .column {
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: -0.1px;
+    padding: 0 20px;
+    text-align: left;
+    color: #000000;
+}
+.contentsTable .tableBox .tableHeader .column.center {
+    text-align: center;
+}
+.contentsTable .tableBox .tableContentItem {
+    overflow: hidden;
+    height: 76px;
+    line-height: 76px;
+    font-size: 14px;
+    border-top: 1px solid #e0e0e0;
+    cursor: pointer;
+    color: #000000;
+    position: relative;
+}
+.contentsTable .tableBox .tableContentItem:first-child {
+    border: none;
+}
+.contentsTable .tableBox .tableContentItem .column {
+    text-align: left;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    padding: 0 20px;
+    line-height: 76px;
+}
+.contentsTable .tableBox .tableContentItem .column.center {
+    text-align: center;
+}
+.contentsTable .tableBox .tableContentItem .column .title {
+    margin-top: 17px;
+    height: 20px;
+    line-height: 22px;
+    letter-spacing: -0.1px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.contentsTable .tableBox .tableContentItem .column .title.bold {
+    font-weight: bold;
+    color: #2d2d2d;
+}
+.contentsTable .tableBox .tableContentItem .column .optionTitle {
+    color: #626262;
+    line-height: 22px;
+    letter-spacing: -0.1px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.contentsTable .tableBox .tableContentItem .column .downloadBtn {
+
+}
+/*Funding Condition*/
+.menuTitle{
+    font-size: 37px;
+    font-weight: bold;
+    /*width: 168px;*/
+    line-height: 1.5em;
+    margin-top: 20px;
+}
+.menuTitle .orderNum {
+    color: #ff1f1f;
+    display: block;
+}
+.myFundingBox {
+    float: left;
+    margin-right: 15px;
+}
+.myFundingBox:nth-child(3n) {
+    float: left;
+    margin-right: 0;
+}
+
+/*Order History */
+.myOrderBox {
+    width: 100%;
+    border-top: 2px solid #000000;
+}
+.myOrderHeader {
+    height: 68.5px;
+    padding: 14px 0;
+}
+.orderTitle {
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.5);
+    line-height: 1.5em;
+}
+.orderStatus {
+    font-size: 18px;
+    color: #ff1f1f;
+    font-weight: bold;
+    line-height: 1.5em;
+}
+.myOrderBody {
+    width: 100%;
+    min-height: 133.5px;
+    border-top: 1px solid rgba(151, 151, 151, 0.3);
+    overflow: hidden;
+    padding-top: 15px;
+}
+.myOrderBodyLeft {
+    float: left;
+    width: 80%;
+}
+.myOrderBodyLeft li:first-child {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.5em;
+}
+.myOrderBodyLeft li:nth-child(2) {
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.5);
+    line-height: 1.5em;
+}
+.myOrderBodyLeft li:nth-child(3) {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.5em;
+}
+.myOrderBodyLeft li:nth-child(3) span{
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.5);
+}
+.myOrderBodyRight {
+    float: right;
+    /*width: 20%;*/
+}
+.myOrderBodyRight > li {
+    position: relative;
+    height: 68px;
+    width: 68px;
+}
+.myOrderBodyRight > li .productImgScale {
+    width: 100%;
+    opacity: 0;
+}
+.myOrderBodyRight > li .userImage {
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
+/*buy coin */
+.userMenuBody.userMenuRight {
+    padding-left: 78px;
+}
+.userMenuHeader.userMenuLeft {
+    border-right: 1px solid rgba(151, 151, 151, 0.2);
+}
+
+.userMenuBox {
+    margin-top: 52px;
+}
+.userMenuBox li {
+    overflow: hidden;
+    font-weight: bold;
+}
+.userMenuBox li:first-child {
+    margin-bottom: 23px;
+}
+.userMenuBox li:first-child div {
+    font-size: 19px;
+    color: #000000;
+}
+.userMenuBox li:nth-child(2),
+.userMenuBox li:nth-child(3) {
+    margin-bottom: 15px;
+}
+.userMenuBox li:nth-child(2) span,
+.userMenuBox li:nth-child(3) span {
+    font-size: 16px;
+}
+.userMenuBox li:nth-child(2) div,
+.userMenuBox li:nth-child(3) div {
+    font-size: 30px;
+    color: #fd0a0a;
+    float: left;
+}
+.buyCoinBox {
+    width: 100%;
+    padding: 5px;
+}
+.buyCoinHeader {
+    font-size: 19px;
+    font-weight: bold;
+}
+.buyCoinHeader div {
+    margin-top: 6px;
+    font-size: 14px;
+    color: rgba(22, 22, 22, 0.5);
+}
+.buyCoinBody {
+    overflow: hidden;
+    margin-top: 13px;
+}
+
+.buyCoinBody li{
+    width: 150px;
+    height: 112px;
+    float: left;
+    border-radius: 12px;
+    box-shadow: 17px 20px 35px 0 rgba(0, 0, 0, 0.07);
+    position: relative;
+    margin-bottom: 50px;
+    margin-right: 14px;
+    background-color: #ffffff;
+    cursor: pointer;
+}
+.buyCoinBody li:hover{
+    opacity: 0.5;
+    -webkit-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+.buyCoinBody li .payOptionIcon {
+    margin-left: 15px;
+    margin-top: 22px;
+}
+.buyCoinBody li .payTitle {
+    font-size: 18px;
+    margin-left: 15px;
+}
+.buyCoinBody li .checkOption {
+    position: absolute;
+    right: 8px;
+    top: 8px;
+}
+.buyCoinBody li .coinOption {
+    overflow: hidden;
+    margin-left: 14px;
+ }
+.buyCoinBody li .coinOption div{
+    float: left;
+    font-size: 28px;
+    color: #fd0a0a;
+    margin-top: 42px;
+    line-height: 25px;
+}
+.buyCoinBody li .coinPrice {
+    font-size: 14px;
+    color: rgba(22, 22, 22, 0.7);
+    margin-left: 14px;
+}
+/*-----------*/
+.payOptionBody {
+    overflow: hidden;
+    margin-top: 13px;
+}
+
+.payOptionBody li{
+    width: 150px;
+    height: 112px;
+    float: left;
+    border-radius: 12px;
+    box-shadow: 17px 20px 35px 0 rgba(0, 0, 0, 0.07);
+    position: relative;
+    margin-bottom: 50px;
+    margin-right: 14px;
+    background-color: #ffffff;
+    cursor: pointer;
+}
+.payOptionBody li:hover{
+    opacity: 0.5;
+    -webkit-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+.payOptionBody li .payOptionIcon {
+    margin-left: 15px;
+    margin-top: 22px;
+}
+.payOptionBody li .payTitle {
+    font-size: 18px;
+    margin-left: 15px;
+}
+.payOptionBody li .checkOption {
+    position: absolute;
+    right: 8px;
+    top: 8px;
+}
+.payOptionBody li .coinOption {
+    overflow: hidden;
+    margin-left: 14px;
+}
+.payOptionBody li .coinOption div{
+    float: left;
+    font-size: 28px;
+    color: #fd0a0a;
+    margin-top: 42px;
+    line-height: 25px;
+}
+.payOptionBody li .coinPrice {
+    font-size: 14px;
+    color: rgba(22, 22, 22, 0.7);
+    margin-left: 14px;
+}
+/*----------*/
+.btnBuyCoin {
+    width: 152px;
+    background-color: #fd0a0a;
+    color: #ffffff;
+    padding: 13px 0;
+    text-align: center;
+}
+/*check box*/
+.checkBoxForm {
+    margin-bottom: 39px;
+}
+input[type=checkbox].signupCheckbox:checked + label.ckeckboxBlackIcon {
+    background-image: url(/assets/img/ic_web_icon.png);
+    width: 26px;
+    height: 26px;
+    background-position: 62px 66px;
+    cursor: pointer;
+    position: relative;
+    top: 15px;
+}
+input[type=checkbox].signupCheckbox + label.ckeckboxBlackIcon{
+    background-image: url(/assets/img/ic_web_icon.png);
+    width: 26px;
+    height: 26px;
+    background-position: 62px 95px;
+    cursor: pointer;
+    position: relative;
+    top: 15px;
+}
+input[type=checkbox].signupCheckbox {
+    display: none;
+    position: relative;
+}
+.checkboxLabel {
+    display: inline-block;
+    margin-left: 3px;
+}
+
+/*button*/
+.btnBoxMobile {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    display: none;
+}
+.btnPay {
+    height: 56px;
+    width: 50%;
+    background-color: #fd0a0a;
+    color: #ffffff;
+    line-height: 56px;
+    font-size: 16px;
+    cursor: pointer;
+    float: left;
+    text-align: center;
+}
+.btnCancel {
+    height: 56px;
+    width: 50%;
+    background-color: #1f1f1f;
+    color: #ffffff;
+    line-height: 56px;
+    font-size: 16px;
+    cursor: pointer;
+    float: left;
+    text-align: center;
+}
+.coinIcon {
+    margin-top: 2px;
+}
+/*guideline*/
+.SectionTitle {
+    font-size: 24px;
+}
+
+.guideLineContainer {
+    width: 100%;
+    margin: 70px auto 50px;
+    min-height: 500px;
+    max-height: 1390px;
+}
+.userMenuBg {
+    background-image: url("/assets/img/bg_sellev_guideline.png");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 474px;
+}
+.guideLineHeader {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
+    height: 474px;
+}
+.contentBox {
+    position: relative;
+    width: 100%;
+    bottom: 380px;
+}
+.guideLineHeader .contentBox .logoBox {
+    overflow: hidden;
+    height: 31px;
+    width: 210px;
+    margin: 0 auto 36px;
+}
+.guideLineHeader .contentBox .logoBox .logo {
+    background-image: url(/assets/img/logo_header_white.png);
+    width: 90px;
+    height: 25px;
+    background-position: center;
+    background-repeat: no-repeat;
+    float: left;
+}
+.guideLineHeader .contentBox .logoBox .title {
+    float: left;
+    font-size: 26px;
+    color: #ffffff;
+    line-height: 31px;
+    margin-left: 3px;
+}
+.guideLineHeader .contentBox .titleBox {
+    font-size: 44px;
+    color: #ffffff;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 44px;
+    line-height: 1.2em;
+}
+.guideLineHeader .contentBox .subTitleBox {
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: 500;
+    text-align: center;
+    opacity: 0.8;
+    line-height: 1.5em;
+}
+.guideLineBody {
+    overflow: hidden;
+    width: 830px;
+    padding: 10px;
+    margin: 0 auto;
+    position: relative;
+    bottom: 720px;
+}
+.guideLineBody li{
+    float: left;
+    width: 30%;
+    height: 386px;
+    margin-right: 5%;
+    background-color: #ffffff;
+    box-shadow: 2px 0 12px 3px rgba(0, 0, 0, 0.1);
+    margin-bottom: 39px;
+    padding: 35px 24px 10px;
+}
+.guideLineBody li:nth-child(3n){
+    margin-right: 0;
+}
+.stepText {
+    color: #ff4848;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 50px 0 3px;
+    height: 18px;
+    line-height: 18px;
+}
+.stepTitle {
+    font-size: 26px;
+    font-weight: bold;
+    border-bottom: 2px solid #000000;
+    padding-bottom: 5px;
+    margin-bottom: 16px;
+}
+.stepContent {
+    font-size: 13px;
+    font-weight: 500;
+    color: #444444;
+    line-height: 1.5em;
+}
+.stepOther {
+    font-size: 12px;
+    font-weight: 500;
+    color: #444444;
+    opacity: 0.5;
+    line-height: 1.5em;
+}
+.grayBgBox{
+    width: 100%;
+    height: 800px;
+}
+.grayLine {
+    border: 20px solid #d8d8d8;
+    border-left: none;
+    position: relative;
+    bottom: 500px;
+    width: 580px;
+    height: 440px;
+    margin: 0 auto;
+}
+.grayBg {
+    background-color: #d8d8d8;
+    width: 100%;
+    height: 800px;
+    opacity: 0.2;
+}
+.step1Icon {
+    background-image: url(/assets/img/ic_step1.png);
+    width: 70px;
+    height: 85px;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+}
+.step2Icon {
+    background-image: url(/assets/img/ic_step2.png);
+    width: 70px;
+    height: 85px;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+}
+.step3Icon {
+    background-image: url(/assets/img/ic_step3.png);
+    width: 70px;
+    height: 85px;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+}
+.step4Icon {
+    background-image: url(/assets/img/ic_step4.png);
+    width: 70px;
+    height: 85px;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+}
+.step5Icon {
+    background-image: url(/assets/img/ic_step5.png);
+    width: 150px;
+    height: 85px;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+}
+.step6Icon {
+    background-image: url(/assets/img/ic_step6.png);
+    width: 70px;
+    height: 85px;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+}
+@media screen and (max-width: 1160px){
+    .UserContainer {
+        width: 100%;
+        padding: 0 20px;
+    }
+    .myFundingBox {
+        width: 32%;
+        margin-right: 2%;
+    }
+    .myFundingBox:nth-child(3n) {
+        width: 32%;
+        margin-right: 0;
+    }
+}
+@media screen and (max-width: 768px){
+    /*coinbtn*/
+    .coinIcon {
+        margin-top: 4px;
+    }
+    /*funding condition*/
+    .UserContainer {
+        width: 100%;
+        padding: 0 28px 0 28px;
+    }
+    .userMenuHeader {
+        float: none;
+        width: 100%;
+    }
+    .userMenuBody {
+        float: none;
+        width: 100%;
+    }
+    .userMenuBox {
+        float: none;
+        width: 100%;
+        margin: 0;
+    }
+    .userMenuBox li:nth-child(2),
+    .userMenuBox li:nth-child(3) {
+        padding: 49px 22px;
+    }
+    .userMenuBox li:nth-child(2){
+        border-right: 1px solid rgba(212, 212 212, 0.5);
+    }
+    .userMenuBox li:nth-child(2) > div,
+    .userMenuBox li:nth-child(3) > div{
+        font-size: 22px;
+    }
+    .menuTitle {
+        font-size: 24px;
+        width: 230px;
+    }
+    .menuTitle .orderNum {
+        display: none;
+    }
+    .myFundingBox {
+        width: 100%;
+        float: none;
+        margin-right: 0;
+    }
+    .myFundingBox:nth-child(3n) {
+        float: none;
+        width: 100%;
+        margin-right: 0;
+    }
+    /*order history*/
+    .myOrderBody {
+        height: 100%;
+    }
+    .orderStatus {
+        font-size: 16px;
+    }
+    .orderTitle {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        font-size: 15px;
+    }
+    .myOrderBodyLeft li:nth-child(1) {
+        font-size: 15px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+    .myOrderBodyLeft li:nth-child(2) {
+        font-size: 15px;
+    }
+    .myOrderBodyLeft li:nth-child(3) {
+        font-size: 16px;
+    }
+    .myOrderBodyLeft li:nth-child(3) span{
+        font-size: 15px;
+    }
+    .myOrderBodyLeft {
+        width: 70%;
+    }
+    /*buy coin*/
+    .userMenuBody.userMenuRight {
+        padding-left: 0;
+    }
+    .userMenuHeader.userMenuLeft {
+        border: none;
+    }
+    .buyCoinBody li{
+        height: 94px;
+        width: 30%;
+        margin-right: 3%;
+    }
+    .payOptionBody li{
+        height: 94px;
+        width: 45%;
+        margin-right: 5%;
+    }
+    .font16Mobile {
+        font-size: 16px;
+        font-weight: normal;
+        line-height: 1.5em;
+    }
+    .font45Mobile {
+        font-size: 45px;
+        line-height: 1.5em;
+    }
+    .buyCoinBody li .coinOption {
+        margin-left: 14px;
+    }
+    .buyCoinBody li .coinOption div{
+        font-size: 15px;
+        line-height: 25px;
+        margin-top: 42px;
+        font-weight: bold;
+    }
+    .buyCoinBody li .coinPrice {
+        font-size: 13px;
+        padding: 0;
+        margin-left: 14px;
+    }
+    .buyCoinBody li .payOptionIcon {
+        margin-top: 42px;
+    }
+    .buyCoinBody li .payTitle {
+        font-size: 15px;
+    }
+    /*---------*/
+    .payOptionBody li .coinOption {
+        margin-left: 14px;
+    }
+    .payOptionBody li .coinOption div{
+        font-size: 15px;
+        line-height: 25px;
+        margin-top: 42px;
+        font-weight: bold;
+    }
+    .payOptionBody li .coinPrice {
+        font-size: 13px;
+        padding: 0;
+        margin-left: 14px;
+    }
+    .payOptionBody li .payOptionIcon {
+        margin-top: 19px;
+    }
+    .payOptionBody li .payTitle {
+        font-size: 13px;
+        margin-top: 5px;
+    }
+    /*-------------*/
+    .userInfoBoxMobile {
+        width: 100%;
+        height: 130px;
+        border-radius: 12px;
+        background-color: #ffffff;
+        box-shadow: 17px 20px 35px 0 rgba(0, 0, 0, 0.07);
+        margin-bottom: 44px;
+    }
+    .userInfoMobile {
+        display: inline-block;
+        width: 50%;
+        height: 150px;
+        padding: 40px;
+    }
+    .userInfoMobile:nth-child(2) {
+        border-right: none;
+    }
+    .buyCoinHeader {
+        font-size: 16px;
+        font-weight: normal;
+    }
+    .font13Mobile {
+        font-size: 13px;
+        color: rgba(151, 151, 151, 0.8);
+        line-height: 1.5em;
+    }
+    .btnBoxMobile {
+        display: block;
+    }
+    .checkboxLabel {
+        font-size: 10px;
+        font-weight: bold;
+    }
+    /*guide line*/
+    .guideLineContainer {
+        max-height: 100%;
+    }
+    .guideLineHeader .contentBox .logoBox {
+        height: 56px;
+    }
+    .guideLineHeader .contentBox .logoBox .title {
+        font-size: 18px;
+        float: none;
+        margin-left: 0;
+    }
+    .guideLineHeader .contentBox .logoBox .logo {
+        float: none;
+        margin: 0 auto;
+    }
+    .guideLineHeader .contentBox .titleBox {
+        font-size: 22px;
+    }
+    .guideLineHeader .contentBox .subTitleBox {
+        font-size: 12px;
+    }
+    .guideLineBody {
+        width: 100%;
+        padding: 5px 20px;
+        bottom: 0;
+        margin-top: 22px;
+    }
+    .guideLineBody li{
+        float: none;
+        margin-right: 0;
+        width: 100%;
+    }
+}
+.formInputWarn {
+    font-size: 14px;
+    color: #ff0000;
+    padding-top: 13px;
+    margin-bottom: 13px;
+}
